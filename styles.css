@@ -1,25 +1,35 @@
-/* Using a sans serif font and increasing the size of the characters */
+:root {
+    /* Fonts */
+    --primary-fonts: Roboto;
+    --secondary-fonts: Raleway;
+    /* Text colors */
+    --primary-txt-cl: #2E2F42;
+    --secondary-txt-cl: #434455;
+    --accent-txt-cl: #4D5AE5;
+    /* BG colors */
+    --primary-bg-cl: #FFFFFF;
+    --accent-bg-cl: #4D5AE5;
+    --icon-clr-cl: #8E8F99;
+    --icon-ocean-cl: #404BBF;
+    --icon-modal-cl: #FCFCFC;
+    /* Others */
+    --trns-fast: 400ms ease-in;
+    --trns-slow: 1800ms ease-in-out;
+
+}
+
+/* Studio */
 body {
-    font-family: sans-serif;
-    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    Letter-spacing: 0.02em;
+    color: var(--primary-txt-cl);
 }
 
-/* Shift the heading text to the left, by default it is centered */
-table caption {
-    text-align: left;
+/* reset style */
+.link {
+    text-decoration: none;
+
 }
 
-/* We "collapse" the frames of adjacent cells */
-table {
-    border-collapse: collapse;
-}
-
-/* 
-  Add a border and padding to the cells, the distance from the content to the border.
-  To control the vertical position, the caption-side property is used.
-*/
-table th,
-table td {
-    padding: 10px;
-    border: 1px solid #2a2a2a;
-}
