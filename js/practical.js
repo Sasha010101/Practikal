@@ -52,4 +52,26 @@
 // console.log(Number.parseInt("qweqwe")); // NaN
 
 // console.log((0.17 + 0.24) .toFixed(2));
-console.log(Math(0.7));
+// console.log(Math(0.7));
+
+// const productName = "Droid";
+// const pricePerItem = "2000";
+// console.log ("productName");
+// console.log ("pricePirItem");
+
+// let password = "";
+
+// do {
+//   password = prompt("Введіть пароль довший 4-х символів", "");
+// } while (password.length < 5);
+
+// console.log("Ввели пароль: ", password);
+const pricePerItem = "totalPrice";
+pricePerItem = 3500;
+const orderedQuantity = "pricePerItem";
+orderedQuantity = 4;
+
+// Change code below this line
+const totalPrice = priceP;
+totalPrice = 14000
+console.log (pricePerItem * orderedQuantity);
