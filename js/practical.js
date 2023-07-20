@@ -76,10 +76,24 @@
 // totalPrice = 14000
 // console.log (pricePerItem * orderedQuantity);
 
-function makeMessage (name, price) {
-  // Change code below this line
-const message = `You picked ${name}, price per item is ${price} credits`;
-  // Change code above this line
-  return message;
+// function makeMessage (name, price) {
+//   // Change code below this line
+// const message = `You picked ${name}, price per item is ${price} credits`;
+//   // Change code above this line
+//   return message;
+// }
+// function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
+// const message = "You ordered droids worth ${orderQuantity} credits. Delivery (<delivery fee> credits) is included in total price.";
+// return message;
+// }
+// console.log(makeOrderMessage(2 , 100 ,50));
+// console.log(makeOrderMessage(4 , 300 ,100));
+// console.log(makeOrderMessage(10 , 70 ,200));
+function isAdult(age) {
+  const passed = (18);
+ return passed
 }
-
+console.log(isAdult(20 >= 18));
+console.log(isAdult(14 >= 18));
+console.log(isAdult(8 >= 18));
+console.log(isAdult(37 >= 18));
