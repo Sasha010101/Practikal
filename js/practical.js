@@ -66,12 +66,20 @@
 // } while (password.length < 5);
 
 // console.log("Ввели пароль: ", password);
-const pricePerItem = "totalPrice";
-pricePerItem = 3500;
-const orderedQuantity = "pricePerItem";
-orderedQuantity = 4;
+// const pricePerItem = "totalPrice";
+// pricePerItem = 3500;
+// const orderedQuantity = "pricePerItem";
+// orderedQuantity = 4;
 
-// Change code below this line
-const totalPrice = priceP;
-totalPrice = 14000
-console.log (pricePerItem * orderedQuantity);
+// // Change code below this line
+// const totalPrice = priceP;
+// totalPrice = 14000
+// console.log (pricePerItem * orderedQuantity);
+
+function makeMessage (name, price) {
+  // Change code below this line
+const message = `You picked ${name}, price per item is ${price} credits`;
+  // Change code above this line
+  return message;
+}
+
