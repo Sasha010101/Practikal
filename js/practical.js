@@ -89,11 +89,85 @@
 // console.log(makeOrderMessage(2 , 100 ,50));
 // console.log(makeOrderMessage(4 , 300 ,100));
 // console.log(makeOrderMessage(10 , 70 ,200));
-function isAdult(age) {
-  const passed = (18);
- return passed
+
+// function isAdult(age) {
+// const passed = 18>=;
+// return passed;
+ 
+// }
+// console.log(isAdult(20));
+// console.log(isAdult(14));
+// console.log(isAdult(8));
+// console.log(isAdult(37));
+
+// let a = 5;
+// let b = 10;
+// let c = 15;
+// let d = 20;
+
+// // Change code below this line
+// a += a + 2;
+// b -= b - 4;
+// c *= c * 3;
+// d /= d / 10;
+// console.log();
+
+// function isNumberInRange(start, end, number) {
+//   const isInRange = number >= start && number >= end;
+
+//   return isInRange;
+// }
+// console.log(isNumberInRange(10,30,17));
+// console.log(isNumberInRange(10,30,5));
+// console.log(isNumberInRange(20,50,24));
+// console.log(isNumberInRange(20,50,76));
+
+// function isNumberNotInRange(start, end, number) {
+//   const isInRange = number <= start && number >= end;
+//   const isNotInRange = !number <= start || !number >= end; // Change this line
+
+//   return isNotInRange;
+// }
+// console.log(isNumberNotInRange(10, 30, 17));
+// console.log(isNumberNotInRange(10, 30, 5));
+// console.log(isNumberNotInRange(20, 50, 24));
+// console.log(isNumberNotInRange(20, 50, 76));
+
+// const productName = "Repair droid";
+// console.log(productName.slice(9)); // "air dr"
+
+// function calculateEngravingPrice(message, pricePerWord) {
+//     let words;
+//     words = message.split().length * pricePerWord;
+//     return words;
+// }
+
+// const start = 10;
+// const end = 44;
+// for (let i = start; i <= end; i += 7){
+//     console.log(i);
+// }
+
+// function calculateTotal(number) {
+//     let total = 0;
+//     for (let i = 1; i <= number; i += 1) {
+//         total += i;
+
+  
+// }
+//   return total;
+// }
+// console.log(calculateTotal(7));
+// console.log(calculateTotal(18));
+// console.log(calculateTotal(30));
+function calculateTotalPrice(order) {
+  let total = 0;
+  // Change code below this line
+
+  for (let total of order) {
+    total += order;
+  }
+
+  // Change code above this line
+  return total;
 }
-console.log(isAdult(20 >= 18));
-console.log(isAdult(14 >= 18));
-console.log(isAdult(8 >= 18));
-console.log(isAdult(37 >= 18));
