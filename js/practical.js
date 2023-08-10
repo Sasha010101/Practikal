@@ -226,8 +226,12 @@
 // }
 // const hotelName = alert("Please enter desired hotel name");
 // console.log(hotelName);
-const num1 = 15;
-const num2 = 9;
-const biggerNumber = num1 > num2 ? num1 : num2;
+newFunction();
 
-console.log(biggerNumber);
+// function newFunction() {
+//   const num1 = 15;
+//   const num2 = 9;
+//   const biggerNumber = num1 > num2 ? num1 : num2;
+
+//   console.log(biggerNumber);
+// }
