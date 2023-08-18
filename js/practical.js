@@ -277,4 +277,5 @@ console.log(someString.substr(0, 5)); // 5 символов, начиная с 0
 console.log(someString.substring(0, 5)); // копировать по индексам [0:5)
 console.log(someString.replace(/\s.*/, '')); // заменить пробел и всё, что дальше пустой строкой
 console.log(someString.slice(0, -3)); // срез без последних трёх символов
-// console.log("methods replace:", someString.replace(num, /5/, "09386687788")); // get "09386687788"
+// console.log("methods replace:", someString.replace(num, /5/, "09386687788")); // get "09386687788"js
+console.log(Hello world);
