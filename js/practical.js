@@ -190,20 +190,12 @@
 // •  В циклі for використовувалися методи includes і push
 
 // function getCommonElements(array1, array2) {
-// 1.Створення пустого масиву.
-// 2.Перебрати масиву за допомогою for.
-  // 3.Умова яка порівнює елемент одного масиву з елементами іншого масиву.
-  // 4. якщо умова стверджується "True" цей елемент додається в пустий масив.
-  // в інших випадках "false".
-  // 5.функція виводить результат в пустий масив.
-  
 
+// const resultString  = ""; // concatination numbers to string " 1, 3, 22, 43, 0 "
 //   const result = []; // 1.
 //   for (let i = 0; i < array1.length; i++){  // 2.
 //     if(array2.includes(array1[i])){ // 3
-   
 //         result.push(array1[i]);
-    
 //   }
 // };
 // return result;
@@ -224,6 +216,10 @@
 //   }
 //   return result;
 // }
+
+// Homework2: get result in string; ////////////////////////////
+
+
 // const hotelName = alert("Please enter desired hotel name");
 // console.log(hotelName);
 // newFunction();
@@ -256,10 +252,29 @@
 
 
 
-let password = "";
+// for (let i = 0; i <= 5; i += 1) {
+//   console.log(i);
 
-do {
-  password = prompt("Введіть пароль довший 4-х символів", "");
-} while (password.length < 5);
+//   if (i === 3) {
+//     console.log("Знайшли число 3, перериваємо виконання циклу");
+//     break;
+//   }
+// }
+// Home-work1////////////////////////////
+// Method string replace
+const num = 15;
+const someString = "Jonh - +38093-866-877- 88";
+// steps to resolve:
+// 1.обрізаємо після +38 і обрізаємо.
+// 2. Видаляємо дефіси.
+// 3.Видаляємо пробіли/
+const phoneNumber = "";
+console.log(someString.split(" ", [0]) );
 
-console.log("Ввели пароль: ", password);
+console.log(someString.split(' ')[0]); // Разделить по пробелу, взять первую часть
+console.log(someString.match(/\d?\d:\d\d/)[0]); // совпадение по регулярному выражению
+console.log(someString.substr(0, 5)); // 5 символов, начиная с 0го
+console.log(someString.substring(0, 5)); // копировать по индексам [0:5)
+console.log(someString.replace(/\s.*/, '')); // заменить пробел и всё, что дальше пустой строкой
+console.log(someString.slice(0, -3)); // срез без последних трёх символов
+// console.log("methods replace:", someString.replace(num, /5/, "09386687788")); // get "09386687788"
