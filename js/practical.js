@@ -262,20 +262,19 @@
 // }
 // Home-work1////////////////////////////
 // Method string replace
-const num = 15;
-const someString = "Jonh - +38093-866-877- 88";
+
 // steps to resolve:
 // 1.обрізаємо після +38 і обрізаємо.
 // 2. Видаляємо дефіси.
 // 3.Видаляємо пробіли/
-const phoneNumber = "";
-console.log(someString.split(" ", [0]) );
+// const phoneNumber = "";
+// console.log(someString.split(" ", [0]) );
 
-console.log(someString.split(' ')[0]); // Разделить по пробелу, взять первую часть
-console.log(someString.match(/\d?\d:\d\d/)[0]); // совпадение по регулярному выражению
-console.log(someString.substr(0, 5)); // 5 символов, начиная с 0го
-console.log(someString.substring(0, 5)); // копировать по индексам [0:5)
-console.log(someString.replace(/\s.*/, '')); // заменить пробел и всё, что дальше пустой строкой
-console.log(someString.slice(0, -3)); // срез без последних трёх символов
+// console.log(someString.split(' ')[0]); // Разделить по пробелу, взять первую часть
+// console.log(someString.match(/\d?\d:\d\d/)[0]); // совпадение по регулярному выражению
+// console.log(someString.substr(0, 5)); // 5 символов, начиная с 0го
+// console.log(someString.substring(0, 5)); // копировать по индексам [0:5)
+// console.log(someString.replace(/\s.*/, '')); // заменить пробел и всё, что дальше пустой строкой
+// console.log(someString.slice(0, -3)); // срез без последних трёх символов
 // console.log("methods replace:", someString.replace(num, /5/, "09386687788")); // get "09386687788"js
-console.log(Hello world);
+console.log("Hello world");
