@@ -29,5 +29,9 @@
     // const min = 10;
     // const result = Math.round(Math.random() * (max - min) + min);
     // console.log(result);
-
-    
+///////////6.//////toLowercase with slice.
+//     let brand = "saMSuNg";
+//     console.log(brand[4]);
+//     console.log(brand.slice(5).toLowerCase());
+// brand = brand[0] + brand.slice(1).toLowerCase();
+// console.log(brand);
