@@ -35,3 +35,8 @@
 //     console.log(brand.slice(5).toLowerCase());
 // brand = brand[0] + brand.slice(1).toLowerCase();
 // console.log(brand);
+       /////7. Логічні оператори &&, || /HE////
+// const x = 10;
+// const y = 20;
+// const res = 15 < 10 || 15 < y; 
+// console.log(res);
