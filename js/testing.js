@@ -40,3 +40,41 @@
 // const y = 20;
 // const res = 15 < 10 || 15 < y; 
 // console.log(res);
+
+
+
+// function getCommonElements(array1, array2) {
+//   const result = [];
+//   for (let i = 0; i < array1.length; i += 1) {
+//     if (array2.includes(array1[i])) {
+//       result.push(array1[i]);
+//     }
+//   }
+//   return result;
+// }
+// getCommonElements([1, 2, 3], [2, 4]);
+
+
+// function getCommonElements(array1, array2) {
+
+
+//       const result = []; // 1.
+//       for (let i = 0; i < array1.length; i++){  // 2.
+//         if(array2.includes(array1[i])){ // 3
+//             result.push(array1[i]);
+//       }
+//     };
+//     return result;
+//     }
+//     console.log(getCommonElements([1, 2, 3], [2, 4]));
+
+
+   
+    //     function getCommonElements(array1, array2) {
+    // return array1.filter(number => array2.includes(number) ? number : false);
+    // }
+    // console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+    
+
+   
+    
