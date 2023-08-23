@@ -279,15 +279,15 @@
 // console.log("methods replace:", someString.replace(num, /5/, "09386687788")); // get "09386687788"js
 // console.log("Hello world");
 
-const phoneNumber = " Rthvhvhv to +3806326715 80";
-    // const cleanedPhoneNumber = phoneNumber.replace(/\+38|\s/g, "");
-    // console.log(cleanedPhoneNumber);
-    const cleanedPhoneNumber = phoneNumber.includes(+38);
-    console.log("step1:", cleanedPhoneNumber);
+// const phoneNumber = " Rthvhvhv to +3806326715 80";
+//     // const cleanedPhoneNumber = phoneNumber.replace(/\+38|\s/g, "");
+//     // console.log(cleanedPhoneNumber);
+//     const cleanedPhoneNumber = phoneNumber.includes(+38);
+//     console.log("step1:", cleanedPhoneNumber);
 
-const stepSecond  = phoneNumber.split(" ", 5);
-console.log("stepSecond :", stepSecond );
-const stepThird = phoneNumber.splice 
+// const stepSecond  = phoneNumber.split(" ", 5);
+// console.log("stepSecond :", stepSecond );
+// const stepThird = phoneNumber.splice 
     // /1.стрілкова та декларативна функція.../// declaration & arrow functions
     // 2. methods to array and to strings
     // steps to resolve:
