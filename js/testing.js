@@ -112,3 +112,55 @@
   
 //   console.log(message); // "Клієнт з таким ім'ям є в базі даних!"
 //   }
+/////////task12///////
+// function greet(name) {
+//     return `Welcome to Finland ${name}.`;
+// }
+// console.log(greet("Mariia"));
+// console.log(greet);
+
+/////task13////
+// Функція вищого порядку
+// function greet(name) {
+//     console.log(`Ласкаво просимо ${name}.`);
+//   }
+  
+//   // Функція вищого порядку
+//   function registerGuest(name, callback) {
+//     console.log(`Реєструємо гостя ${name}.`);
+//     callback(name);
+//   }
+  
+//   registerGuest("Манго", greet);
+
+
+
+
+//   function greet (name) {
+//     console.log(`Welcome to Ukraine ${name}.`); 
+   
+// }
+// function registerGuest (name, callback){
+//     console.log(`Реєструємо гостя ${name}.`);
+//     callback(name);
+// }
+// registerGuest("Mariia", greet);
+
+
+// function great (name) {
+//     console.log(`Welcome at home ${name}.`);
+// }
+// function registerGuest (name, callback){
+//     console.log(` Реєструємо гостя ${name}.`);
+//     callback(name);
+// }
+// registerGuest("Olga", great);
+//////перебирання масиву task 14/////
+//  const friends = ["Mariia", "Olga", "Sasha", "Anatolii", "Yurii", "Galosha"];
+// console.log(friends);
+// const lastIndex = friends.length -1;
+// for (let i = 0; i <= lastIndex; i += 1) {
+//     console.log(friends[i]);
+    
+// }
+// console.table(friends);
