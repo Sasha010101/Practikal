@@ -164,3 +164,42 @@
     
 // }
 // console.table(friends);
+//////task15-перебирання масиву та додавання всіх чисел(якщо елементи змінюються використовуємо for,якщо ні то  for of)////
+//  const numbers = [54, 44,48, 99, 127,78, 34, 27, 13,7];
+//  let total = 0;
+//  for(let i = 0; i < numbers.length; i += 1) {
+//      console.log(numbers[i]);
+//     total = total + numbers[i];
+   
+  
+//  }
+
+// console.log("Total:", total);
+////////
+// const numberss = [23, 44, 56, 23, 43,45, 5,];
+// let total = 0;
+// for (let i =0; i < numberss.length; i += 1){
+//     console.log(numberss[i]);
+//     total += numberss[i];
+// }
+// 
+
+// for(const value of namess) {
+//     total += value;
+// }
+// console.log("Total:", total);
+
+
+const numbers =[1, 16, 4, 2, 9, 11, 6, 77, 55, 33,100];
+let total = 0;
+for( const number of numbers) {
+    console.log(number);
+    if (number % 2 ===0) {
+        console.log("Зліченнi!!");
+        total += number;
+    }
+}
+
+
+
+
