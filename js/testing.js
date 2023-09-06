@@ -78,20 +78,37 @@
 
 
 ///8. task////
-const minSalary = 500;
-const maxSalary = 5000;
-const workers = 5;
-let totalSalary = 0;
+// const minSalary = 500;
+// const maxSalary = 5000;
+// const workers = 5;
+// let totalSalary = 0;
 
-for (let i = 1; i <= workers; i += 1) {
-  const salary = Math.round(
-    Math.random() * (maxSalary - minSalary) + minSalary,
-  );
-  console.log(`Зп працівника номер ${i} - ${salary}`);
+// for (let i = 1; i <= workers; i += 1) {
+//   const salary = Math.round(
+//     Math.random() * (maxSalary - minSalary) + minSalary,
+//   );
+//   console.log(`Зп працівника номер ${i} - ${salary}`);
   
-  totalSalary += salary;
-  
-}
-console.log('totalSalary:', totalSalary);
-   
+//   totalSalary += salary;
+//   for (let index = 0; index < array.length; index++) {
+    // const element = array[index];
     
+  // }
+  // console.log('totalSalary:', totalSalary);
+                              //////Оператори break and continue//////
+//   const clients = ["Mango", "Poly", "Ajax"];
+//   const clientNameToFind = "Ajax";
+//   let message;
+  
+//   for (const client of clients) {
+//     if (client === clientNameToFind) {
+//       message = "Клієнт з таким ім'ям є в базі даних!";
+//       break;
+//     }
+  
+//     // Якщо вони не збігаються - записуємо в message повідомлення про відсутність імені
+//     message = "Клієнт з таким ім'ям відсутній в базі даних!";
+//   }
+  
+//   console.log(message); // "Клієнт з таким ім'ям є в базі даних!"
+//   }
