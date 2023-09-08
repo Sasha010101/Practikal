@@ -250,8 +250,6 @@
 // }
 
 
-
-
 // for (let i = 0; i <= 5; i += 1) {
 //   console.log(i);
 
@@ -297,9 +295,36 @@
 // const phoneNumber = "";
 // console.log(someString.split(" ", [0]) );
 
-const phoneNumber = " Rthvhvhv to +3806326715 80";
-const phoneNumberArray = phoneNumber.split(' ');
-const deletedString = phoneNumberArray.splice(0, 3);
-const joinedString = phoneNumberArray.join('');
+// const stringWithphoneNumber = "Rthvhvhv to the +3806326715 80";
+// const phoneNumberArray = stringWithphoneNumber.split(' ');
+// const deletedString = phoneNumberArray.splice(0, 3);
+// const joinedString = phoneNumberArray.join('');
 
-console.log(joinedString);
+// console.log(joinedString);
+
+
+function getPhoneNumber(string){
+    // 1. Перетворити рядок в масив .split();
+    // 2. Перебрати масив .forEach();
+    // 3. regExp  create expresion  type= number,  13 simbol, start with +38
+    // 4. find item array like exression
+    // 5. return result;
+
+const phoneRegex = /\+380\(\d{2}\)-\d{3}-\d{2}-\d{2}/g; // expresion for phone
+ 
+   const phone = string.split(' ').forEach((item, index) => {
+    if(phoneRegex.test(item) ){
+        console.log("this item is phone:",item);
+    }
+    else{
+        console.log("no number");
+    }
+
+  });
+    return phone;
+};
+
+console.log(getPhoneNumber("Rthvhvhv Rthvhvhv 5454 to the +380(67)-995-33 65"));
+console.log(getPhoneNumber("Some text with phone some person: +380(67)-995-33-65"));
+
+// функція для перевірка імейлу
