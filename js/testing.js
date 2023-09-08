@@ -190,16 +190,48 @@
 // console.log("Total:", total);
 
 
-const numbers =[1, 16, 4, 2, 9, 11, 6, 77, 55, 33,100];
-let total = 0;
-for( const number of numbers) {
-    console.log(number);
-    if (number % 2 ===0) {
-        console.log("Зліченнi!!");
-        total += number;
-    }
-}
+// const numbers =[1, 16, 4, 2, 9, 11, 6, 77, 55, 33,100];
+// let total = 0;
+// for( const number of numbers) {
+//     console.log(number);
+//     if (number % 2 ===0) {
+//         console.log("Зліченнi!!");
+//         total += number;
+//     }
+// }
+// function repeatLog(n) {
+//     for (let i = 0; i < n; i += 1) {
+//       console.log(i);
+//     }
+//   }
+  
+//   repeatLog(5);
+
+////////Перебирання масиву/////         
+// const numbers = [5, 10, 15, 20, 25];
+
+// const logMessage = (number, index) => {
+//   console.log(`Індекс ${index}, значення ${number}`);
+// };
+
+// numbers.forEach(logMessage);
+
+// const numbers = [5, 10, 15, 20, 25];
+
+// // Класичний for
+// for (let i = 0; i < numbers.length; i += 1) {
+//   console.log(`Індекс ${i}, значення ${numbers[i]}`);
+// }
 
 
+// Імперативний підхід
+// const numbers = [1, 2, 3, 4, 5];
+// const filteredNumbers = [];
 
+// for (let i = 0; i < numbers.length; i += 1) {
+//   if (numbers[i] > 1) {
+//     filteredNumbers.push(numbers[i]);
+//   }
+// }
 
+// console.log(filteredNumbers);

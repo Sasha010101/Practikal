@@ -296,3 +296,10 @@
 // 3.Видаляємо пробіли/
 // const phoneNumber = "";
 // console.log(someString.split(" ", [0]) );
+
+const phoneNumber = " Rthvhvhv to +3806326715 80";
+const phoneNumberArray = phoneNumber.split(' ');
+const deletedString = phoneNumberArray.splice(0, 3);
+const joinedString = phoneNumberArray.join('');
+
+console.log(joinedString);
