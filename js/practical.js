@@ -301,30 +301,30 @@
 // const joinedString = phoneNumberArray.join('');
 
 // console.log(joinedString);
+////wertyuiohgfdsdfghjkl;lkjhgfdsdfghjklkjhgf/////
 
+// function getPhoneNumber(string){
+//     // 1. Перетворити рядок в масив .split();
+//     // 2. Перебрати масив .forEach();
+//     // 3. regExp  create expresion  type= number,  13 simbol, start with +38
+//     // 4. find item array like exression
+//     // 5. return result;
 
-function getPhoneNumber(string){
-    // 1. Перетворити рядок в масив .split();
-    // 2. Перебрати масив .forEach();
-    // 3. regExp  create expresion  type= number,  13 simbol, start with +38
-    // 4. find item array like exression
-    // 5. return result;
-
-const phoneRegex = /\+380\(\d{2}\)-\d{3}-\d{2}-\d{2}/g; // expresion for phone
+// const phoneRegex = /\+380\(\d{2}\)-\d{3}-\d{2}-\d{2}/g; // expresion for phone
  
-   const phone = string.split(' ').forEach((item, index) => {
-    if(phoneRegex.test(item) ){
-        console.log("this item is phone:",item);
-    }
-    else{
-        console.log("no number");
-    }
+//    const phone = string.split(' ').forEach((item, index) => {
+//     if(phoneRegex.test(item) ){
+//         console.log("this item is phone:",item);
+//     }
+//     else{
+//         console.log("no number");
+//     }
 
-  });
-    return phone;
-};
+//   });
+//     return phone;
+// };
 
-console.log(getPhoneNumber("Rthvhvhv Rthvhvhv 5454 to the +380(67)-995-33 65"));
-console.log(getPhoneNumber("Some text with phone some person: +380(67)-995-33-65"));
+// console.log(getPhoneNumber("Rthvhvhv Rthvhvhv 5454 to the +380(67)-995-33 65"));
+// console.log(getPhoneNumber("Some text with phone some person: +380(67)-995-33-65"));
 
 // функція для перевірка імейлу
