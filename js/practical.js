@@ -226,8 +226,51 @@
 // }
 // const hotelName = alert("Please enter desired hotel name");
 // console.log(hotelName);
-const num1 = 15;
-const num2 = 9;
-const biggerNumber = num1 > num2 ? num1 : num2;
+// const num1 = 15;
+// const num2 = 9;
+// const biggerNumber = num1 > num2 ? num1 : num2;
 
-console.log(biggerNumber);
+// console.log(biggerNumber);
+
+
+// let x = 10; // number
+// console.log(x);
+// x = {name: "Sanya"}; // object
+// console.log(x);
+
+// Task: Sort elements  for tipes
+ const arr = [ 2, [1], [[12, 33, 11]], "Ukraine", 33,  [[[[1], 3]]], {name: "Sanya"}. true ];
+// const arr2 
+
+
+function sortForTypes(array, filterType) {
+  // 1.Перебрати масив за допомогою for.  
+  // 2.Відсортувати елементи масиву./
+  const result = []; 
+
+
+  for (let i = 0; i < array.length; i += 1) { // 1.
+    console.log(array[i]);  
+    if( typeof array[i] == filterType){ // 2   // rewrite to ternal operation
+      result.push(array[i])
+    }
+  }
+  
+
+
+  // do it code
+  console.log("result:",result);
+
+  return result;
+};
+
+
+
+sortForTypes(arr, "number"); // [2, 33]
+sortForTypes(arr, "string");  // [Ukraine]
+sortForTypes(arr, "object"); //{name: "Sanya"}
+sortForTypes(arr, "boolean"); // true
+
+
+
+
