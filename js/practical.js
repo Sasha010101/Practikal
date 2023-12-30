@@ -210,25 +210,25 @@
 // }
 
 // console.log(getCommonElements([1, 2, 3], [2, 4])); // [2]
-// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19])); //[1, 2]
-// console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27])); // [12, 27, 3]
-// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40])); // [10, 30, 40]
-// console.log(getCommonElements([1, 2, 3], [10, 20, 30])); // []
+console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19])); //[1, 2]
+console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27])); // [12, 27, 3]
+console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40])); // [10, 30, 40]
+console.log(getCommonElements([1, 2, 3], [10, 20, 30])); // []
 
-// function getCommonElements(array1, array2) {
-//   const result = [];
-//   for (let i = 0; i < array1.length; i += 1) {
-//     if (array2.includes(array1[i])) {
-//       result.push(array1[i]);
-//     }
-//   }
-//   return result;
-// }
-// const hotelName = alert("Please enter desired hotel name");
-// console.log(hotelName);
-// const num1 = 15;
-// const num2 = 9;
-// const biggerNumber = num1 > num2 ? num1 : num2;
+function getCommonElements(array1, array2) {
+  const result = [];
+  for (let i = 0; i < array1.length; i += 1) {
+    if (array2.includes(array1[i])) {
+      result.push(array1[i]);
+    }
+  }
+  return result;
+}
+const hotelName = alert("Please enter desired hotel name");
+console.log(hotelName);
+const num1 = 15;
+const num2 = 9;
+const biggerNumber = num1 > num2 ? num1 : num2;
 
 // console.log(biggerNumber);
 
