@@ -351,28 +351,172 @@
 
 
 // 4. Перевірити, чи рядок закінчується на літеру "d", і вивести "Закінчується" або "Не закінчується" у консоль.
-function checkString(str) {
-  if(str[str.length -1] === "d"){
-    console.log("Закінчується");
-  }
-  else{
-    console.log("Не закінчується");
-  }
-}
-checkString("BreD");
-checkString("bred");
-checkString("Dred");
+// function checkString(str) {
+//   if(str[str.length -1] === "d"){
+//     console.log("Закінчується");
+//   }
+//   else{
+//     console.log("Не закінчується");
+//   }
+// }
+// checkString("BreD");
+// checkString("bred");
+// checkString("Dred");
 
 // 5. Перевірити, чи довжина рядка більше за 10 символів, і вивести "Більше" або "Не більше" у консоль.
+// function checkLine(str) {
+//   if(str.length > 10) {
+//     console.log("Більше");
+//   }
+//   else{
+//     console.log("Не Більше");
+//   }
+// }
+// checkLine("Hello world");
+// checkLine("Mouse");
+// checkLine(`Good morning world`);
+// checkLine("Hello");
+
 // 6. Перевірити, чи рядок містить цифру "7", і вивести "Знайдено" або "Не знайдено" у консоль.
+// function checkString(str) {
+//   if(str.includes(7)){
+//     console.log("Знайдено");
+//   }
+//   else{
+//     console.log("Не знайдено");
+//   }
+// }
+// checkString("Hel7lo world");
+// checkString("uhfeujf8den");
+// checkString("frtwduded7ue");
+// checkString("edeid3jk");
+
 // 7. Перевірити, чи позиція першого входження літери "e" у рядку дорівнює 3, і вивести "спрацював if" або "спрацював else" у консоль.
+// function checkLetter(str) {
+//   if(str[3] === "e") {
+// console.log("спрацював");
+//   }
+//   else {
+//     console.log("не спрацював");
+//   }
+// }
+// checkLetter("Later");
+// checkLetter("Hello");
+// checkLetter("wydewydg");
+// checkLetter("finger");
 // 9. Перевірити, чи останній символ рядка є пробілом, і вивести "спрацював if" або "спрацював else" у консоль.
+// function checkString(str) {
+//     if(str[str.length -1 ] === " ") {
+//   console.log("спрацював");
+//     }
+//     else {
+//       console.log("не спрацював");
+//     }
+//   }
+//   checkString("Later");
+//   checkString("Hello ");
+//   checkString("wydewydg");
+//   checkString("finger ");
+
 // 12. Перевірити, чи рядок починається зі слова "JavaScript", і вивести "Починається" або "Не починається" у консоль.
+// function checkString(str) {
+//       if(str.startsWith("JavaScript")) {
+//     console.log("Починається");
+//       }
+//       else {
+//         console.log("Не починається");
+//       }
+//     }
+//     checkString("LaterJavaScript");
+//     checkString("JavaScriptHello");
+//     checkString("JavaScriptwydewydg");
+//     checkString("fingerJavaScript");
+
 // 13. Перевірити, чи рядок містить символи "&" або "$", і вивести "Знайдено" або "Не знайдено" у консоль.
+// function checkString(str) {
+//     if(str.includes("&") || str.includes("$")){
+//       console.log("Знайдено");
+//     }
+//     else{
+//       console.log("Не знайдено");
+//     }
+//   }
+//   checkString("Hel7lo wo&rld");
+//   checkString("uhfeujf8den");
+//   checkString("frtwd$uded7ue");
+//   checkString("edeid3jk");
+
+
 // 14. Перевірити, чи рядок містить лише пропуски, і вивести "спрацював if" або "спрацював else" у консоль.
+// function checkString(str) {
+//   if(str.trim()) {
+//     console.log("спрацював if");
+//   }
+//   else{
+//     console.log("спрацював else");
+//   }
+// }
+// checkString("Helloworld");
+// checkString("Hello world");
+// checkString("Hello world ");
+// checkString("Hello  world");
+// checkString("hiworld");
 // 15. Перевірити, чи позиція першого входження літери "A" у рядку менше за 5, і вивести "спрацював if" або "спрацював else" у консоль.
+// function checkLetter(str) {
+//   if(str.indexOf("A") < 5) {
+//     console.log("спрацював if");
+//   }
+//   else {
+//     console.log("спрацював else");
+//   }
+// }
+// checkLetter("Sugar");
+// checkLetter("Canada");
+// checkLetter("world");
+// checkLetter("constructor");
 // 16. Перевірити, чи рядок містить лише малі літери, і вивести "спрацював if" або "спрацював else" у консоль.
+// const string = "Hello world"
+// if(string === string.toLowerCase()) {
+//   console.log("спрацював if");
+// }
+// else {
+//   console.log("спрацював else");
+// }
+
 // 17. Перевірити, чи рядок містить лише великі літери, і вивести "спрацював if" або "спрацював else" у консоль.
+// const string = "HELLO WORLD"
+// if(string === string.toUpperCase()) {
+//   console.log("спрацював if");
+// }
+// else {
+//   console.log("спрацював else");
+// }
 // 18. Перевірити, чи рядок містить підрядок "lo" від позиції 3 до 5 (включно), і вивести "Знайдено" або "Не знайдено" у консоль.
+// function checkString(str) {
+//   const subString = str.slice(3, 6);
+//   if(subString === "lo") {
+//     console.log("Знайдено");
+//   }
+//   else {
+//     console.log("Не знайдено");
+//   }
+  
+// }
+// checkString("Hello world");
+// checkString("Helo world");
+
 // 19. Перевірити, чи позиція останнього входження літери "o" у рядку дорівнює останній позиції, і вивести "спрацював if" або "спрацював else" у консоль.
+
 // 20. Перевірити, чи рядок містить символи "&" і "!", і вивести "Знайдено" або "Не знайдено" у консоль.
+// function checkString(str) {
+//       if(str.includes("&") || str.includes("!")){
+//         console.log("Знайдено");
+//       }
+//       else{
+//         console.log("Не знайдено");
+//       }
+//     }
+//     checkString("Hel7lowo&rld");
+//     checkString("uhfeuj!f8den");
+//     checkString("frtwduded7ue");
+//     checkString("edeid3jk");
