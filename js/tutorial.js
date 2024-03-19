@@ -586,9 +586,47 @@
 // }
 
 // 7. Створіть масив рядків. За допомогою циклу for перевірте кожен рядок на наявність пробілів. Якщо рядок містить пробіли, виведіть його у консоль.
+// const elements = ["Hello world", "Helloworld"];
+// let result = [];
+// for(let element of elements){
+//     if(element.includes(" ")){
+//       result.push9=(element);
+//       console.log(`"Рядок ${element} містить пробіл"`);
+//     }else{
+//         console.log(`"Рядок ${element} не містить пробіл"`);
+//     }
+    
+// }
 
 // 8. Створіть масив з числами. Знайдіть середнє арифметичне всіх чисел у масиві та виведіть його у консоль.
+// const numbers = [3, 45, 2, 4, 8, 23, 20, 15];
+// let sum = 0;
+// for(let number of numbers){
+//     sum += number
+// }
+// let allSum = sum / numbers.length;
+//     console.log("середнє арифметичне" + allSum);
 
 // 9. Створіть масив рядків. Перевірте, чи всі рядки у масиві мають довжину менше або дорівнюють 10 символів. Виведіть у консоль результат перевірки.
-
+// const elements = ["Hello world", "Hello", "elementary", "Hi", "excuse me"]
+// let result = [];
+// for(let element of elements){
+//     if(element.length <= 10){
+//         result.push(element)
+// console.log(`Рядок "${element} має менше 10 символів"`);
+//     }else{
+//         console.log(`Рядок "${element} має більше 10 символів"`);
+//     }
+// }
 // 10. Створіть масив з числами. За допомогою циклу for перевірте кожне число на парність. Якщо число парне, виведіть його у консоль разом з повідомленням "Це парне число", інакше виведіть "Це непарне число".
+// const numbers = [3, 45, 2, 4, 8, 23, 20, 15];
+// // let result = [];
+// for(let number of numbers){
+//     if(number % 2 === 0){
+//         // result.push(number)
+//         console.log(`"Число ${number} є парним"`);
+//     }else{
+//         console.log(`"Число ${number} не є парним"`);
+//     }
+// }  
+/////Тут можна і з рузалтом і без//////
