@@ -2,40 +2,40 @@
 // console.log("message");
 
 // const username = "Mango";
-// console.log("Username is ", username);
+console.log("Username is ", username);
 
-// const message = "JavaScript is awesome!";
-// alert("messege");
+const message = "JavaScript is awesome!";
+alert("messege");
 
-// const isComing = confirm("Please confirm hotel reservation");
-// console.log("isComing");
+const isComing = confirm("Please confirm hotel reservation");
+console.log("isComing");
 
-// const hotelName = prompt("Please enter desired hotel name");
-// console.log(hotelName);
+const hotelName = prompt("Please enter desired hotel name");
+console.log(hotelName);
 
-// const value = prompt("Please enter a number!");
-// console.log(typeof value); // "string"
-// console.log(value); // "5
+const value = prompt("Please enter a number!");
+console.log(typeof value); // "string"
+console.log(value); // "5
 
 // const x =10;
-// const b = 596;
-// console.log( x * b);
+const b = 596;
+console.log(x * b);
 
-// let value =5
-// value += 10;
-// console.log(value);
+let value = 5;
+value += 10;
+console.log(value);
 
-// const x = 5;
-// const y = 10;
-// const z = 5;
-// console.log = prompt ("x > y:", x > y);
-// console.log = prompt ("x < y:", x < y);
+const x = 5;
+const y = 10;
+const z = 5;
+console.log = prompt("x > y:", x > y);
+console.log = prompt("x < y:", x < y);
 
-// a > b і a < b - більше/менше
-// a >= b і a <= b - більше/менше або дорівнює
-// a == b - рівність
-// a != b - нерівність
-// a === b - строга рівність
+a > b і a < b - більше / менше
+a >= b і a <= b - більше / менше або дорівнює
+a == b - рівність
+a != b - нерівність
+a === b - строга рівність
 // a !== b - строга нерівність
 
 // const valueA = "5";
@@ -93,7 +93,7 @@
 // function isAdult(age) {
 // const passed = 18>=;
 // return passed;
- 
+
 // }
 // console.log(isAdult(20));
 // console.log(isAdult(14));
@@ -153,7 +153,7 @@
 //     for (let i = 1; i <= number; i += 1) {
 //         total += i;
 
-  
+
 // }
 //   return total;
 // }
@@ -192,18 +192,18 @@
 // function getCommonElements(array1, array2) {
 // 1.Створення пустого масиву.
 // 2.Перебрати масиву за допомогою for.
-  // 3.Умова яка порівнює елемент одного масиву з елементами іншого масиву.
-  // 4. якщо умова стверджується "True" цей елемент додається в пустий масив.
-  // в інших випадках "false".
-  // 5.функція виводить результат в пустий масив.
-  
+// 3.Умова яка порівнює елемент одного масиву з елементами іншого масиву.
+// 4. якщо умова стверджується "True" цей елемент додається в пустий масив.
+// в інших випадках "false".
+// 5.функція виводить результат в пустий масив.
+
 
 //   const result = []; // 1.
 //   for (let i = 0; i < array1.length; i++){  // 2.
 //     if(array2.includes(array1[i])){ // 3
-   
+
 //         result.push(array1[i]);
-    
+
 //   }
 // };
 // return result;
@@ -239,27 +239,27 @@ const biggerNumber = num1 > num2 ? num1 : num2;
 // console.log(x);
 
 // Task: Sort elements  for tipes
- const arr = [ 2, [1], [[12, 33, 11]], "Ukraine", 33,  [[[[1], 3]]], {name: "Sanya"}. true ];
+const arr = [2, [1], [[12, 33, 11]], "Ukraine", 33, [[[[1], 3]]], { name: "Sanya" }.true];
 // const arr2 
 
 
 function sortForTypes(array, filterType) {
   // 1.Перебрати масив за допомогою for.  
   // 2.Відсортувати елементи масиву./
-  const result = []; 
+  const result = [];
 
 
   for (let i = 0; i < array.length; i += 1) { // 1.
-    console.log(array[i]);  
-    if( typeof array[i] == filterType){ // 2   // rewrite to ternal operation
+    console.log(array[i]);
+    if (typeof array[i] == filterType) { // 2   // rewrite to ternal operation
       result.push(array[i])
     }
   }
-  
+
 
 
   // do it code
-  console.log("result:",result);
+  console.log("result:", result);
 
   return result;
 };
