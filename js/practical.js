@@ -2,40 +2,40 @@
 
 <<<<<<< HEAD
 // const username = "Mango";
-console.log("Username is ", username);
+// console.log("Username is ", username);
 
-const message = "JavaScript is awesome!";
-alert("messege");
+// const message = "JavaScript is awesome!";
+// alert("messege");
 
-const isComing = confirm("Please confirm hotel reservation");
-console.log("isComing");
+// const isComing = confirm("Please confirm hotel reservation");
+// console.log("isComing");
 
-const hotelName = prompt("Please enter desired hotel name");
-console.log(hotelName);
+// const hotelName = prompt("Please enter desired hotel name");
+// console.log(hotelName);
 
-const value = prompt("Please enter a number!");
-console.log(typeof value); // "string"
-console.log(value); // "5
+// const value = prompt("Please enter a number!");
+// console.log(typeof value); // "string"
+// console.log(value); // "5
 
-// const x =10;
-const b = 596;
-console.log(x * b);
+// // const x =10;
+// const b = 596;
+// console.log(x * b);
 
-let value = 5;
-value += 10;
-console.log(value);
+// let value = 5;
+// value += 10;
+// console.log(value);
 
-const x = 5;
-const y = 10;
-const z = 5;
-console.log = prompt("x > y:", x > y);
-console.log = prompt("x < y:", x < y);
+// const x = 5;
+// const y = 10;
+// const z = 5;
+// console.log = prompt("x > y:", x > y);
+// console.log = prompt("x < y:", x < y);
 
-a > b і a < b - більше / менше
-a >= b і a <= b - більше / менше або дорівнює
-a == b - рівність
-a != b - нерівність
-a === b - строга рівність
+// a > b і a < b - більше / менше
+// a >= b і a <= b - більше / менше або дорівнює
+// a == b - рівність
+// a != b - нерівність
+// a === b - строга рівність
 // a !== b - строга нерівність
 
 // const valueA = "5";
