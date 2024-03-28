@@ -720,33 +720,73 @@
 // На обʼєкти на функції :
 
 // 1. Створіть об'єкт car з властивостями brand, model і year. Напишіть функцію що виводить ці властивості у консоль циклом 
+// const car = {
+//   brand: "BMW",
+//   model: "X5M5",
+//   yesr: 2016,
+// }
+// function getCar(car){
+//   for(let key in car){
+// console.log(`${key}, ${car[key]}`)
+//   }
+// }
+// getCar(car);
 
 // 2. Створіть функцію calculateArea, яка приймає об'єкт з властивостями width і height та виводить обчислену площу прямокутника.
+// function calculateArea(rectangle){
+//   const area = rectangle.width * rectangle.heigth;
+//   console.log("Площа прямокутника - " + area);
+// }
+// const rectangle = {
+//   width: 6,
+//   heigth: 5
+// };
+// calculateArea(rectangle);
 
 // 3. Створіть об'єкт person з властивостями name, age і gender. Створіть функцію greet, який виводить вітання з ім'ям особи.
+// const person = {
+//   name: "Anatoliy",
+//   age: 44,
+//   gender: "male"
+// }
+// function greet(person){
+//   console.log(`Доброго дня ${person.name}`);
+// }
+// greet(person);
+
 
 // 5. Створіть об'єкт rectangle з властивостями width і height. Створіть функцію getPerimeter, яка виводить у консоль периметр прямокутника.
-
+// const rectangle = {
+//   width: 5,
+//   heigth: 3
+// }
+// function getPerimeter(rectangle){
+//   let perimetr = 2 * (rectangle.width + rectangle.heigth);
+//   console.log("Периметр = " + perimetr);;
+//  return perimetr;
+ 
+// }
+// getPerimeter(rectangle);
 // 6. Створіть функцію mergeObjects, яка об'єднує два об'єкти у новий об'єкт.
+// function mergeObjects(object1, object2){
+//   return {...object1, ...object2}
+
+// }
+// const obj = {
+//   car1: "BMW",
+//   car2: "Volvo"
+// }
+// const obj1 = {
+//   car3: "Mazda",
+//   car4: "VW"
+// }
+// const cars = mergeObjects (obj, obj1);
+// console.log(cars);
+
 
 // 7. Створіть об'єкт book з властивостями title, author і pages. , "readed_pages”Створіть функцію isReaded, яка виводить повідомлення про те, що книга прочитана ( книга прочитана якщо значення поля pages дорівнює значенню поля readed_pages )
+
 
 // 8. Створіть функцію getAverageAge, яка обчислює середній вік всіх людей у об'єкті. Приклад:  {Alex: 22, Melisa: 19, John: 10}
 
 // 9. Створіть об'єкт circle з властивістями radius і color. Створіть функцію getArea, який виводить у консоль площу кола.
-function getAllPropValues(propName) {
-    const products = [
-      { name: "Radar", price: 1300, quantity: 4 },
-      { name: "Scanner", price: 2700, quantity: 3 },
-      { name: "Droid", price: 400, quantity: 7 },
-      { name: "Grip", price: 1200, quantity: 9 },
-    ];
-    let propValues = [];
-    for(let product of products){
-      if(propName in product){
-      propValues.push(product[propName]);
-      }
-    }
-    return propValues;
-  }
-  
