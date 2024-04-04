@@ -123,12 +123,27 @@
 
 
 
-const user = {
-  username: "Victor",
-  showName() {
-		// ✅ Віктор біжить швидко, тому що він (this) намагається зловити поїзд.
-    console.log(this.username);
-  },
-};
+// const user = {
+//   username: "Victor",
+//   showName() {
+// 		// ✅ Віктор біжить швидко, тому що він (this) намагається зловити поїзд.
+//     console.log(this.username);
+//   },
+// };
 
-user.showName();
+// user.showName();
+class Car {
+  constructor(params) {
+    this._brand = params.brand;
+    this.model = params.model;
+    this.price = params.price;
+  }
+
+  getBrand() {
+    return this._brand;
+  }
+
+  changeBrand(newBrand) {
+    this._brand = newBrand;
+  }
+}
