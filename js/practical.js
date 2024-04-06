@@ -132,18 +132,39 @@
 // };
 
 // user.showName();
+// class Car {
+//   constructor(params) {
+//     this._brand = params.brand;
+//     this.model = params.model;
+//     this.price = params.price;
+//   }
+
+//   getBrand() {
+//     return this._brand;
+//   }
+
+//   changeBrand(newBrand) {
+//     this._brand = newBrand;
+//   }
+// }
 class Car {
+  static #maxPrice = 50000;
+
   constructor(params) {
-    this._brand = params.brand;
-    this.model = params.model;
     this.price = params.price;
   }
-
-  getBrand() {
-    return this._brand;
-  }
-
-  changeBrand(newBrand) {
-    this._brand = newBrand;
+  static checkPrice(price) {
+    if(price > Car.#maxPrice){
+      return "Error! Price exceeds the maximum";
+    } else {
+      return "Success! Price is within acceptable limits";
+    }
   }
 }
+
+
+const audi = new Car({ price: 36000 });
+const bmw = new Car({ price: 64000 });
+
+console.log(Car.checkPrice(audi.price)); // "Success! Price is within acceptable limits"
+console.log(Car.checkPrice(bmw.price)); // "Error! Price exceeds the maximum"
