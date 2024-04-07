@@ -784,9 +784,114 @@
 // console.log(cars);
 
 
-// 7. Створіть об'єкт book з властивостями title, author і pages. , "readed_pages”Створіть функцію isReaded, яка виводить повідомлення про те, що книга прочитана ( книга прочитана якщо значення поля pages дорівнює значенню поля readed_pages )
-
-
+// 7. Створіть об'єкт book з властивостями title, author і pages. , "readed_pages”Створіть функцію isReaded,
+//  яка виводить повідомлення про те, що книга прочитана ( книга прочитана якщо значення поля pages дорівнює значенню 
+//     поля readed_pages )
+// const book = {
+//     title: "Mysterious island",
+//     author: "Jules Vern",
+//     pages: 568,
+//     readed_pages: 568
+// }
+// function isReaded(bookObj){
+//     if(bookObj.pages === bookObj.readed_pages){
+//         return "Книга прочитана";
+//     }else{
+//         return "Книга непрочитана";
+//     }
+// }
+// console.log(isReaded(book));
 // 8. Створіть функцію getAverageAge, яка обчислює середній вік всіх людей у об'єкті. Приклад:  {Alex: 22, Melisa: 19, John: 10}
+// function getAverageAge (middleAge){
+// let sumAge = 0;
+// let count = 0;
+// for(let age in middleAge){
+//     sumAge += middleAge[age]
+//     count += 1;
+    
+// }
+// return sumAge / count;
+// }
+// const agePeople = {
+//     Alex: 22,
+//      Melisa: 19,
+//     John: 10};
 
+// console.log(getAverageAge(agePeople));
 // 9. Створіть об'єкт circle з властивістями radius і color. Створіть функцію getArea, який виводить у консоль площу кола.
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+// 1. Функція для роботи з масивами:
+//    Створіть функцію, яка приймає масив чисел як аргумент і повертає цей масив у зворотньому порядку.
+// function areNumbers(numbers){
+//     return numbers.reverse();
+// }
+//   const reversNumbers = [1, 3, 5, 67, 8, 9, 45,];
+//   console.log(areNumbers(reversNumbers));
+
+// 2. Функція для роботи з об'єктами:
+//    Створіть функцію, яка приймає об'єкт з інформацією про користувача як аргумент і виводить цю інформацію в консоль.
+// function writeUserInfo(user){
+// console.log(`імʼя: ${user.name}`);
+// console.log(`Прізвище: ${user.surname}`);
+// console.log(`Вік: ${user.age}`);
+// console.log(`Зріст: ${user.heigth}`);
+// console.log(`Національність: ${user.nationality}`);
+// }
+// const user = {
+//     name: "Анатолій",
+//     surname: "Цюперяк",
+//     age: 37,
+//     heigth: "184 см",
+//     nationality: "Українець"
+// }
+// writeUserInfo(user);
+
+// 3. Функція для роботи з циклами:
+//    Створіть функцію, яка виводить всі парні числа від 1 до n, де n - параметр функції.
+// function writeNumbers(n){
+//     const arr = []
+//     for (const number of n) {
+//         if(number % 2 === 0){
+//         arr.push(number)
+//         }
+//     }
+//     return arr;
+// }
+// const numbers = [1, 14, 22, 33, 8, 18, 55, 23, 42,];
+// console.log(writeNumbers(numbers));
+
+// 4. Функція для роботи з умовами:
+//    Створіть функцію, яка приймає рік народження користувача як аргумент і повертає рядок "Ви повнолітній" або "Ви неповнолітній".
+// function isAdult(yearBirth){
+//     const year = 2018 - yearBirth;
+//     if(year >= 18){
+//         return "Ви повнолітній"
+//     }else{
+//         return "Ви неповнолітній"
+//     }
+// }
+// let yearBirth = 1999;
+// console.log(isAdult(yearBirth));
+// 5. Функція, поєднана з усіма елементами:
+//    Створіть функцію, яка приймає масив об'єктів користувачів як аргумент і виводить в 
+// консоль імена всіх користувачів, які мають повний вік.(18 або більше років)
+
+function isAdult(users){
+    const adultUser = []
+    for(let user of users){
+        const year = 2018 - user.yearBirth;
+        if(year >= 18){
+          adultUser.push(user.name)
+        }
+        }
+        return adultUser;
+    }        
+    const users = [
+    { name: "Sasha", yearBirth: 1999 },
+    { name: "Dima", yearBirth: 2010 },
+    { name: "Anatoliy", yearBirth: 1975 }
+    ]
+    console.log(isAdult(users));
