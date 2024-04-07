@@ -814,13 +814,47 @@
 // }
 // const agePeople = {
 //     Alex: 22,
-//      Melisa: 19,
-//     John: 10};
+//     Melisa: 19,
+//     John: 10
+// };
+// function getAverageAge(peaple_obj){
+    // let total_age = 0;
+    // for (const name in peaple_obj) {
+    //     total_age += peaple_obj[name];
+    // }
+
+    // console.log(Object.keys(peaple_obj));
+    // console.log(Object.keys(peaple_obj).length);
+    
+    // let count_of_people = Object.keys(peaple_obj).length;
+
+    // return total_age/count_of_people
+    // console.log(Object.values(peaple_obj));
+    // return total_age/Object.keys(peaple_obj).length;
+
+    // let ages_arr = Object.values(peaple_obj);
+
+    // for (const age of ages_arr) {
+    //     total_age +=age
+    // }
+
+    // return total_age/ages_arr.length
+// }   
+// console.log(getAverageAge(agePeople));
 
 // console.log(getAverageAge(agePeople));
 // 9. Створіть об'єкт circle з властивістями radius і color. Створіть функцію getArea, який виводить у консоль площу кола.
 
+// let circle_obj = {
+//     radius: 10,
+//     color: "red"
+// }
 
+// function getArea(circle_obj){
+//     return 3.14*(circle_obj.radius**2);
+// }
+
+// console.log(getArea(circle_obj));
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 // 1. Функція для роботи з масивами:
@@ -834,20 +868,44 @@
 // 2. Функція для роботи з об'єктами:
 //    Створіть функцію, яка приймає об'єкт з інформацією про користувача як аргумент і виводить цю інформацію в консоль.
 // function writeUserInfo(user){
-// console.log(`імʼя: ${user.name}`);
-// console.log(`Прізвище: ${user.surname}`);
-// console.log(`Вік: ${user.age}`);
-// console.log(`Зріст: ${user.heigth}`);
-// console.log(`Національність: ${user.nationality}`);
+//     console.log(`імʼя: ${user.name}`);
+//     console.log(`Прізвище: ${user.surname}`);
+//     console.log(`Вік: ${user.age}`);
+//     console.log(`Зріст: ${user.heigth}`);
+//     console.log(`Національність: ${user.nationality}`);
 // }
 // const user = {
 //     name: "Анатолій",
+//     city: "Kyiv",
 //     surname: "Цюперяк",
 //     age: 37,
 //     heigth: "184 см",
 //     nationality: "Українець"
 // }
 // writeUserInfo(user);
+
+
+// function writeUserInfo(user_obj){
+//     for(let use_obj_value of Object.entries(user_obj)){
+//     console.log(use_obj_value[0] + " : " +use_obj_value[1]);
+//     }
+// }
+     
+// const user = {
+//     name: "Анатолій",
+//     city: "Kyiv",
+//     surname: "Цюперяк",
+//     age: 37,
+//     heigth: "184 см",
+//     nationality: "Українець"
+// }
+// writeUserInfo(user);
+
+
+
+
+
+
 
 // 3. Функція для роботи з циклами:
 //    Створіть функцію, яка виводить всі парні числа від 1 до n, де n - параметр функції.
@@ -863,6 +921,25 @@
 // const numbers = [1, 14, 22, 33, 8, 18, 55, 23, 42,];
 // console.log(writeNumbers(numbers));
 
+// function writeNumbers(n){
+//     // for (let i = 1; i <=n; i++) {
+//     //     if(!i%2){  // i%2 === 0 => (true/false)   // i%2 => !0/!1 (false/true)
+//     //         console.log(`number ${i} is parne`);
+//     //     }
+//     // }
+//     // for (let i = 2; i <=n; i+=2) {
+//     //     console.log(`number ${i} is parne`);
+//     // }
+//     while (n>2) {
+//         if(!(n%2)){
+//             console.log(`number ${n} is parne`);
+//         }
+//         n--;
+//     }
+
+// }
+// writeNumbers(45);
+
 // 4. Функція для роботи з умовами:
 //    Створіть функцію, яка приймає рік народження користувача як аргумент і повертає рядок "Ви повнолітній" або "Ви неповнолітній".
 // function isAdult(yearBirth){
@@ -875,23 +952,88 @@
 // }
 // let yearBirth = 1999;
 // console.log(isAdult(yearBirth));
+
+// function isAdult(yearBirth){
+//     if(new Date().getFullYear() - yearBirth >= 18){
+//         return "Ви повнолітній"
+//     }
+//     return "Ви неповнолітній"
+// }
+// let test = 1995;
+// console.log(isAdult(test));
+
 // 5. Функція, поєднана з усіма елементами:
 //    Створіть функцію, яка приймає масив об'єктів користувачів як аргумент і виводить в 
 // консоль імена всіх користувачів, які мають повний вік.(18 або більше років)
 
-function isAdult(users){
-    const adultUser = []
-    for(let user of users){
-        const year = 2018 - user.yearBirth;
-        if(year >= 18){
-          adultUser.push(user.name)
-        }
-        }
-        return adultUser;
-    }        
-    const users = [
-    { name: "Sasha", yearBirth: 1999 },
-    { name: "Dima", yearBirth: 2010 },
-    { name: "Anatoliy", yearBirth: 1975 }
-    ]
-    console.log(isAdult(users));
+// function isAdult(users){
+//     const adultUser = []
+//     for(let user of users){
+//         const year = 2018 - user.yearBirth;
+//         if(year >= 18){
+//           adultUser.push(user.name)
+//         }
+//         }
+//         return adultUser;
+//     }        
+//     const users = [
+//     { name: "Sasha", yearBirth: 1999 },
+//     { name: "Dima", yearBirth: 2010 },
+//     { name: "Anatoliy", yearBirth: 1975 }
+//     ]
+//     console.log(isAdult(users));
+
+// function isAdult(users) {
+    //   for (let user of users) {
+    //     if (2018 - user.yearBirth >= 18) {
+    //       console.log(user.name);
+    //     }
+    //   }
+        // for (let user of users) {
+        //     2018 - user.yearBirth >= 18 ? console.log(user.name) : null
+        // }
+    
+        // users.forEach(use_obj=>{2018 - use_obj.yearBirth >= 18 ? console.log(use_obj.name) : null});
+    
+        // users.forEach(function(){
+        //     2018 - use_obj.yearBirth >= 18 
+        //         ? console.log(use_obj.name) 
+        //         : null
+        // })
+    // }
+    // const users = [
+    //   { name: "Sasha", yearBirth: 1999 },
+    //   { name: "Dima", yearBirth: 2010 },
+    //   { name: "Anatoliy", yearBirth: 1975 },
+    // ];
+    // isAdult(users);
+    
+
+
+// Напишіть функцію яка приймає параметром строку та повертає обʼєкт з 
+// даними про строку з відповідними ключами : 
+// - кількість символів  
+// - кількість пробілів 
+// — кількість ком
+// — кількість крапок
+
+// - кількість букв
+// let phrase = "Hello, World. My name is Dima, and i am learning TypeScript. I am frontend developer"
+// function getStrInfo(str){
+//     const str_info_obj = {
+//         symbols: 0,
+//         spaces: 0,
+//         commas: 0,
+//         points: 0,
+//         letters: 0
+//     }
+//     for (let i = 0; i < str.length; i++) {
+//         if(str[i] === " "){
+//             str_info_obj.spaces++
+//         }else if(str[i] === " "){
+            
+//         }
+//     }
+//     console.log(str_info_obj);
+// }
+// getStrInfo(phrase)
