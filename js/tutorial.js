@@ -1018,27 +1018,86 @@
 // — кількість крапок
 
 // - кількість букв
-let phrase = "Hello, World. My name is Dima, and i am learning TypeScript. I am frontend developer"
-function getStrInfo(str){
-    const str_info_obj = {
-        symbols: 0,
-        spaces: 0,
-        commas: 0,
-        points: 0,
-        letters: 0
-    }
-    for (let i = 0; i < str.length; i++) {
-        if(str[i] === " "){
-            str_info_obj.spaces++
-        }else if(str[i] === ","){
-            str_info_obj.commas++
-        }else if(str[i] === "."){
-            str_info_obj.points++
-        }else if(/[a-zA-Z]/.test(str[i])){
-            str_info_obj.letters++
-        }
-        str_info_obj.symbols++
-    }
-    console.log(str_info_obj);
-}
-getStrInfo(phrase)
+// let phrase = "Hello, World. My name is Dima, and i am learning TypeScript. I am frontend developer"
+// function getStrInfo(str){
+//     const str_info_obj = {
+//         symbols: 0,
+//         spaces: 0,
+//         commas: 0,
+//         points: 0,
+//         letters: 0
+//     }
+//     for (let i = 0; i < str.length; i++) {
+//         if(str[i] === " "){
+//             str_info_obj.spaces++
+//         }else if(str[i] === ","){
+//             str_info_obj.commas++
+//         }else if(str[i] === "."){
+//             str_info_obj.points++
+//         }else if(!"0123456789,.!?".includes(str[i]))
+//         //else if(/[a-zA-Z]/.test(str[i])){
+//             str_info_obj.letters++
+//         // }
+//         str_info_obj.symbols++
+//     }
+//     console.log(str_info_obj);
+// }
+// getStrInfo(phrase);
+
+// . Задано масив чисел. Вивести всі парні числа, які більше за 10.
+// const numbers = [1, 3, 5, 11, 2, 13, 44, 15, 16, 78];
+// function checkNumbers(arrNumbers){
+//     for( let number of arrNumbers){
+//         if(number % 2 === 0 && number > 10){
+//             console.log(number);
+//         }
+//     }
+// }
+// checkNumbers(numbers);
+
+
+// 2. Задано масив слів. Вивести всі слова, які мають більше ніж 5 символів та починаються на літеру "a".
+// const numbers = "Задано масив слів. Вивести всі африка слова, які мають антоха більше ніж 5 символів та починаються на літеру.".split(" ");
+// function logConditionalyStr(strArr){
+    
+//     for(let str of strArr){
+//         console.log(str.startsWith("а"));
+//         if(str.length > 5 && str.startsWith("а")) console.log(str);
+        
+//     }
+
+// }
+// logConditionalyStr(numbers);
+// 3. Задано масив чисел. Знайти суму всіх додатніх елементів масиву.
+// const numbers = [1, 3, -5, 11, -2, 13, 44, 15, 0, -16, 78];
+// function calculateSumOfPositiveInts(arrNumbers){
+//     let sum = 0;
+//     for(let number of arrNumbers){
+//         if(number > 0) sum += number;
+//     }
+//     return sum;
+// }
+// console.log(calculateSumOfPositiveInts(numbers));
+
+
+// 4. Задано масив об'єктів з інформацією про студентів (ім'я, вік, середній бал). Вивести ім'я студента з найвищим середнім балом.
+const students = [
+    {
+        name: "Anatoliy",
+        age: 25,
+        middle_point: 4.8
+    },
+    {
+        name: "Peter",
+        age: 23,
+        middle_point: 4.1
+    },
+    {
+        name: "Anton",
+        age: 44,
+        middle_point: 1.8
+    },
+]
+function logStudentWithHighestMiddlePoint()
+
+// 5. Задано масив чисел. Знайти мінімальне та максимальне значення в масиві і вивести їх разом з їхніми індексами в масиві.
