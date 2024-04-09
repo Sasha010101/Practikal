@@ -1018,22 +1018,27 @@
 // — кількість крапок
 
 // - кількість букв
-// let phrase = "Hello, World. My name is Dima, and i am learning TypeScript. I am frontend developer"
-// function getStrInfo(str){
-//     const str_info_obj = {
-//         symbols: 0,
-//         spaces: 0,
-//         commas: 0,
-//         points: 0,
-//         letters: 0
-//     }
-//     for (let i = 0; i < str.length; i++) {
-//         if(str[i] === " "){
-//             str_info_obj.spaces++
-//         }else if(str[i] === " "){
-            
-//         }
-//     }
-//     console.log(str_info_obj);
-// }
-// getStrInfo(phrase)
+let phrase = "Hello, World. My name is Dima, and i am learning TypeScript. I am frontend developer"
+function getStrInfo(str){
+    const str_info_obj = {
+        symbols: 0,
+        spaces: 0,
+        commas: 0,
+        points: 0,
+        letters: 0
+    }
+    for (let i = 0; i < str.length; i++) {
+        if(str[i] === " "){
+            str_info_obj.spaces++
+        }else if(str[i] === ","){
+            str_info_obj.commas++
+        }else if(str[i] === "."){
+            str_info_obj.points++
+        }else if(/[a-zA-Z]/.test(str[i])){
+            str_info_obj.letters++
+        }
+        str_info_obj.symbols++
+    }
+    console.log(str_info_obj);
+}
+getStrInfo(phrase)
