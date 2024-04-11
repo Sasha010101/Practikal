@@ -1095,9 +1095,21 @@ const students = [
     {
         name: "Anton",
         age: 44,
-        middle_point: 1.8
+        middle_point: 5.8
     },
 ]
-function logStudentWithHighestMiddlePoint()
+function logStudentWithHighestMiddlePoint(students){
+let highestMiddlePoint = 0;
+let highestMiddlePoinName = " ";
+for(let student of students){
+    if(student.middle_point > highestMiddlePoint){
+        highestMiddlePoint = student.middle_point;
+        highestMiddlePoinName = student.name;
+      
+    }
+}
+console.log(highestMiddlePoinName);  
+}
+logStudentWithHighestMiddlePoint(students);
 
 // 5. Задано масив чисел. Знайти мінімальне та максимальне значення в масиві і вивести їх разом з їхніми індексами в масиві.
