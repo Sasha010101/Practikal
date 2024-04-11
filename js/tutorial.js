@@ -1081,35 +1081,81 @@
 
 
 // 4. Задано масив об'єктів з інформацією про студентів (ім'я, вік, середній бал). Вивести ім'я студента з найвищим середнім балом.
-const students = [
-    {
-        name: "Anatoliy",
-        age: 25,
-        middle_point: 4.8
-    },
-    {
-        name: "Peter",
-        age: 23,
-        middle_point: 4.1
-    },
-    {
-        name: "Anton",
-        age: 44,
-        middle_point: 5.8
-    },
-]
-function logStudentWithHighestMiddlePoint(students){
-let highestMiddlePoint = 0;
-let highestMiddlePoinName = " ";
-for(let student of students){
-    if(student.middle_point > highestMiddlePoint){
-        highestMiddlePoint = student.middle_point;
-        highestMiddlePoinName = student.name;
+// const students = [
+//     {
+//         name: "Anatoliy",
+//         age: 25,
+//         middle_point: 4.8
+//     },
+//     {
+//         name: "Peter",
+//         age: 23,
+//         middle_point: 4.1
+//     },
+//     {
+//         name: "Anton",
+//         age: 44,
+//         middle_point: 5.8
+//     },
+// ]
+// function logStudentWithHighestMiddlePoint(students){
+// let highestMiddlePoint = 0;
+// let highestMiddlePoinName = " ";
+// for(let student of students){
+//     if(student.middle_point > highestMiddlePoint){
+//         highestMiddlePoint = student.middle_point;
+//         highestMiddlePoinName = student.name;
       
-    }
-}
-console.log(highestMiddlePoinName);  
-}
-logStudentWithHighestMiddlePoint(students);
+//     }
+// }
+// console.log(highestMiddlePoinName);  
+// }
+// logStudentWithHighestMiddlePoint(students);
 
 // 5. Задано масив чисел. Знайти мінімальне та максимальне значення в масиві і вивести їх разом з їхніми індексами в масиві.
+// const numbers = [1, 3, 5, 11, 2, 13, 44, 15, 6, 78];
+// let minNumber = numbers[0];
+// let maxNumber = numbers[0];
+// function logMinAndMaxNumber(numbers){
+//     for(let number of numbers){
+//         if(number > maxNumber){
+//         maxNumber = number;
+//         }
+//         if(number < minNumber){
+//             minNumber = number;
+//         }
+    
+//     }
+//     console.log(numbers.indexOf(minNumber), numbers.indexOf(maxNumber));
+// }
+// logMinAndMaxNumber(numbers);
+// Створіть функцію, яка приймає масив чисел і повертає їхню суму.
+//  const numbers = [1, 3, 5, 11, 2, 13, 44, 15, 6, 78];
+// function calculateSumOfNumbers(arrNumbers){
+//    let sum = 0;
+//    for(let number of numbers){
+//     sum += number;
+//    }
+//    return sum;
+// }
+
+// console.log(calculateSumOfNumbers(numbers));
+// 3. Створіть функцію, яка приймає параметр типу boolean і 
+// повертає протилежне значення (true, якщо переданий параметр false, і навпаки).
+// function getReverseValue(flag){
+//     return !flag ;
+// }
+
+// console.log(getReverseValue(true));
+// 8. Створіть функцію, яка приймає параметр типу number і перевіряє, 
+// чи є це число паліндромом (читається однаково зліва направо і справа наліво).
+function checkIsNumberOfPalidrom(number){
+let number1 = String(number);
+let arr = number1.split("");
+let reversarr = arr.reverse();
+let joinedarr = +reversarr.join("");
+if( number === joinedarr) console.log(number);
+else{console.log("euhfejf");}
+
+}
+checkIsNumberOfPalidrom(123, 3, 56);
