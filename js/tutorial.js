@@ -1149,13 +1149,58 @@
 // console.log(getReverseValue(true));
 // 8. Створіть функцію, яка приймає параметр типу number і перевіряє, 
 // чи є це число паліндромом (читається однаково зліва направо і справа наліво).
-function checkIsNumberOfPalidrom(number){
-let number1 = String(number);
-let arr = number1.split("");
-let reversarr = arr.reverse();
-let joinedarr = +reversarr.join("");
-if( number === joinedarr) console.log(number);
-else{console.log("euhfejf");}
+// function checkIsNumberOfPalidrom(number){
+// let number1 = String(number);
+// let arr = number1.split("");
+// let reversarr = arr.reverse();
+// let joinedarr = +reversarr.join("");
+// if( number === joinedarr) console.log(number);
+// else{console.log("euhfejf");}
 
-}
-checkIsNumberOfPalidrom(123, 3, 56);
+// }
+// checkIsNumberOfPalidrom(123, 3, 56);
+
+// 1. Напишіть функцію, яка приймає масив чисел та повертає суму всіх додатних чисел у цьому масиві.
+// function sumNumbers(number){
+//     let sum = 0;
+//     for(let number of numbers){
+//         if(number > 0 ){
+//         sum +=number
+//         }
+//     }
+//     return sum;
+//     }
+//     const numbers = [2, -5, -1, 5, 6, -1];
+//     console.log(sumNumbers(numbers));
+    
+// 2. Напишіть функцію, яка приймає масив рядків та повертає новий масив, в якому кожен елемент буде починатися з великої літери.
+// function getSting(strArr){
+// let fruits = [];
+// for(let string of strArr){
+//     fruits.push(string.toUpperCase());
+// }
+// return fruits;
+// }
+// const words = ["apple", "peach", "banana", "orange"];
+// console.log(getSting(words));
+// 3. Напишіть функцію, яка приймає масив об'єктів з властивістю age та повертає середній вік всіх об'єктів у масиві.
+// function calculateMiddleAgePeople(people){
+//     let totalAge = 0;
+//     for(let human of people){
+// totalAge += human.age
+//     }
+//     return totalAge / people.length;
+// }
+// const people = [
+//     { name: "Dima", age: 29 },
+//     { name: "Sasha", age: 25 },
+//     { name: "Mariia", age: 27 },
+// ];
+// console.log(calculateMiddleAgePeople(people));
+// 4. Напишіть функцію, яка приймає масив чисел і число n, та повертає новий масив, в якому всі елементи більше n.
+// 5. Напишіть функцію, яка приймає масив чисел і число n, та повертає індекс першого входження числа n у масиві.
+// 6. Напишіть функцію, яка приймає масив об'єктів, кожен об'єкт має властивості name і age, та повертає масив імен всіх осіб, які мають вік менше за 18 років.
+// 7. Напишіть функцію, яка приймає масив рядків і роздільник, та повертає новий масив, в якому кожен елемент буде масивом слів рядка, розділених заданим роздільником.
+// 8. Напишіть функцію, яка приймає масив чисел і повертає масив з унікальними значеннями (без повторень).
+// 9. Напишіть функцію, яка приймає масив об'єктів, кожен об'єкт має властивісті name і score, та повертає масив імен тих осіб, чий бал вище 80.
+// 10. Напишіть функцію, яка приймає масив чисел і перевіряє, чи всі числа в масиві парні.
