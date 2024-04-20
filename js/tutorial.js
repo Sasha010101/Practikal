@@ -1184,17 +1184,17 @@
 // const words = ["apple", "peach", "banana", "orange"];
 // console.log(getSting(words));
 // 3. Напишіть функцію, яка приймає масив об'єктів з властивістю age та повертає середній вік всіх об'єктів у масиві.
-// function calculateMiddleAgePeople(people){
-//     let totalAge = 0;
-//     for(let human of people){
-// totalAge += human.age
-//     }
-//     return totalAge / people.length;
-// }
-// const people = [
-//     { name: "Dima", age: 29 },
-//     { name: "Sasha", age: 25 },
-//     { name: "Mariia", age: 27 },
+function calculateMiddleAgePeople(people){
+    let totalAge = 0;
+    for(let human of people){
+totalAge += human.age
+    }
+    return totalAge / people.length;
+}
+const people = [
+    { name: "Dima", age: 29 },
+    { name: "Sasha", age: 25 },
+    { name: "Mariia", age: 27 },
 // ];
 // console.log(calculateMiddleAgePeople(people));
 // 4. Напишіть функцію, яка приймає масив чисел і число n, та повертає новий масив, в якому всі елементи більше n.
