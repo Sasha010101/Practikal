@@ -1184,20 +1184,34 @@
 // const words = ["apple", "peach", "banana", "orange"];
 // console.log(getSting(words));
 // 3. Напишіть функцію, яка приймає масив об'єктів з властивістю age та повертає середній вік всіх об'єктів у масиві.
-function calculateMiddleAgePeople(people){
-    let totalAge = 0;
-    for(let human of people){
-totalAge += human.age
-    }
-    return totalAge / people.length;
-}
-const people = [
-    { name: "Dima", age: 29 },
-    { name: "Sasha", age: 25 },
-    { name: "Mariia", age: 27 },
+// function calculateMiddleAgePeople(people){
+//     let totalAge = 0;
+//     for(let human of people){
+// totalAge += human.age
+//     }
+//     return totalAge / people.length;
+// }
+// const people = [
+//     { name: "Dima", age: 29 },
+//     { name: "Sasha", age: 25 },
+//     { name: "Mariia", age: 27 },
 // ];
 // console.log(calculateMiddleAgePeople(people));
+
 // 4. Напишіть функцію, яка приймає масив чисел і число n, та повертає новий масив, в якому всі елементи більше n.
+function logArrNumbers(numbers, n){
+    let arrNumber = [];
+for(let number of numbers){
+    if(number > n)
+    {arrNumber.push(number)}
+     
+    
+}
+return arrNumber;
+}
+const numberArr = [10, 33, 44, 77, 56, 90,11];
+let n = 55;
+console.log(logArrNumbers(numberArr, n));
 // 5. Напишіть функцію, яка приймає масив чисел і число n, та повертає індекс першого входження числа n у масиві.
 // 6. Напишіть функцію, яка приймає масив об'єктів, кожен об'єкт має властивості name і age, та повертає масив імен всіх осіб, які мають вік менше за 18 років.
 // 7. Напишіть функцію, яка приймає масив рядків і роздільник, та повертає новий масив, в якому кожен елемент буде масивом слів рядка, розділених заданим роздільником.
