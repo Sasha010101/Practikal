@@ -1199,22 +1199,90 @@
 // console.log(calculateMiddleAgePeople(people));
 
 // 4. Напишіть функцію, яка приймає масив чисел і число n, та повертає новий масив, в якому всі елементи більше n.
-function logArrNumbers(numbers, n){
-    let arrNumber = [];
-for(let number of numbers){
-    if(number > n)
-    {arrNumber.push(number)}
+// function logArrNumbers(numbers, n){
+//     let arrNumber = [];
+// for(let number of numbers){
+//     if(number > n)
+//     {arrNumber.push(number)}
      
     
-}
-return arrNumber;
-}
-const numberArr = [10, 33, 44, 77, 56, 90,11];
-let n = 55;
-console.log(logArrNumbers(numberArr, n));
+// }
+// return arrNumber;
+// }
+// const numberArr = [10, 33, 44, 77, 56, 90,11];
+// let n = 55;
+// console.log(logArrNumbers(numberArr, n));
 // 5. Напишіть функцію, яка приймає масив чисел і число n, та повертає індекс першого входження числа n у масиві.
-// 6. Напишіть функцію, яка приймає масив об'єктів, кожен об'єкт має властивості name і age, та повертає масив імен всіх осіб, які мають вік менше за 18 років.
-// 7. Напишіть функцію, яка приймає масив рядків і роздільник, та повертає новий масив, в якому кожен елемент буде масивом слів рядка, розділених заданим роздільником.
+// function logArrNumbers(numbers, n){
+//     for(let i = 0; i < numbers.length; i++){
+//         if(numbers[i] > n){
+//            return i;
+//         } 
+//     }
+//     }
+//     const numberArr = [10, 55, 33, 44, 77, 56, 90,11];
+//     let n = 55;
+//     console.log(logArrNumbers(numberArr, n));
+// // 6. Напишіть функцію, яка приймає масив об'єктів, кожен об'єкт має властивості 
+// name і age, та повертає масив імен всіх осіб, які мають вік менше за 18 років.
+// function calculateMiddleAgePeople(people){
+//     let names = [];
+//     for(let human of people){
+// if(human.age < 18){
+//    names.push(human.name);
+// }
+//     }
+//     return names;
+// }
+// const people = [
+//     { name: "Dima", age: 12 },
+//     { name: "Sasha", age: 25 },
+//     { name: "Mariia", age: 27 },
+//     { name: "Viktor", age: 6 }
+// ];
+// console.log(calculateMiddleAgePeople(people));
+// 7. Напишіть функцію, яка приймає масив рядків і роздільник, та повертає 
+// новий масив, в якому кожен елемент буде масивом слів рядка, розділених заданим роздільником.
+// function divideStrings(arr, divider){
+//     let result = [];
+//     for(let str of arr){
+//         result.push(str.split(divider))
+//     }
+//     return result;
+// }
+// const arrstr = ["name, age, heigth", "car, moto, tractor", "lake, sea, river"];
+// let divider = ","
+// console.log(divideStrings(arrstr, divider));
+
 // 8. Напишіть функцію, яка приймає масив чисел і повертає масив з унікальними значеннями (без повторень).
-// 9. Напишіть функцію, яка приймає масив об'єктів, кожен об'єкт має властивісті name і score, та повертає масив імен тих осіб, чий бал вище 80.
+// // 9. Напишіть функцію, яка приймає масив об'єктів, кожен об'єкт має властивісті name і score,
+//  та повертає масив імен тих осіб, чий бал вище 80.
+// function getHighScorers(people){
+//         let higthScore = [];
+//         for(let human of people){
+//     if(human.score > 80){
+//        higthScore.push(human.name);
+//     }
+//         }
+//         return higthScore;
+//     }
+//     const people = [
+//         { name: "Dima", score: 25 },
+//         { name: "Sasha", score: 125 },
+//         { name: "Mariia", score: 66 },
+//         { name: "Viktor", score: 88 }
+//     ];
+//     console.log(getHighScorers(people));
 // 10. Напишіть функцію, яка приймає масив чисел і перевіряє, чи всі числа в масиві парні.
+// function checkNumbers(arr){
+//     for(let number of arr){
+//         if(number % 2 !== 0){
+//             return true;
+//         }
+//     }
+//     return false;
+// }
+// const arr1 = [2, 12, 5, 6, 8];
+// const arr2 = [2, 4, 6, 10, 8];
+// console.log(checkNumbers(arr1));
+// console.log(checkNumbers(arr2));
