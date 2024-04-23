@@ -1286,3 +1286,57 @@
 // const arr2 = [2, 4, 6, 10, 8];
 // console.log(checkNumbers(arr1));
 // console.log(checkNumbers(arr2));
+
+// Напишіть функцію, яка приймає параметром 2 числа - перше - Х -  це довжина масиву, 
+// друге - У - максимально можливе значення чисел у масиві 
+
+// Функція повинна повертати масив довжиною Х, в якому будуть випадкові числа від 0 до У
+
+// function generateArrWithRandomInts(arr_length, max_int_value){
+// let result = [];
+// for(let i = 0; i < arr_length; i++ ){
+// result.push(Math.floor(Math.random() * max_int_value))
+// }
+// return result;
+// }
+// console.log(generateArrWithRandomInts(10,15));
+// // [11,6,7,19,1,5,7]
+// Створіть функцію, яка приймає масив рядків і повертає масив, в якому кожний рядок записаний в верхньому регістрі.
+// function createUpperCaseArrStrings(string){
+//     let result = [];
+// for(let str of string){
+// result.push(str.toUpperCase());
+// }
+// return result;
+// }
+// const arrSting = ["car, tractor, moto"];
+// console.log(createUpperCaseArrStrings(arrSting));
+
+// Створіть функцію, яка приймає масив об'єктів і повертає новий масив,
+//  в якому залишені тільки об'єкти з властивістю completed, яка дорівнює true.
+// function filterArrWithTrueCompletedField(arr){
+//     let newArr = [];
+// for(let arr1 of arr){
+//     if(arr1.completed === true){
+//         newArr.push(arr1)
+//     }
+// }
+// return newArr;
+// }
+// const arrObj = [
+// {task: "#123", completed: true},
+// {task: "#12", completed: false},
+// {task: "#13", completed: true},
+// {task: "#23", completed: false},
+// {task: "#3", completed: true},
+// ];
+// console.log(filterArrWithTrueCompletedField(arrObj));
+
+
+
+// Створіть функцію, яка приймає рядок і повертає його обернену версію 
+// (спочатку останній символ, потім передостанній і так далі).
+// function reverseString(str){
+//     return str.split("").reverse().join("");
+// }
+// console.log(reverseString("Anton"));
