@@ -26,27 +26,30 @@
 // const roomsElement = document.querySelector("#rooms .slider");
 // console.log(roomsElement);
 
-const bookEl = document.querySelector(".book");
-bookEl.style.backgroundColor = "teal";
-bookEl.style.fontSize = "16px";
-bookEl.style.textAlign = "center";
-bookEl.style.borderColor = "tomato";
-bookEl.style.color = "violet";
-bookEl.addEventListener("click", function(){
-    console.log("Hello world");
-});
-const squareEl = document.querySelector(".square");
-squareEl.style.border = '1px solid black';
-squareEl.addEventListener("mouseover", (event) =>{
-    console.log("mouse is over");
+// const bookEl = document.querySelector(".book");
+// bookEl.style.backgroundColor = "teal";
+// bookEl.style.fontSize = "16px";
+// bookEl.style.textAlign = "center";
+// bookEl.style.borderColor = "tomato";
+// bookEl.style.color = "violet";
+// bookEl.addEventListener("click", function(){
+//     console.log("Hello world");
+// });
+// const squareEl = document.querySelector(".square");
+// squareEl.style.border = '1px solid black';
+// squareEl.addEventListener("mouseover", (event) =>{
+//     console.log("mouse is over");
 
-    const numbers = [2, 5, 6, 7];
-    numbers.forEach(number => {
-        if(number % 2 !== 0){
-            console.log(number);
-        }
-    })
-});
+//     const numbers = [2, 5, 6, 7];
+//     numbers.forEach(number => {
+//         if(number % 2 !== 0){
+//             console.log(number);
+//         }
+//     })
+// });
+
+
+
 // const discriptionEl = document.querySelector(".discription")
 // discriptionEl.addEventListener("click", event =>{
 //     console.log(discriptionEl.textContent.length);
