@@ -169,3 +169,25 @@
 // console.log(Car.checkPrice(audi.price)); // "Success! Price is within acceptable limits"
 // console.log(Car.checkPrice(bmw.price)); // "Error! Price exceeds the maximum"
 
+// є масив чисел та строк та булеан значень -
+//  вивести з доп меп кожне значення у консоль
+// модифікувати попередне завдання так, щоб результат
+//  визову функції меп повернув новий масив який буде складатись тільки з чисел
+
+// const arr = [1, "str", 8, "allo", 22, "hello", true, false];
+// let new_arr = arr.map(element => {
+//     if(typeof(element) === "number"){
+//      return element;
+//     }
+//     return 
+// })
+// console.log(new_arr);
+// 3) створити масив у якому будуть строки , 
+// за допомогою методу меп створити новий масив який буде складатися з довжин строк минулого масиву
+
+// const arr = ["allo", "nokia", "smart", "JS", "React", "Css"];
+// let sum = 0;
+// let new_arr = arr.map(element =>{
+//     sum+=element.length;
+// });
+// console.log(sum);
