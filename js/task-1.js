@@ -1,5 +1,5 @@
 
-// Напишіть функцію, яка приймає масив чисел і 
+//(1) Напишіть функцію, яка приймає масив чисел і 
 // повертає суму всіх елементів у масиві.
 // const mainEl = document.querySelector("#main");
 // function calculateSumArr(numbers){
@@ -18,21 +18,54 @@
 
 
 
-
+// (3.) Напишіть функцію, яка приймає масив чисел 
+// і повертає кількість додатних чисел у масиві.
 // const listEl = document.querySelector(".list");
+// function logPositiveNumbers(numbers){
+//     let result = 0
+// for(let number of numbers){
+//     if(number > 0){
+//         result++;
+//     }
+// }
+// return result
+// };
+// const arrNumbers = [-1, 4, 6, -4, -5, 7];
 
-// console.log(listEl);
+// listEl.addEventListener("mouseover", event =>{
+// console.log("Hello List");
+// console.log(logPositiveNumbers(arrNumbers));
+// })
+
+
+// 4. Напишіть функцію, яка приймає масив рядків 
+// і повертає новий масив, в якому всі рядки записані в 
+// обернутому вигляді.(при натісканні на лішки спрацьовує тільки 1 лішка)
 
 // const itemEl = document.querySelector(".item");
-// console.log(itemEl);
+// function giveReverseString(string){
+//     return string.map(str => str.split("").reverse().join(""));
+// };
+// const arrStrings = ["JS", "HTML", "CSS", "React", "Vue" ];
+// itemEl.addEventListener("mouseout", event =>{
+//     console.log("Godbye");
+//     console.log(giveReverseString(arrStrings));
+// })
+
+// 5. Напишіть функцію, яка приймає масив 
+// чисел і повертає найбільше число у масиві.
 
 // const textEl = document.querySelector(".text");
+// console.log(textEl);
+
+// const textEl = document.querySelector(".text");
+
 // console.log(textEl);
 
 // const miniTitleEl = document.querySelector("#mini-title");
 // console.log(miniTitleEl);
 
-// Напишіть функцію, яка приймає масив рядків 
+//(2) Напишіть функцію, яка приймає масив рядків 
 // і повертає новий масив, який містить тільки рядки, 
 // які починаються з літери "A".
 
@@ -67,7 +100,15 @@
 // console.log(shoppingEl);
 
 // const linkElem = document.querySelector("#link");
-// console.log(linkElem);
+// function getMostNumber(numbers) {
+//     return Math.max(...numbers)
+// }
+// const arrNumbers = [22, 55, 66, 98, 300, 444];
+// linkElem.addEventListener("click", event => {
+//     linkElem.textContent = "";
+//     console.log(getMostNumber(arrNumbers));
+// });
+
 
 // const registerEl = document.querySelector(".register");
 // console.log(registerEl);
