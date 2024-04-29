@@ -86,17 +86,17 @@
 
 // 7. Напишіть функцію, яка приймає масив рядків і повертає новий масив,
 //  в якому всі рядки складаються з менше ніж 5 символів.
-const titleEl = document.querySelector(".title");
+// const titleEl = document.querySelector(".title");
 
-function giveNewArrStrFewFiveSymbol(string){
-    return string.filter(str => str.length < 5);
-};
-const newArrStr = ["Sasha", "Dima", "Mariia", "Anatoliy", "Olga"];
+// function giveNewArrStrFewFiveSymbol(string){
+//     return string.filter(str => str.length < 5);
+// };
+// const newArrStr = ["Sasha", "Dima", "Mariia", "Anatoliy", "Olga"];
 
-titleEl.addEventListener("mouseover", event => {
-    console.log("Рядок менше 5 символів");
-    console.log(giveNewArrStrFewFiveSymbol(newArrStr));
-})
+// titleEl.addEventListener("mouseover", event => {
+//     console.log("Рядок менше 5 символів");
+//     console.log(giveNewArrStrFewFiveSymbol(newArrStr));
+// })
 // const subTitleEl = document.querySelector(".sub-title");
 // console.log(subTitleEl);
 
