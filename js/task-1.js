@@ -52,18 +52,9 @@
 //     console.log(giveReverseString(arrStrings));
 // })
 
-// 5. Напишіть функцію, яка приймає масив 
-// чисел і повертає найбільше число у масиві.
-
 // const textEl = document.querySelector(".text");
 // console.log(textEl);
 
-// const textEl = document.querySelector(".text");
-
-// console.log(textEl);
-
-// const miniTitleEl = document.querySelector("#mini-title");
-// console.log(miniTitleEl);
 
 //(2) Напишіть функцію, яка приймає масив рядків 
 // і повертає новий масив, який містить тільки рядки, 
@@ -90,9 +81,22 @@
 // const menuEl = document.querySelector(".menu");
 // console.log(menuEl);
 
-// const titleEl = document.querySelector(".title");
-// console.log(titleEl);
+// 5. Напишіть функцію, яка приймає масив 
+// чисел і повертає найбільше число у масиві.
 
+// 7. Напишіть функцію, яка приймає масив рядків і повертає новий масив,
+//  в якому всі рядки складаються з менше ніж 5 символів.
+const titleEl = document.querySelector(".title");
+
+function giveNewArrStrFewFiveSymbol(string){
+    return string.filter(str => str.length < 5);
+};
+const newArrStr = ["Sasha", "Dima", "Mariia", "Anatoliy", "Olga"];
+
+titleEl.addEventListener("mouseover", event => {
+    console.log("Рядок менше 5 символів");
+    console.log(giveNewArrStrFewFiveSymbol(newArrStr));
+})
 // const subTitleEl = document.querySelector(".sub-title");
 // console.log(subTitleEl);
 
@@ -110,5 +114,24 @@
 // });
 
 
+// 6. Напишіть функцію, яка приймає масив 
+// чисел і повертає новий масив, в якому всі 
+// від'ємні числа замінені на 0.
+
 // const registerEl = document.querySelector(".register");
-// console.log(registerEl);
+// function giveNegativeNumberConvertedToZero(numbers){
+//     return numbers.map(number =>{
+// if(number < 0){
+//     return 0;
+// }else{
+//     return number;
+// }
+//     });
+    
+// }
+// const arrNumber = [-1, 2, -6, -12, -15, 10];
+
+// registerEl.addEventListener("click", event =>{
+//     console.log(giveNegativeNumberConvertedToZero(arrNumber));
+   
+// })
