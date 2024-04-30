@@ -191,3 +191,37 @@
 //     sum+=element.length;
 // });
 // console.log(sum);
+// function calculateNumbers(numbers){
+// return numbers.reduce((sum, number) => sum + number * number, 0);
+// }
+// const arrNumbers = [4, 8, 9, 3, 7, 5];
+// console.log(calculateNumbers(arrNumbers));
+// написати код , коли на кнопку наводити мишку - у кнопки буде зелений фон і білий текст
+// а коли мишка уходить - фон буде сірий, а текст чорний
+// const bookEl = document.querySelector(".book");
+// bookEl.addEventListener("mouseover", event =>{
+//     bookEl.style.cssText = `
+//  background: green;
+//  color: white;
+// `;
+//     console.log(bookEl);
+// });
+// bookEl.addEventListener("mouseout", event =>{
+//     bookEl.style.cssText = `
+//     background: gray;
+//     color: black;
+// `;
+//     console.log(bookEl);
+// });
+// є інпут, при наведенні мишки - додати синю тінь до інпуту,
+//  а при втраті фокусу - вивести алерт з текстом з інпуту
+const test_inpEl = document.getElementById("test_inp");
+test_inpEl.addEventListener("mouseover", event =>{
+test_inpEl.style.boxShadow = '0px 0px 10px blue';
+});
+
+test_inpEl.addEventListener("mouseout", event =>{
+    test_inpEl.style.boxShadow = 'none';
+    alert(test_inpEl.value);
+    });
+    
