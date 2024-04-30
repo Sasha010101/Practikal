@@ -198,21 +198,21 @@
 // console.log(calculateNumbers(arrNumbers));
 // написати код , коли на кнопку наводити мишку - у кнопки буде зелений фон і білий текст
 // а коли мишка уходить - фон буде сірий, а текст чорний
-// const bookEl = document.querySelector(".book");
-// bookEl.addEventListener("mouseover", event =>{
-//     bookEl.style.cssText = `
-//  background: green;
-//  color: white;
-// `;
-//     console.log(bookEl);
-// });
-// bookEl.addEventListener("mouseout", event =>{
-//     bookEl.style.cssText = `
-//     background: gray;
-//     color: black;
-// `;
-//     console.log(bookEl);
-// });
+const bookEl = document.querySelector(".book");
+bookEl.addEventListener("mouseover", event =>{
+    bookEl.style.cssText = `
+ background: green;
+ color: white;
+`;
+    console.log(bookEl);
+});
+bookEl.addEventListener("mouseout", event =>{
+    bookEl.style.cssText = `
+    background: gray;
+    color: black;
+`;
+    console.log(bookEl);
+});
 // є інпут, при наведенні мишки - додати синю тінь до інпуту,
 //  а при втраті фокусу - вивести алерт з текстом з інпуту
 const test_inpEl = document.getElementById("test_inp");
