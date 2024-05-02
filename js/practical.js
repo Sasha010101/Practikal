@@ -5,121 +5,159 @@
 //   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
 // ];
 
-// const totalAveragePlaytimePerGame = players.reduce((acc, player) => {
-//   const averagePlaytimePerGame = player.playtime / player.gamesPlayed;
-//   return acc + averagePlaytimePerGame;
-// }, 0);
+<<<<<<< HEAD
+// const username = "Mango";
+console.log("Username is ", username);
 
-// const calculateTotalBalance = (users) => {
-//   return users.reduce((acc, user) => {
-//     return acc + user.balance
-//   }, 0)};
-//  const sumUsers = [
-//    {
-//      name: "Moore Hensley",
-//      email: "moorehensley@indexia.com",
-//      eyeColor: "blue",
-//      friends: ["Sharron Pace"],
-//      isActive: false,
-//      balance: 2811,
-//      gender: "male"
-//    },
-//    {
-//      name: "Sharlene Bush",
-//      email: "sharlenebush@tubesys.com",
-//      eyeColor: "blue",
-//      friends: ["Briana Decker", "Sharron Pace"],
-//      isActive: true,
-//      balance: 3821,
-//      gender: "female"
-//    },
-//    {
-//      name: "Ross Vazquez",
-//      email: "rossvazquez@xinware.com",
-//      eyeColor: "green",
-//      friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
-//      isActive: false,
-//      balance: 3793,
-//      gender: "male"
-//    },
-//    {
-//      name: "Elma Head",
-//      email: "elmahead@omatom.com",
-//      eyeColor: "green",
-//      friends: ["Goldie Gentry", "Aisha Tran"],
-//      isActive: true,
-//      balance: 2278,
-//      gender: "female"
-//    },
-//    {
-//      name: "Carey Barr",
-//      email: "careybarr@nurali.com",
-//      eyeColor: "blue",
-//      friends: ["Jordan Sampson", "Eddie Strong"],
-//      isActive: true,
-//      balance: 3951,
-//      gender: "male"
-//    },
-//    {
-//      name: "Blackburn Dotson",
-//      email: "blackburndotson@furnigeer.com",
-//      eyeColor: "brown",
-//      friends: ["Jacklyn Lucas", "Linda Chapman"],
-//      isActive: false,
-//      balance: 1498,
-//      gender: "male"
-//    },
-//    {
-//      name: "Sheree Anthony",
-//      email: "shereeanthony@kog.com",
-//      eyeColor: "brown",
-//      friends: ["Goldie Gentry", "Briana Decker"],
-//      isActive: true,
-//      balance: 2764,
-//      gender: "female"
-//    }
-//  ];
-// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
-// const authors = [
-//   "Tanith Lee",
-//   "Bernard Cornwell",
-//   "Robert Sheckley",
-//   "Fyodor Dostoevsky",
-// ];
+const message = "JavaScript is awesome!";
+alert("messege");
 
-// const ascendingReleaseDates = releaseDates.toSorted();
+const isComing = confirm("Please confirm hotel reservation");
+console.log("isComing");
 
-// const alphabeticalAuthors = authors.toSorted();
-// console.log(authors.toSorted());
-// console.log(releaseDates.toSorted());
-// const books = [
-//   {
-//     title: "The Last Kingdom",
-//     author: "Bernard Cornwell",
-//     rating: 8.38,
-//   },
-//   {
-//     title: "Beside Still Waters",
-//     author: "Robert Sheckley",
-//     rating: 8.51,
-//   },
-//   {
-//     title: "The Dream of a Ridiculous Man",
-//     author: "Fyodor Dostoevsky",
-//     rating: 7.75,
-//   },
-//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
-//   {
-//     title: "The Dreams in the Witch House",
-//     author: "Howard Lovecraft",
-//     rating: 8.67,
-//   },
-// ];
-// const MIN_BOOK_RATING = 8;
-// const names = books.filter(book => book.rating > MIN_BOOK_RATING)
-//   .map(user => user.author)
-//   .toSorted((a, b) => a.localeCompare(b));
-// console.log(names);
+const hotelName = prompt("Please enter desired hotel name");
+console.log(hotelName);
+
+const value = prompt("Please enter a number!");
+console.log(typeof value); // "string"
+console.log(value); // "5
+
+// const x =10;
+const b = 596;
+console.log(x * b);
+
+let value = 5;
+value += 10;
+console.log(value);
+
+const x = 5;
+const y = 10;
+const z = 5;
+console.log = prompt("x > y:", x > y);
+console.log = prompt("x < y:", x < y);
+
+a > b і a < b - більше / менше
+a >= b і a <= b - більше / менше або дорівнює
+a == b - рівність
+a != b - нерівність
+a === b - строга рівність
+// a !== b - строга нерівність
+
+// const valueA = "5";
+// console.log(Number(valueA)); // 5
+// console.log(typeof Number(valueA)); // "number"
+
+// const valueB = "random string";
+// console.log(Number(valueB)); // NaN
+// console.log(typeof Number(valueB)); // "number"
+
+// console.log(Number.parseInt("5px")); // 5
+// console.log(Number.parseInt("12qwe74")); // 12
+// console.log(Number.parseInt("12.46qwe79")); // 12
+// console.log(Number.parseInt("qweqwe")); // NaN
+
+// console.log((0.17 + 0.24) .toFixed(2));
+// console.log(Math(0.7));
+
+// const productName = "Droid";
+// const pricePerItem = "2000";
+// console.log ("productName");
+// console.log ("pricePirItem");
+
+// let password = "";
+
+// do {
+//   password = prompt("Введіть пароль довший 4-х символів", "");
+// } while (password.length < 5);
+
+// console.log("Ввели пароль: ", password);
+// const pricePerItem = "totalPrice";
+// pricePerItem = 3500;
+// const orderedQuantity = "pricePerItem";
+// orderedQuantity = 4;
+
+// // Change code below this line
+// const totalPrice = priceP;
+// totalPrice = 14000
+// console.log (pricePerItem * orderedQuantity);
+
+// function makeMessage (name, price) {
+//   // Change code below this line
+// const message = `You picked ${name}, price per item is ${price} credits`;
+//   // Change code above this line
+//   return message;
+// }
+// function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
+// const message = "You ordered droids worth ${orderQuantity} credits. Delivery (<delivery fee> credits) is included in total price.";
+// return message;
+// }
+// console.log(makeOrderMessage(2 , 100 ,50));
+// console.log(makeOrderMessage(4 , 300 ,100));
+// console.log(makeOrderMessage(10 , 70 ,200));
+
+// function isAdult(age) {
+// const passed = 18>=;
+// return passed;
+
+// }
+// console.log(isAdult(20));
+// console.log(isAdult(14));
+// console.log(isAdult(8));
+// console.log(isAdult(37));
+
+// let a = 5;
+// let b = 10;
+// let c = 15;
+// let d = 20;
+
+// // Change code below this line
+// a += a + 2;
+// b -= b - 4;
+// c *= c * 3;
+// d /= d / 10;
+// console.log();
+
+// function isNumberInRange(start, end, number) {
+//   const isInRange = number >= start && number >= end;
+
+//   return isInRange;
+// }
+// console.log(isNumberInRange(10,30,17));
+// console.log(isNumberInRange(10,30,5));
+// console.log(isNumberInRange(20,50,24));
+// console.log(isNumberInRange(20,50,76));
+
+// function isNumberNotInRange(start, end, number) {
+//   const isInRange = number <= start && number >= end;
+//   const isNotInRange = !number <= start || !number >= end; // Change this line
+
+//   return isNotInRange;
+// }
+// console.log(isNumberNotInRange(10, 30, 17));
+// console.log(isNumberNotInRange(10, 30, 5));
+// console.log(isNumberNotInRange(20, 50, 24));
+// console.log(isNumberNotInRange(20, 50, 76));
+
+// const productName = "Repair droid";
+// console.log(productName.slice(9)); // "air dr"
+
+// function calculateEngravingPrice(message, pricePerWord) {
+//     let words;
+//     words = message.split().length * pricePerWord;
+//     return words;
+=======
+// if(planets.length > 3) {
+// 	console.log("3 or more elements");
+// } else {
+// 	console.log("3 or less elements");
+>>>>>>> 49cef5b7bb8f15c4c5c9157731a8eec9cf1678a0
+// }
+
+// let a = ["Mango", "Poly"];
+// let b = a;
+// a = "Tolik"
+// console.log(a); // ["Mango", "Poly"]
+// console.log(b); // ["Mango", "Poly"]
 
 
 
