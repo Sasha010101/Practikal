@@ -198,30 +198,78 @@
 // console.log(calculateNumbers(arrNumbers));
 // написати код , коли на кнопку наводити мишку - у кнопки буде зелений фон і білий текст
 // а коли мишка уходить - фон буде сірий, а текст чорний
-const bookEl = document.querySelector(".book");
-bookEl.addEventListener("mouseover", event =>{
-    bookEl.style.cssText = `
- background: green;
- color: white;
-`;
-    console.log(bookEl);
-});
-bookEl.addEventListener("mouseout", event =>{
-    bookEl.style.cssText = `
-    background: gray;
-    color: black;
-`;
-    console.log(bookEl);
-});
+// const bookEl = document.querySelector(".book");
+// bookEl.addEventListener("mouseover", event =>{
+//     bookEl.style.cssText = `
+//  background: green;
+//  color: white;
+// `;
+//     console.log(bookEl);
+// });
+// bookEl.addEventListener("mouseout", event =>{
+//     bookEl.style.cssText = `
+//     background: gray;
+//     color: black;
+// `;
+//     console.log(bookEl);
+// });
 // є інпут, при наведенні мишки - додати синю тінь до інпуту,
 //  а при втраті фокусу - вивести алерт з текстом з інпуту
-const test_inpEl = document.getElementById("test_inp");
-test_inpEl.addEventListener("mouseover", event =>{
-test_inpEl.style.boxShadow = '0px 0px 10px blue';
-});
+// const test_inpEl = document.getElementById("test_inp");
+// test_inpEl.addEventListener("mouseover", event =>{
+// test_inpEl.style.boxShadow = '0px 0px 10px blue';
+// });
 
-test_inpEl.addEventListener("mouseout", event =>{
-    test_inpEl.style.boxShadow = 'none';
-    alert(test_inpEl.value);
-    });
+// test_inpEl.addEventListener("mouseout", event =>{
+//     test_inpEl.style.boxShadow = 'none';
+//     alert(test_inpEl.value);
+//     });
+
+
+
+
+// 1. Створіть функцію, яка приймає масив чисел 
+// і повертає суму всіх додатніх чисел.
+
+//     function calculateSumArrNumbers(numbers){
+//     return numbers.reduce((sum, number)=>{
+//         if(number > 0){
+//             return sum += number;
+//         }
+//         return sum;
+//     },0)
+// }
+    
+//     const newArr = [-4, 10, -1, 8, 11, -5];
+//     console.log(calculateSumArrNumbers(newArr));
+
+
+    // c2. Напишіть функцію, яка приймає масив рядків та
+    //  повертає новий масив, в якому всі рядки перетворені на заголовні.
+// function giveNewArrWithUpperCase(string){
+// return string.map(str => str.toUpperCase());
+// };
+// const arrStr = ["js", "html", "css", "react", "angular"];
+// console.log(giveNewArrWithUpperCase(arrStr));
+
+
+
+// 4. Напишіть функцію, яка приймає масив чисел і 
+// повертає новий масив, в якому всі числа збільшені на 10.
+
+// function logNumbersPlusTen(numbers){
+//     return numbers.map(number => number +10)
+
+// };
+// const arrNumber = [10, 12, 3, 7, 9, 44, 77, 84];
+// console.log(logNumbersPlusTen(arrNumber));
+
+// 5. Створіть функцію, яка приймає масив рядків і повертає 
+// новий масив, в якому всі рядки зберігаються, але в зворотньому порядку.
+
+// function giveNewArrWithUpperCase(string){
+//     return string.map(str => str.split("").reverse().join(""));
+//     };
+//     const arrStr = ["js", "html", "css", "react", "angular"];
+//     console.log(giveNewArrWithUpperCase(arrStr));
     
