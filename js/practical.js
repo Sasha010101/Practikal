@@ -5,42 +5,42 @@
 //   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
 // ];
 
-<<<<<<< HEAD
+
 // const username = "Mango";
-console.log("Username is ", username);
+// console.log("Username is ", username);
 
-const message = "JavaScript is awesome!";
-alert("messege");
+// const message = "JavaScript is awesome!";
+// alert("messege");
 
-const isComing = confirm("Please confirm hotel reservation");
-console.log("isComing");
+// const isComing = confirm("Please confirm hotel reservation");
+// console.log("isComing");
 
-const hotelName = prompt("Please enter desired hotel name");
-console.log(hotelName);
+// const hotelName = prompt("Please enter desired hotel name");
+// console.log(hotelName);
 
-const value = prompt("Please enter a number!");
-console.log(typeof value); // "string"
-console.log(value); // "5
+// const value = prompt("Please enter a number!");
+// console.log(typeof value); // "string"
+// console.log(value); // "5
 
-// const x =10;
-const b = 596;
-console.log(x * b);
+// // const x =10;
+// const b = 596;
+// console.log(x * b);
 
-let value = 5;
-value += 10;
-console.log(value);
+// let value = 5;
+// value += 10;
+// console.log(value);
 
-const x = 5;
-const y = 10;
-const z = 5;
-console.log = prompt("x > y:", x > y);
-console.log = prompt("x < y:", x < y);
+// const x = 5;
+// const y = 10;
+// const z = 5;
+// console.log = prompt("x > y:", x > y);
+// console.log = prompt("x < y:", x < y);
 
-a > b і a < b - більше / менше
-a >= b і a <= b - більше / менше або дорівнює
-a == b - рівність
-a != b - нерівність
-a === b - строга рівність
+// a > b і a < b - більше / менше
+// a >= b і a <= b - більше / менше або дорівнює
+// a == b - рівність
+// a != b - нерівність
+// a === b - строга рівність
 // a !== b - строга нерівність
 
 // const valueA = "5";
@@ -145,12 +145,10 @@ a === b - строга рівність
 //     let words;
 //     words = message.split().length * pricePerWord;
 //     return words;
-=======
 // if(planets.length > 3) {
 // 	console.log("3 or more elements");
 // } else {
 // 	console.log("3 or less elements");
->>>>>>> 49cef5b7bb8f15c4c5c9157731a8eec9cf1678a0
 // }
 
 // let a = ["Mango", "Poly"];
@@ -277,7 +275,8 @@ a === b - строга рівність
 //         return sum;
 //     },0)
 // }
-    
+
+
 //     const newArr = [-4, 10, -1, 8, 11, -5];
 //     console.log(calculateSumArrNumbers(newArr));
 
@@ -311,3 +310,97 @@ a === b - строга рівність
 //     const arrStr = ["js", "html", "css", "react", "angular"];
 //     console.log(giveNewArrWithUpperCase(arrStr));
     
+
+// 3. Створіть функцію, яка приймає масив об'єктів і повертає новий масив,
+//  в якому кожен об'єкт має додаткове поле з певним значенням.
+
+// function addNewFieldToObj(arrObj){
+// return arrObj.map(obj => {
+//     obj.city = "Kyiv"
+//     return obj;
+// });
+    
+// };
+// function addNewFieldToObj(arrObj){
+//     return arrObj.map(user_obj => {
+//         //some code
+//         if(user_obj.age > 25){
+//             return {...user_obj, city: "Kyiv"};
+//         }
+//         return user_obj;
+//     }) 
+// };
+// const newArr = [
+//     {name: "Masha", age: 25},
+//     {name: "Dima", age: 29},
+//     {name: "Sasha", age: 21},
+//     {name: "Anton", age: 44},
+// ];
+// console.log(addNewFieldToObj(newArr));
+//  const bookEl = document.querySelector(".book");
+//  bookEl.addEventListener("click", event => {
+//     console.log("Заброньовано!");
+//     console.log(addNewFieldToObj(newArr));
+//  })
+
+//let test_arr = [...newArr]; //shalowCopy
+// let test_arr = structuredClone([...newArr]);//deepCopy
+// test_arr[0].age = '9999';
+// console.log('newArr',newArr);
+// console.log('test_arr',test_arr);
+// let arr_test = [1,2,3];
+// let int_arr = [4,5,6,7];
+// arr_test = [...arr_test, ...int_arr] // => [4,5,6,7]
+
+
+// 6. Напишіть функцію, яка приймає масив об'єктів і рядок,
+//  і повертає новий масив, в якому включені тільки об'єкти,
+//   які містять цей рядок в одному зі своїх полів.
+// function getArrOfObjectsWichContainString(arr, str){
+// return arr.filter(obj =>{
+// //  {name: "Masha", age: 25, city: "Kyiv"}
+//     for (const key in  obj) {
+//         if(obj[key] === str) return true
+//     }
+// })
+// };
+// const newArrObjArr = [
+//     {name: "Masha", age: 25, city: "Kyiv"},
+//     {name: "Dima", age: 29, city: "Odessa"},
+//     {name: "Alisa", age: 25, city: "Dnepr"},
+//     {name: "Pasha", age: 29, city: "Hello"},
+//     {name: "Melisa", age: 25, city: "Lviv"},
+//     {name: "Kate", age: 29, city: "Luzk"},
+// ];
+// const str = "Hello";
+// console.log(getArrOfObjectsWichContainString(newArrObjArr,ageForFilter));
+// function getArrOfObjectsWichContainString(arr, ageForFilter){
+//     return arr.filter(obj =>  obj.age >= ageForFilter)
+//     /* 
+//         if(obj.age >= 26){
+//             return obj
+//         }else{
+//             return null
+//         }
+//     */
+//     };
+//     const newArrObjArr = [
+//         {name: "Masha", age: 25, city: "Kyiv"},
+//         {name: "Dima", age: 29, city: "Odessa"},
+//         {name: "Alisa", age: 25, city: "Dnepr"},
+//         {name: "Pasha", age: 29, city: "Hello"},
+//         {name: "Melisa", age: 25, city: "Lviv"},
+//         {name: "Kate", age: 29, city: "Luzk"},
+//     ];
+//     const ageForFilter = 26;
+//     console.log(getArrOfObjectsWichContainString(newArrObjArr,ageForFilter));
+
+// 8. Напишіть функцію, яка приймає масив рядків і 
+// повертає новий масив, в якому всі рядки скорочені до першої літери.
+
+function getArrayStringShorteningtoFirstLetter(arr){
+    return arr.map(arr_str => arr_str[0]);
+
+};
+const arrString = ["Hello", "React", "Angular", "HTML",];
+console.log(getArrayStringShorteningtoFirstLetter(arrString));
