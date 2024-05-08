@@ -215,10 +215,10 @@
 //     if(typeof(element) === "number"){
 //      return element;
 //     }
-//     return 
+//     return
 // })
 // console.log(new_arr);
-// 3) створити масив у якому будуть строки , 
+// 3) створити масив у якому будуть строки ,
 // за допомогою методу меп створити новий масив який буде складатися з довжин строк минулого масиву
 
 // const arr = ["allo", "nokia", "smart", "JS", "React", "Css"];
@@ -264,7 +264,7 @@
 
 
 
-// 1. Створіть функцію, яка приймає масив чисел 
+// 1. Створіть функцію, яка приймає масив чисел
 // і повертає суму всіх додатніх чисел.
 
 //     function calculateSumArrNumbers(numbers){
@@ -291,7 +291,7 @@
 
 
 
-// 4. Напишіть функцію, яка приймає масив чисел і 
+// 4. Напишіть функцію, яка приймає масив чисел і
 // повертає новий масив, в якому всі числа збільшені на 10.
 
 // function logNumbersPlusTen(numbers){
@@ -301,7 +301,7 @@
 // const arrNumber = [10, 12, 3, 7, 9, 44, 77, 84];
 // console.log(logNumbersPlusTen(arrNumber));
 
-// 5. Створіть функцію, яка приймає масив рядків і повертає 
+// 5. Створіть функцію, яка приймає масив рядків і повертає
 // новий масив, в якому всі рядки зберігаються, але в зворотньому порядку.
 
 // function giveNewArrWithUpperCase(string){
@@ -328,7 +328,7 @@
 //             return {...user_obj, city: "Kyiv"};
 //         }
 //         return user_obj;
-//     }) 
+//     })
 // };
 // const newArr = [
 //     {name: "Masha", age: 25},
@@ -376,7 +376,7 @@
 // console.log(getArrOfObjectsWichContainString(newArrObjArr,ageForFilter));
 // function getArrOfObjectsWichContainString(arr, ageForFilter){
 //     return arr.filter(obj =>  obj.age >= ageForFilter)
-//     /* 
+//     /*
 //         if(obj.age >= 26){
 //             return obj
 //         }else{
@@ -395,12 +395,14 @@
 //     const ageForFilter = 26;
 //     console.log(getArrOfObjectsWichContainString(newArrObjArr,ageForFilter));
 
-// 8. Напишіть функцію, яка приймає масив рядків і 
+// 8. Напишіть функцію, яка приймає масив рядків і
 // повертає новий масив, в якому всі рядки скорочені до першої літери.
 
-function getArrayStringShorteningtoFirstLetter(arr){
-    return arr.map(arr_str => arr_str[0]);
+// function getArrayStringShorteningtoFirstLetter(arr){
+//     return arr.map(arr_str => arr_str[0]);
 
-};
-const arrString = ["Hello", "React", "Angular", "HTML",];
-console.log(getArrayStringShorteningtoFirstLetter(arrString));
+// };
+// const arrString = ["Hello", "React", "Angular", "HTML",];
+// console.log(getArrayStringShorteningtoFirstLetter(arrString));
+
+

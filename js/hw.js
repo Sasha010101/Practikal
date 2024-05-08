@@ -30,7 +30,7 @@
 //   console.log(customer.getOrders()); // ["Burger", "Pizza", "Salad", "Steak"]
 
 
-// Створи клас Storage, який створюватиме об'єкти для управління складом товарів. Клас очікує 
+// Створи клас Storage, який створюватиме об'єкти для управління складом товарів. Клас очікує
 // лише один аргумент — початковий масив товарів, який записується до створеного об'єкта в приватну властивість items.
 
 // Оголоси наступні методи класу:
@@ -67,7 +67,7 @@
 
 /////////////////////////
 
-// Напиши клас StringBuilder, який приймає один параметр initialValue — 
+// Напиши клас StringBuilder, який приймає один параметр initialValue —
 // довільний рядок, який записується у приватну властивість value об'єкта, що створюється.
 // Оголоси наступні методи класу:
 
@@ -103,3 +103,63 @@
 // console.log(builder.getValue()); // "^.^"
 // builder.padBoth("=");
 // console.log(builder.getValue()); // "=^.^="
+
+
+// 1. Знайдіть всіх користувачів у масиві об'єктів, які мають вік більше 18 років.
+// function searchHighAge(arr_obj) {
+//     return arr_obj.filter((arr) => arr.age > 18);
+// };
+// const newArr = [
+//     {name: "Masha", age: 25},
+//     {name: "Dima", age: 29},
+//     {name: "Sasha", age: 18},
+//     {name: "Anton", age: 44},
+// ];
+// console.log(searchHighAge(newArr));
+
+// 2. Отримайте список об'єктів у масиві, які мають властивість "статус" зі значенням "активний".
+// function searchActiveUser(arr_obj) {
+//     return arr_obj.filter((arr) => arr.status === "active");
+// };
+// const newArr = [
+//     {name: "Masha", age: 25, status: "not-active"},
+//     {name: "Dima", age: 29, status: "active"},
+//     {name: "Sasha", age: 18, status: "not-active"},
+//     {name: "Anton", age: 44, status: "active"},
+// ];
+// console.log(searchActiveUser(newArr));
+
+// 3. Обчисліть загальну суму вартості усіх товарів у масиві об'єктів, де кожен об'єкт містить властивість "ціна".
+// function sumArrObjPrice(arr_obj) {
+//     return arr_obj.reduce((sum, obj) => {
+//        return sum + obj.price;
+//     }, 0);
+// };
+// const newArr = [
+//     {brand: "BMW", price: 30000},
+//     {brand: "Audi", price:  25000},
+//     {brand: "Ford", price:  15000},
+//     {brand: "Kia", price:  44000},
+// ];
+// console.log(sumArrObjPrice(newArr));
+ 
+
+// 4. Знайдіть перший об'єкт у масиві, в якому властивість "назва" має значення "продукт".
+
+function searchProduct(arr_obj) {
+    return arr_obj.find((arr) => arr.price === "product");
+};
+const newArr = [
+    {brand: "BMW", price: 30000},
+    {brand: "Audi", price:  25000},
+    {brand: "Ford", price: "product"},
+    {brand: "Kia", price: 44000 },
+];
+
+console.log(searchProduct(newArr));
+// 5. Створіть новий масив об'єктів, де значення кожної властивості буде збільшено на 10%.
+// 6. Отримайте список об'єктів у масиві, в яких властивість "кількість" більше 5.
+// 7. Обчисліть середнє значення властивості "оцінка" у масиві об'єктів.
+// 8. Знайдіть перший об'єкт у масиві, де властивість "категорія" містить підстроку "електроніка".
+// 9. Створіть новий масив, в якому кожний об'єкт містить властивість "прізвище" зі значенням, яке є об'єднанням властивостей "ім'я" та "прізвище".
+// 10. Отримайте список об'єктів у масиві, де властивість "доступність" має значення true.
