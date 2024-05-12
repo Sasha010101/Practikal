@@ -170,7 +170,7 @@ function getAverageScoreValue(arr_obj) {
 //     id,
 //     title,
 //     onClickHandler,
-//     disabled,    
+//     disabled,
 //     className,
 //     activeStyles,
 // }) => {
@@ -187,42 +187,63 @@ function getAverageScoreValue(arr_obj) {
 //     )
 // }
 
-props = {
-    id: 'test',
-    className: 'mt-10'
-}
+// props = {
+//     id: 'test',
+//     className: 'mt-10'
+// }
 
-const CustomButton:FC<ICustomButton> = (props) => {
-    return (
-        <button
-            id={props.id}
-            disabled={props.disabled}
-            onClick={props.onClickHandler}
-            className={props.className}
-        >
-            {props.title}
-        </button>
-    )
-}
+// const CustomButton:FC<ICustomButton> = (props) => {
+//     return (
+//         <button
+//             id={props.id}
+//             disabled={props.disabled}
+//             onClick={props.onClickHandler}
+//             className={props.className}
+//         >
+//             {props.title}
+//         </button>
+//     )
+// }
 
-let user = [
-    { since: "biology", score: 10 },
-    { since: "algebra", score: 9 },
-    { since: "geometry", score: 11 },
+// let user = [
+//     { since: "biology", score: 10 },
+//     { since: "algebra", score: 9 },
+//     { since: "geometry", score: 11 },
 // ];
 // console.log(getAverageScoreValue(user));
+
+
+
+// {/* <CustomButton
+//     id='test'
+//     title="Click me!"
+//     onClickHandler={()=>{console.log('Hello')}}
+//     disabled={false}
+//     className="mt-10 text-[50px] font-bold underline text-blue-500"
+//     activeStyles="shadow-md"
+// // /> */}
+
 
 // 8. Знайдіть перший об'єкт у масиві, де властивість "категорія" містить підстроку "електроніка".
 // 9. Створіть новий масив, в якому кожний об'єкт містить властивість "прізвище" зі значенням, яке є об'єднанням властивостей "ім'я" та "прізвище".
 // 10. Отримайте список об'єктів у масиві, де властивість "доступність" має значення true.
 
+// 1. Створіть кнопку з текстом "Натисніть мене" і додайте подію "click", яка виводить повідомлення в консоль при натисканні кнопки.
 
+// 2. Створіть поле введення тексту і додайте подію "input", яка виводить у консоль поточний вміст поля при зміні введеного тексту.
 
-<CustomButton 
-    id='test'
-    title="Click me!"
-    onClickHandler={()=>{console.log('Hello')}}
-    disabled={false}
-    className="mt-10 text-[50px] font-bold underline text-blue-500"
-    activeStyles="shadow-md"
-/>
+// 3. Створіть список з декількома пунктами. Додайте подію "mouseover" на кожен пункт списку, яка змінює колір тексту пункту при наведенні на нього.
+
+// 4. Створіть форму з кнопкою "Надіслати". Додайте подію "submit" на форму, яка перешкоджає стандартному поведінці форми та виводить у консоль дані, які ввів користувач перед відправкою форми.
+
+// 5. Створіть блок з текстом і додайте подію "dblclick", яка змінює стиль тексту (наприклад, робить його жирним) при подвійному кліку на блок.
+
+// 6. Створіть зображення та додайте подію "load", яка виводить повідомлення в консоль після завантаження зображення.
+
+// 7. Створіть анімовану кнопку, яка змінює свій колір при натисканні на неї, а потім змінюється назад через деякий час.
+
+// 8. Створіть блок тексту та додайте подію "contextmenu", яка відкриває контекстне меню з деякими опціями при правому кліку на блок.
+
+// 9. Створіть список посилань і додайте подію "mouseenter" на кожне посилання, яка змінює колір фону посилання при наведенні на нього.
+
+// 10. Створіть таймер, який робить щось (наприклад, виводить повідомлення в консоль) кожні 5 секунд.
