@@ -187,28 +187,28 @@ function getAverageScoreValue(arr_obj) {
 //     )
 // }
 
-// props = {
-//     id: 'test',
-//     className: 'mt-10'
-// }
+props = {
+    id: 'test',
+    className: 'mt-10'
+}
 
-// const CustomButton:FC<ICustomButton> = (props) => {
-//     return (
-//         <button
-//             id={props.id}
-//             disabled={props.disabled}
-//             onClick={props.onClickHandler}
-//             className={props.className}
-//         >
-//             {props.title}
-//         </button>
-//     )
-// }
+const CustomButton:FC<ICustomButton> = (props) => {
+    return (
+        <button
+            id={props.id}
+            disabled={props.disabled}
+            onClick={props.onClickHandler}
+            className={props.className}
+        >
+            {props.title}
+        </button>
+    )
+}
 
-// let user = [
-//     { since: "biology", score: 10 },
-//     { since: "algebra", score: 9 },
-//     { since: "geometry", score: 11 },
+let user = [
+    { since: "biology", score: 10 },
+    { since: "algebra", score: 9 },
+    { since: "geometry", score: 11 },
 // ];
 // console.log(getAverageScoreValue(user));
 
