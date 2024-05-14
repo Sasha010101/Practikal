@@ -162,9 +162,9 @@
 // 6. Отримайте список об'єктів у масиві, в яких властивість "кількість" більше 5.
 // 7. Обчисліть середнє значення властивості "оцінка" у масиві об'єктів.
 
-function getAverageScoreValue(arr_obj) {
-    return arr_obj.reduce((sum, obj) =>  sum += obj.score, 0)/arr_obj.length //сумма  = 30/3 => 3 = arr_obj.length
-};
+// function getAverageScoreValue(arr_obj) {
+//     return arr_obj.reduce((sum, obj) =>  sum += obj.score, 0)/arr_obj.length //сумма  = 30/3 => 3 = arr_obj.length
+// };
 
 // const CustomButton:FC<ICustomButton> = ({
 //     id,
@@ -225,12 +225,37 @@ function getAverageScoreValue(arr_obj) {
 
 
 // 8. Знайдіть перший об'єкт у масиві, де властивість "категорія" містить підстроку "електроніка".
+
+// function getObj(arr_obj) {
+//     return arr_obj.find(product => {
+//         product.category.includes("електроніка")
+//     });
+// };
+// const products = [
+//   { name: "Phone", category: "електроніка"},
+//   { name: "AirPods", category: "комп'ютери"},
+//   { name: "TV", category: "електроніка"},
+//   { name: "Tablet", category: "електроніка"},
+//   { name: "Mouse", category: "комп'ютерні аксесуари"},
+// ];
+// console.log(getObj(products));
+
+
 // 9. Створіть новий масив, в якому кожний об'єкт містить властивість "прізвище" зі значенням, яке є об'єднанням властивостей "ім'я" та "прізвище".
 // 10. Отримайте список об'єктів у масиві, де властивість "доступність" має значення true.
 
 // 1. Створіть кнопку з текстом "Натисніть мене" і додайте подію "click", яка виводить повідомлення в консоль при натисканні кнопки.
+// const buttonEl = document.querySelector(".button_elem");
+// buttonEl.addEventListener("click", event => {
+//     console.log("Кнопку було натиснуто!!!");
+// });
+ 
 
 // 2. Створіть поле введення тексту і додайте подію "input", яка виводить у консоль поточний вміст поля при зміні введеного тексту.
+// const inputEl = document.querySelector("#test_inp");
+// inputEl.addEventListener("input", event => {
+//     console.log(event.target.value);
+// });
 
 // 3. Створіть список з декількома пунктами. Додайте подію "mouseover" на кожен пункт списку, яка змінює колір тексту пункту при наведенні на нього.
 
