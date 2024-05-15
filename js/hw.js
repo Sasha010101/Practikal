@@ -253,20 +253,69 @@
 
 // 2. Створіть поле введення тексту і додайте подію "input", яка виводить у консоль поточний вміст поля при зміні введеного тексту.
 // const inputEl = document.querySelector("#test_inp");
-// inputEl.addEventListener("input", event => {
-//     console.log(event.target.value);
+// inputEl.addEventListener('blur', event => {
+//     // console.log(event.target.value);
+//     let input_value = event.target.value;
+//     event.target.value = "";
+//     setTimeout(()=>{
+//         alert(input_value);
+//     },100)
+   
 // });
 
-// 3. Створіть список з декількома пунктами. Додайте подію "mouseover" на кожен пункт списку, яка змінює колір тексту пункту при наведенні на нього.
+// 3. Створіть список з декількома пунктами. Додайте подію "mouseover" на кожен пункт списку,
+//  яка змінює колір тексту пункту при наведенні на нього.
+
+// const ul_listEL = document.querySelector(".li_item");
+// ul_listEL.onclick = function (event) {
+//     console.log(event);
+// // }
+// let color_arr = ['red', 'blue', 'green', 'yelow', 'gray'];
+// let list_items = document.querySelectorAll(".li_item");//[li,li,li,li]
+
+// list_items.forEach(list_item => list_item.onmouseover = function(){
+//     // list_item.style.color = color_arr[Math.floor(Math.random()*color_arr.length)]
+//     // setInterval(()=>{
+//     //     list_item.style.color = color_arr[Math.floor(Math.random()*color_arr.length)]
+//     // },2000)
+// })
+
+// const ul_listEL = document.querySelector(".ul_list");
+// ul_listEL.onmouseover = function (event) {
+//     console.log(event.target.className);
+//     if(event.target.className === 'li_item'){//якщо ми навели мишку на тег li
+//         event.target.style.color = color_arr[Math.floor(Math.random()*color_arr.length)];
+//     }
+// }
 
 // 4. Створіть форму з кнопкою "Надіслати". Додайте подію "submit" на форму, яка перешкоджає стандартному поведінці форми та виводить у консоль дані, які ввів користувач перед відправкою форми.
 
-// 5. Створіть блок з текстом і додайте подію "dblclick", яка змінює стиль тексту (наприклад, робить його жирним) при подвійному кліку на блок.
+// 5. Створіть блок з текстом і додайте подію "dblclick",
+//  яка змінює стиль тексту(наприклад, робить його жирним) при подвійному кліку на блок.
+// const textEl = document.getElementById("text");
+// textEl.ondblclick = function (event) {
+//     textEl.style.fontWeight = "900";
+// }
+
 
 // 6. Створіть зображення та додайте подію "load", яка виводить повідомлення в консоль після завантаження зображення.
+// const photoEl = document.getElementById("photo");
+// photoEl.onload = function () {
+//     console.log("Фото завантажено!");
+// }
 
 // 7. Створіть анімовану кнопку, яка змінює свій колір при натисканні на неї, а потім змінюється назад через деякий час.
 
+// const buttonEl = document.querySelector(".button_elem");
+// buttonEl.onclick = function () {
+//     console.log("hfuehfuheufh");
+//      setInterval(()=>{
+//         buttonEl.style.color = "pink";
+//     }, 2000)
+//     setTimeout(()=>{
+//         buttonEl.style.color = "orange";
+//     }, 4000)
+// }
 // 8. Створіть блок тексту та додайте подію "contextmenu", яка відкриває контекстне меню з деякими опціями при правому кліку на блок.
 
 // 9. Створіть список посилань і додайте подію "mouseenter" на кожне посилання, яка змінює колір фону посилання при наведенні на нього.
