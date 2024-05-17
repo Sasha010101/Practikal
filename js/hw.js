@@ -316,9 +316,94 @@
 //         buttonEl.style.color = "orange";
 //     }, 4000)
 // }
-// 8. Створіть блок тексту та додайте подію "contextmenu", яка відкриває контекстне меню з деякими опціями при правому кліку на блок.
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 8. Створіть блок тексту та додайте подію "contextmenu", яка відкриває контекстне меню з деякими опціями при правому кліку на блок.
+// const textEl = document.getElementById("text");
+// textEl.addEventListener("contextmenu", event => {
+//     console.log("Кнопка була натиснута!!!!");
+// });
+//////////////////////////////////////////////////////////////////////////////
 // 9. Створіть список посилань і додайте подію "mouseenter" на кожне посилання, яка змінює колір фону посилання при наведенні на нього.
+// let color_arr = ['red', 'blue', 'green', 'yellow', 'gray'];
+// const linkEl = document.querySelectorAll(".link");
+// linkEl.forEach(linkElem => linkElem.addEventListener("mouseenter", event => {
+//  linkElem.style.color = color_arr[Math.floor(Math.random() * color_arr.length)];
+// console.log("Колір змінений!!!!");
+// }));
+//////////////////////////////////////////////////////////////////////////////
 
 // 10. Створіть таймер, який робить щось (наприклад, виводить повідомлення в консоль) кожні 5 секунд.
-
+//////////////////////////////////////////////////////////////////////////////
+// setInterval(() => {
+//     console.log("Hello Dima");
+// }, 5000);
+//////////////////////////////////////////////////////////////////////////////
+// 1. Створіть кнопку з текстом "Натисніть мене" і додайте подію "click", яка змінює колір фону кнопки на червоний при натисканні.
+// const buttonEl = document.querySelector(".button_elem");
+// buttonEl.addEventListener("click", event => {
+//     buttonEl.style.backgroundColor = "red"
+//     console.log("Колір змінено на червоний!!!");
+// });
+//////////////////////////////////////////////////////////////////////////////
+// 2. Створіть кнопку з текстом "Клацніть тут" і додайте подію "click", яка змінює колір тексту кнопки на зелений при натисканні.
+// const buttonEl = document.querySelector(".button_elem");
+// buttonEl.addEventListener("click", event => {
+//     buttonEl.style.color = "green"
+//     console.log("Колір змінено на зелений!!!");
+// });
+//////////////////////////////////////////////////////////////////////////////
+// 3. Створіть кнопку з текстом "Натисніть" і додайте подію "click", яка змінює розмір шрифту кнопки на 20 пікселів при натисканні.
+// const buttonEl = document.querySelector(".button_elem");
+// buttonEl.addEventListener("click", event => {
+//     buttonEl.style.fontSize = "20px"
+//     console.log("Розмір кнопки змінений на 20 пікселів!!!");
+// });
+//////////////////////////////////////////////////////////////////////////////
+// 4. Створіть кнопку з текстом "Клацніть тут" і додайте подію "click", яка змінює рамку кнопки на товсту червону лінію при натисканні.
+// const buttonEl = document.querySelector(".button_elem");
+// buttonEl.addEventListener("click", event => {
+//     buttonEl.style.border = "5px solid red"
+//     console.log("Рамка кнопки змінена на товсту червону лінію!!!");
+// });
+//////////////////////////////////////////////////////////////////////////////
+// 5. Створіть кнопку з текстом "Натисніть мене" і додайте подію "click", яка змінює фон кнопки на випадковий колір при кожному натисканні.
+// const arrClr = ["red", "blue", "orange", "yellow", "grey", "pink", "black", "green", "tomato", "violet", "ocean"];
+// const buttonEl = document.querySelectorAll(".button_elem");
+// buttonEl.forEach(button => button.addEventListener("click", event => {
+//     button.style.color = arrClr[Math.floor(Math.random() * arrClr.length)];
+//     console.log("Випадковий колір", button.style.color);
+// }));
+//////////////////////////////////////////////////////////////////////////////
+// 6. Створіть кнопку з текстом "Клацніть тут" і додайте подію "click", яка змінює прозорість кнопки на 0.5 при натисканні.
+// const buttonEl = document.querySelector(".button_elem");
+// buttonEl.addEventListener("click", event => {
+//     buttonEl.style.opacity = 0.5;
+//     console.log("Прозорість змінена на 0.5!!!")});
+//////////////////////////////////////////////////////////////////////////////
+// 7. Створіть кнопку з текстом "Натисніть" і додайте подію "click", яка змінює ширину кнопки на 200 пікселів при натисканні.
+// const buttonEl = document.querySelector(".button_elem");
+// buttonEl.addEventListener("click", event => {
+//     buttonEl.style.width = "200px";
+//     console.log("Ширина змінена на 200 пікселів!!!")});
+//////////////////////////////////////////////////////////////////////////////
+// 8. Створіть кнопку з текстом "Клацніть тут" і додайте подію "click", яка змінює висоту кнопки на 50 пікселів при натисканні.
+// const buttonEl = document.querySelector(".button_elem");
+// buttonEl.addEventListener("click", event => {
+//     buttonEl.style.height = "50px";
+//     console.log("Висота змінена на 50 пікселів!!!")});
+//////////////////////////////////////////////////////////////////////////////
+// 9. Створіть кнопку з текстом "Натисніть мене" і додайте подію "click", яка змінює форму кнопки на круглу при натисканні.
+// const buttonEl = document.querySelector(".button_elem");
+// buttonEl.addEventListener("click", event => {
+//     buttonEl.style.height = "100px";
+//     buttonEl.style.width = "100px";
+//       buttonEl.style.borderRadius = "50%";
+//     console.log("Кнопка змінена на круглу!!!")});
+//////////////////////////////////////////////////////////////////////////////
+// 10. Створіть кнопку з текстом "Клацніть тут" і додайте подію "click", яка змінює тінь кнопки на зазначену при натисканні.
+// const buttonEl = document.querySelector(".button_elem");
+// buttonEl.addEventListener("click", event => {
+//     buttonEl.style.boxShadow = "3px 3px 3px 4px";
+//     console.log("Висота змінена на 50 пікселів!!!")});
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
