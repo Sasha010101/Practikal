@@ -32,63 +32,87 @@
 ////////////////////////////////////////////////////
 // // 3. Створіть об'єкт car з властивостями make, model, year та color.
 //  Використовуйте деструктуризацію, щоб витягти make і model в окремі змінні.
-const car = {
-    make: "BMW",
-    model: "X5",
-    year: 2016,
-    color: "red"
-};
-const {make, model} = car;
-console.log(make);
-console.log(model);
+// const car = {
+//     make: "BMW",
+//     model: "X5",
+//     year: 2016,
+//     color: "red"
+// };
+// const {make, model} = car;
+// console.log(make);
+// console.log(model);
 ////////////////////////////////////////////////////
 // // 4. Створіть масив numbers з п'яти чисел.
 //  Використовуйте деструктуризацію, щоб витягти перше число в змінну first, а решту чисел в масив rest.
-const numbers = [1, 2, 3, 4, 5];
-const [first, ...rest] = numbers;
-console.log(first);
-console.log(...rest);
+// const numbers = [1, 2, 3, 4, 5];
+// const [first, ...rest] = numbers;
+// console.log(first);
+// console.log(...rest);
 ////////////////////////////////////////////////////
 // // 5. Створіть об'єкт user з вкладеним об'єктом address, який містить властивості street, city та zip.
 //  Використовуйте деструктуризацію, щоб витягти street і city в окремі змінні.
-const user = {
-    name: " Anton",
-    age: 32,
-    address: {
-        street: "Shevchenka 114",
-        city: "Kyiv",
-        zip: 13001
-    },
-};
-const { name, age, address: { street, city, zip }, } = user;
-console.log(name);
-console.log(age);
-console.log(street);
-console.log(city);
-console.log(zip);
+// const user = {
+//     name: " Anton",
+//     age: 32,
+//     address: {
+//         street: "Shevchenka 114",
+//         city: "Kyiv",
+//         zip: 13001
+//     },
+// };
+// const { name, age, address: { street, city, zip }, } = user;
+// console.log(name);
+// console.log(age);
+// console.log(street);
+// console.log(city);
+// console.log(zip);
 ////////////////////////////////////////////////////
 // // 6. Створіть об'єкт book з властивостями title, author, year та publisher.
 //  Використовуйте деструктуризацію з параметрами за замовчуванням, щоб витягти title і year в окремі змінні,
 //  при цьому year має мати значення за замовчуванням 2023.
 
-const book = {
-    title: "House of Hucci",
-    author: "Sara Gay Forden",
-    year: 2021,
-    publisher: "Fabula #PRO"
-};
-const { title, year = 2023 } = book;
-console.log(title);
-console.log(year);
+// const book = {
+//     title: "House of Hucci",
+//     author: "Sara Gay Forden",
+//     year: 2021,
+//     publisher: "Fabula #PRO"
+// };
+// const { title, year = 2023 } = book;
+// console.log(title);
+// console.log(year);
 ////////////////////////////////////
 // // 7. Створіть функцію, яка приймає об'єкт options з властивостями width, height та color.
 //  Використовуйте деструктуризацію в параметрах функції, щоб витягти ці властивості.
-
+// function getoptions({ width, height, color }) {
+//     console.log(`Width: ${width}, Height: ${height}, Color: ${color}`);
+// };
+// getoptions({
+//     width: 150,
+//     height: 300,
+//     color: "tomato"
+// });
 // // 8. Створіть масив coords з двома вкладеними масивами, що представляють координати точок на площині.
 //  Використовуйте деструктуризацію, щоб витягти координати першої точки в змінні x1 і y1, а другої точки в змінні x2 і y2.
-
+// const coords = [
+//     [102, 105],
+//     [104, 108]
+// ];
+// const [[x1, y1], [x2, y2]] = coords;
+// console.log(`Перша точка x = ${x1}, y = ${y1}`);
+// console.log(`Друга точка x = ${x2}, y = ${y2}`);
 // // 9. Створіть об'єкт settings з вкладеним об'єктом theme, який містить властивості primary та secondary.
 //  Використовуйте деструктуризацію, щоб витягти primary в окрему змінну.
-
+// const settings = {
+//     theme: {
+//         primary: 105,
+//         secondary: 106
+//     }
+// };
+// const { theme: { primary } } = settings;
+// console.log(primary);
 // // 10. Створіть функцію, яка приймає масив з двома елементами: username та email.
 //  Використовуйте деструктуризацію в параметрах функції, щоб витягти ці елементи.
+// function getArr([username, email]) {
+//     console.log(username, email);
+// };
+// getArr(["Ivan Ivanov", "Ivanov1970@gmail.com"]);
