@@ -1,6 +1,22 @@
 // 1. Створіть кнопку з текстом "Змінити колір". При кліку на цю кнопку змініть колір фону сторінки на синій.
+// const buttonnEl = document.querySelector(".buttonn");
+// buttonnEl.addEventListener("click", event => {
+//     buttonnEl.style.backgroundColor = "tomato";
+//     document.body.style.backgroundColor = "blue";
+// });
+
+
 // 2. Створіть абзац з текстом "Наведіть на мене". При наведенні миші на цей абзац змініть його текстовий колір на червоний.
+// const paragraphEl = document.querySelector(".paragraph")
+// paragraphEl.addEventListener("mouseover", event => {
+//     paragraphEl.style.color = "red";
+// })
 // 3. Створіть кнопку з текстом "Збільшити текст". При кліку на цю кнопку збільшіть розмір шрифту абзацу на сторінці.
+// const buttonnEl = document.querySelector(".buttonn");
+//  const paragraphEl = document.querySelector(".paragraph")
+// buttonnEl.addEventListener("click", event => {
+//     paragraphEl.style.fontSize = "30px"
+// });
 // 4. Створіть кнопку з текстом "Заховати текст". При кліку на цю кнопку приховайте абзац на сторінці.
 // 5. Створіть абзац з текстом "Клікніть тут". При кліку на цей абзац змініть його фон на жовтий.
 // 6. Створіть поле вводу тексту та кнопку "Змінити фон". При введенні тексту в поле та кліку на кнопку змініть колір фону поля вводу на зелений.
