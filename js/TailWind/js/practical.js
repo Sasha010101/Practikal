@@ -13,9 +13,22 @@
 // })
 // 3. Створіть кнопку з текстом "Збільшити текст". При кліку на цю кнопку збільшіть розмір шрифту абзацу на сторінці.
 // const buttonnEl = document.querySelector(".buttonn");
-//  const paragraphEl = document.querySelector(".paragraph")
-// buttonnEl.addEventListener("click", event => {
-//     paragraphEl.style.fontSize = "30px"
+//  const paragraphEl = document.querySelector(".paragraph");
+// let key = true;
+// buttonnEl.addEventListener("click", ({target}) => {
+    // console.log('target',target);
+    // if(key){// if key equal true
+    //     paragraphEl.style.fontSize = "30px";
+    //     key = !key; // key = !true
+    // }else{
+    //     paragraphEl.style.fontSize = "14px"
+    //     key = !key; // key = !false
+    // }
+    // paragraphEl.style.fontSize = key ? '30px' : '14px';
+    // key = !key; 
+    /* 
+        a ? b : (c ? d : (e ? f : g))
+    */
 // });
 // 4. Створіть кнопку з текстом "Заховати текст". При кліку на цю кнопку приховайте абзац на сторінці.
 // 5. Створіть абзац з текстом "Клікніть тут". При кліку на цей абзац змініть його фон на жовтий.
@@ -99,14 +112,27 @@
 ////////////////////////////////////
 // // 7. Створіть функцію, яка приймає об'єкт options з властивостями width, height та color.
 //  Використовуйте деструктуризацію в параметрах функції, щоб витягти ці властивості.
-// function getoptions({ width, height, color }) {
-//     console.log(`Width: ${width}, Height: ${height}, Color: ${color}`);
+// function getoptions({color, height, width, index:test}) {
+//     console.log(`Width: ${width}, Height: ${height}, Color: ${color}`, 'test', test);
 // };
 // getoptions({
 //     width: 150,
 //     height: 300,
-//     color: "tomato"
+//     color: "tomato",
+//     index: 'destrukturizacyya'
 // });
+
+
+// function _getoptions({
+//     width:width, //-> width
+//     height:height, 
+//     color: color,
+//     zIndex: test
+// }){
+//     console.log('width', width, 'height', height, 'color', color, 'index',test);
+// }
+
+// _getoptions({width:100})
 // // 8. Створіть масив coords з двома вкладеними масивами, що представляють координати точок на площині.
 //  Використовуйте деструктуризацію, щоб витягти координати першої точки в змінні x1 і y1, а другої точки в змінні x2 і y2.
 // const coords = [
