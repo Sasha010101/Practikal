@@ -5,7 +5,7 @@
 //   let number = 5;
 //   if(item > number) {
 //   console.log("Число більше ніж змінна!!!")
-// } 
+// }
 // else {
 //   console.log("Число менше за змінну!!!");
 // }
@@ -20,7 +20,7 @@
 //   let number = 100;
 //   if(item < number) {
 //   console.log("Число меньше ніж 100!!!")
-// } 
+// }
 // else {
 //   console.log("Число більше за 100!!!");
 // }
@@ -147,7 +147,6 @@
 // checkNumber(250, 3);
 // checkNumber(125, 5);
 
-
 // 11. Перевірити, чи сума двох чисел менше або рівна 50, і вивести суму у консоль.
 
 // function checkNumber(number, number1) {
@@ -181,7 +180,6 @@
 // checkNumber(48, 2);
 // checkNumber(20, 5);
 
-
 // 13. Перевірити, чи перше число більше другого на 10 одиниць, і вивести "Так" або "Ні" у консоль.
 // function numbers(num1, num2) {
 // if(num1 - num2 >= 10) {
@@ -213,7 +211,7 @@
 //   numbers(39, 8);
 //   numbers(55, 20);
 //   numbers(44, 33);
-  
+
 // 15. Перевірити, чи сума двох чисел є непарним числом, і вивести "Так" або "Ні" у консоль.
 // function checkNumber(num1, num2) {
 //   let sum = num1 + num2;
@@ -253,7 +251,7 @@
 //   else {
 //     console.log("Ні");
 //   }
-  
+
 // }
 // numbers(11, 12);
 // numbers(9, 8);
@@ -348,7 +346,6 @@
 // checkString("наша Ряба");
 // checkString("Ряба Наша");
 // checkString("Наша ряба");
-
 
 // 4. Перевірити, чи рядок закінчується на літеру "d", і вивести "Закінчується" або "Не закінчується" у консоль.
 // function checkString(str) {
@@ -446,7 +443,6 @@
 //   checkString("frtwd$uded7ue");
 //   checkString("edeid3jk");
 
-
 // 14. Перевірити, чи рядок містить лише пропуски, і вивести "спрацював if" або "спрацював else" у консоль.
 // function checkString(str) {
 //   if(str.trim()) {
@@ -500,7 +496,7 @@
 //   else {
 //     console.log("Не знайдено");
 //   }
-  
+
 // }
 // checkString("Hello world");
 // checkString("Helo world");
@@ -519,8 +515,8 @@
 //     checkString("Hel7lowo&rld");
 //     checkString("uhfeuj!f8den");
 //     checkString("frtwduded7ue");
-    // checkString("edeid3jk");
-    //                                                  ///////////////МАСИВИ......///////////////
+// checkString("edeid3jk");
+//                                                  ///////////////МАСИВИ......///////////////
 // Ось кілька завдань на масиви , цикли та умови)
 
 // 1. Створіть масив чисел. Виведіть у консоль суму всіх парних чисел у масиві.
@@ -561,8 +557,6 @@
 // const minNumbers = Math.min(...numbers);
 // console.log("Мінімальне число:" + minNumbers);
 
-
-
 // 5. Створіть масив рядків. За допомогою циклу for перевірте кожен елемент масиву, чи містить він літеру "a". Виведіть у консоль кількість рядків, в яких зустрічається літера "a".
 // const elements = ["sunny", "elektroperforator", "sun",  " age"];
 // let result = [];
@@ -595,7 +589,7 @@
 //     }else{
 //         console.log(`"Рядок ${element} не містить пробіл"`);
 //     }
-    
+
 // }
 
 // 8. Створіть масив з числами. Знайдіть середнє арифметичне всіх чисел у масиві та виведіть його у консоль.
@@ -628,9 +622,8 @@
 //     }else{
 //         console.log(`"Число ${number} не є парним"`);
 //     }
-// }  
+// }
 /////Тут можна і з рузалтом і без//////
-
 
 // Дмитрий Шелест, [19 бер. 2024 р., 22:15:31]:
 // ...Завдання:  написати наступний код використовуючи функції JavaScript:
@@ -665,7 +658,6 @@
 // 4. Виведіть таблицю множення для числа 7 від 1 до 10, використовуючи цикл for.
 
 // 5. Виведіть усі літери англійського алфавіту від "A" до "Z" за допомогою циклу for.
-
 
 // 6. Створіть цикл for, який виводить усі числа від 1 до 20, і для кожного парного числа виводить "Парне", а для непарного - "Непарне".
 // function checkNumbers(){
@@ -719,7 +711,7 @@
 //     checkNumbers();
 // На обʼєкти на функції :
 
-// 1. Створіть об'єкт car з властивостями brand, model і year. Напишіть функцію що виводить ці властивості у консоль циклом 
+// 1. Створіть об'єкт car з властивостями brand, model і year. Напишіть функцію що виводить ці властивості у консоль циклом
 // const car = {
 //   brand: "BMW",
 //   model: "X5M5",
@@ -754,7 +746,6 @@
 // }
 // greet(person);
 
-
 // 5. Створіть об'єкт rectangle з властивостями width і height. Створіть функцію getPerimeter, яка виводить у консоль периметр прямокутника.
 // const rectangle = {
 //   width: 5,
@@ -764,7 +755,7 @@
 //   let perimetr = 2 * (rectangle.width + rectangle.heigth);
 //   console.log("Периметр = " + perimetr);;
 //  return perimetr;
- 
+
 // }
 // getPerimeter(rectangle);
 // 6. Створіть функцію mergeObjects, яка об'єднує два об'єкти у новий об'єкт.
@@ -783,9 +774,8 @@
 // const cars = mergeObjects (obj, obj1);
 // console.log(cars);
 
-
 // 7. Створіть об'єкт book з властивостями title, author і pages. , "readed_pages”Створіть функцію isReaded,
-//  яка виводить повідомлення про те, що книга прочитана ( книга прочитана якщо значення поля pages дорівнює значенню 
+//  яка виводить повідомлення про те, що книга прочитана ( книга прочитана якщо значення поля pages дорівнює значенню
 //     поля readed_pages )
 // const book = {
 //     title: "Mysterious island",
@@ -808,7 +798,7 @@
 // for(let age in middleAge){
 //     sumAge += middleAge[age]
 //     count += 1;
-    
+
 // }
 // return sumAge / count;
 // }
@@ -818,28 +808,28 @@
 //     John: 10
 // };
 // function getAverageAge(peaple_obj){
-    // let total_age = 0;
-    // for (const name in peaple_obj) {
-    //     total_age += peaple_obj[name];
-    // }
+// let total_age = 0;
+// for (const name in peaple_obj) {
+//     total_age += peaple_obj[name];
+// }
 
-    // console.log(Object.keys(peaple_obj));
-    // console.log(Object.keys(peaple_obj).length);
-    
-    // let count_of_people = Object.keys(peaple_obj).length;
+// console.log(Object.keys(peaple_obj));
+// console.log(Object.keys(peaple_obj).length);
 
-    // return total_age/count_of_people
-    // console.log(Object.values(peaple_obj));
-    // return total_age/Object.keys(peaple_obj).length;
+// let count_of_people = Object.keys(peaple_obj).length;
 
-    // let ages_arr = Object.values(peaple_obj);
+// return total_age/count_of_people
+// console.log(Object.values(peaple_obj));
+// return total_age/Object.keys(peaple_obj).length;
 
-    // for (const age of ages_arr) {
-    //     total_age +=age
-    // }
+// let ages_arr = Object.values(peaple_obj);
 
-    // return total_age/ages_arr.length
-// }   
+// for (const age of ages_arr) {
+//     total_age +=age
+// }
+
+// return total_age/ages_arr.length
+// }
 // console.log(getAverageAge(agePeople));
 
 // console.log(getAverageAge(agePeople));
@@ -859,4 +849,39 @@
 //     }
 //     return propValues;
 //   }
-  
+// function getLastElementMeta(array) {
+//   const indexLastElement = array.length;
+//   return [indexLastElement];
+// }
+// console.log(getLastElementMeta(["apple", "peach", "pear", "banana"]));
+
+// function getLastElementMeta(array) {
+//     const indexLastElement = array.length - 1;
+//     return [indexLastElement, array[indexLastElement]];
+//   }
+//   console.log(getLastElementMeta(["apple", "peach", "pear", "banana"]));
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ### Завдання 1: Фільтрація масиву
+// Напишіть функцію filterEvenNumbers(arr), яка приймає масив чисел і повертає новий масив, що містить лише парні числа.
+
+// function filterEvenNumbers(arr) {
+//   return arr.filter((arr) => arr % 2 === 0);
+// }
+// const numbers = [1, 2, 3, 4, 5, 6];
+// console.log(filterEvenNumbers(numbers));
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ### Завдання 2: Сортування масиву об'єктів
+// Напишіть функцію sortByAge(arr), яка приймає масив об'єктів з властивістю age і повертає його, відсортованим за віком у порядку зростання.
+
+// Приклад вхідних даних:
+// function sortByAge(arr) {
+//   return arr.sort((a, b) => a.age - b.age);
+// }
+// const people = [
+//   { name: "Alice", age: 25 },
+//   { name: "Bob", age: 20 },
+//   { name: "Charlie", age: 30 },
+// ];
+// console.log(sortByAge(people));
