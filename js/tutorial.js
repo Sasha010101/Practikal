@@ -885,3 +885,66 @@
 //   { name: "Charlie", age: 30 },
 // ];
 // console.log(sortByAge(people));
+//////////////////////////////////////////////////////////////////////////////////
+// ### Завдання 3: Пошук об'єкта у масиві
+// Напишіть функцію findPersonByName(arr, name), яка приймає масив об'єктів з властивістю name та ім'я, і повертає перший об'єкт з відповідним ім'ям.
+
+// Приклад вхідних даних:
+// function findPersonByName(arr, searched_name) {
+//   return arr.find(({ name }) => name === searched_name);
+// }
+// const people = [
+//   { name: "Alice", age: 25 },
+//   { name: "Bob", age: 20 },
+//   { name: "Charlie", age: 30 },
+// ];
+// const nameToFind = "Bob";
+// console.log(findPersonByName(people, nameToFind));
+///////////////////////////////////////////////////////////////////
+// ### Завдання 4: Додавання нової властивості до кожного об'єкта
+// Напишіть функцію addFullName(arr), яка приймає масив об'єктів з властивостями firstName і
+// lastName та додає до кожного об'єкта нову властивість fullName, що містить повне ім'я
+// (firstName + lastName).
+
+// Приклад вхідних даних:
+
+// function addFullName(arr) {
+//   arr.forEach((human) => {
+//     human.fullName = `${human.firstName} ${human.lastName}`;
+//   });
+// }
+// const people_one = [
+//   { firstName: "Alice", lastName: "Johnson" },
+//   { firstName: "Bob", lastName: "Smith" },
+//   { firstName: "Charlie", lastName: "Brown" },
+// ];
+
+// addFullName(people_one);
+// console.log(people_one);
+
+// ### Завдання 5: Об'єднання масивів
+// Напишіть функцію mergeArrays(arr1, arr2), яка приймає два масиви об'єктів і повертає новий масив, що містить усі об'єкти з обох масивів, видаляючи дублікати (об'єкти вважаються однаковими, якщо всі їх властивості збігаються).
+
+// Приклад вхідних даних:
+
+// document.addEventListener("click", function ({ target }) {
+//   let { textContent } = target;
+//   console.log("event", target);
+//   console.log("textContent", textContent);
+// });
+
+// document.addEventListener("click", function (event) {
+//   console.log("some data");
+// });
+
+// напишіть функцію яка приймає парметром масив строк, та повертає новий масив
+// усіх строк які починаються на букву "а";
+
+// function giveNewArrayFirstLatterA(str_arr) {
+//   return str_arr.filter(
+//     (element) =>
+//       (element.startsWith("a") || element.startsWith("o")) && element.length > 5
+//   );
+// }
+// const array_string = ["hello", "apple", "orange", "angular", "react"];
+// console.log(giveNewArrayFirstLatterA(array_string));
