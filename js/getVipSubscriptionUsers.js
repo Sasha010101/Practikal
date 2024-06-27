@@ -6,19 +6,16 @@
 //     ({ age, email }) => age > 18 && email.endsWith("@example.com")
 //   );
 // }
-
 // function getAdultUsersNames(arr_obj) {
 //   return arr_obj
 //     .filter(({ age, email }) => age > 18 && email.endsWith("@example.com"))
 //     .map(({ name }) => name);
 // }
-
 // const users = [
 //   { name: "Alice", age: 25, email: "alice@example.com" },
 //   { name: "Bob", age: 17, email: "bob@other.com" },
 //   { name: "Charlie", age: 22, email: "charlie@example.com" },
 // ];
-
 // console.log(getAdultUsersNames(users));
 // console.log(getAdultUsers(users));
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -49,9 +46,7 @@
 //     return domen.includes("mail");
 //   });
 // }
-
 // // return arr.filter((email) => email.split("@")[1].includes("mail"));
-
 // const emails = [
 //   "user1@mail.com",
 //   "user2@gmail.com",
@@ -69,14 +64,12 @@
 //     ({major, score}) => major === "computer science" && score > 85
 //   );
 // }
-
 // const students = [
 //   { name: "Dave", score: 90, major: "computer science" },
 //   { name: "Eve", score: 88, major: "mathematics" },
 //   { name: "Frank", score: 92, major: "computer science" },
 //   { name: "Grace", score: 75, major: "computer science" },
 // ];
-
 // console.log(geScoreStudentsAndUniqMajor(students));
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 5. Завдання:
@@ -126,13 +119,11 @@
 // 8. Завдання:
 //    - Дано масив об'єктів продуктів із властивостями productName, price та available.
 //    - Поверніть масив назв продуктів, які доступні (`available: true`) і ціна яких більша за 50.
-
 // function getFilteredproductNames(arr_obj) {
 //   return arr_obj
 //     .filter(({ available, price }) => available && price > 50)
 //     .map(({ productName }) => productName);
 // }
-
 // function maybeFaster(arr_obj) {
 //   let result = [];
 //   arr_obj.forEach(({ productName, price, available }) => {
@@ -140,7 +131,6 @@
 //   });
 //   return result;
 // }
-
 // const items = [
 //   { productName: "Phone", price: 600, available: true },
 //   { productName: "Tablet", price: 300, available: false },
@@ -174,114 +164,25 @@
 // console.time("first");
 // console.log(getFilteredproductNames(items));
 // console.timeEnd("first");
-
 // console.time("second");
 // console.log(maybeFaster(items));
 // console.timeEnd("second");
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 9. Завдання:
 //    - Дано масив об'єктів користувачів із властивостями name, subscriptionType (`basic`, premium, `gold`).
 //    - Поверніть масив імен користувачів, які мають підписку типу premium або gold.
-// function getVipSubscriptionUsers(users_arr) {
-//   return users_arr
-//     .filter(
-//       ({ subscriptionType }) =>
-//         subscriptionType === "premium" || subscriptionType === "gold"
-//     )
-//     .map(({ name }) => name);
-// }
-// const users = [
-//   { name: "Alice", subscriptionType: "basic" },
-//   { name: "Bob", subscriptionType: "premium" },
-//   { name: "Charlie", subscriptionType: "gold" },
-//   { name: "Dave", subscriptionType: "basic" },
-// ];
-// console.log(getVipSubscriptionUsers(users));
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// 12. Завдання:
-//     - Дано масив об'єктів employees із властивостями name, department, salary.
-//     - Поверніть масив об'єктів із властивостями name та adjustedSalary,{name:'g', adjustedSalary:676}
-// де adjustedSalary дорівнює salary, !якщо департамент не HR!, і salary помножене на 1.1, !якщо департамент HR!.
-// function getArrWithKeys(employees_arr) {
-//   return employees_arr.map(({ name, department, salary }) => {
-//     if (department !== "HR") {
-//       return {
-//         name, //name:name->bame
-//         adjustSalary: salary,
-//       };
-//     } else if (department === "HR") {
-//       return {
-//         name,
-//         adjustSalary: salary * 1.1,
-//       };
-//     }
-//   });
-// }
-// const employees = [
-//   { name: "Ivy", department: "HR", salary: 50000 },
-//   { name: "Jack", department: "Engineering", salary: 70000 },
-//   { name: "Kelly", department: "HR", salary: 55000 },
-//   { name: "Leo", department: "Marketing", salary: 60000 },
-// ];
-// console.log(getArrWithKeys(employees));
-/////////////////////////////////////////////////////////|||||27/06/24||||||////////////////////////////////////////////////////////
-// 1. Завдання: Фільтруйте масив об'єктів продуктів, щоб знайти всі продукти
-// , що мають вартість менше 20 доларів, і створіть новий масив, який містить тільки назви цих продуктів.
-//    - Вхідні дані:
-// function getNamesArr(arr_obj_products) {
-//   return arr_obj_products
-//     .filter(({ price }) => price < 20)
-//     .map(({ name }) => name);
-// }
-
-// const products = [
-//   { name: "Apple", price: 25 },
-//   { name: "Banana", price: 15 },
-//   { name: "Cherry", price: 10 },
-//   { name: "Date", price: 30 },
-// ];
-// console.log(getNamesArr(products));
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////|||||
-// 2. Завдання: Знайдіть середній вік користувачів в масиві об'єктів користувачів.
-//    - Вхідні дані:
-// function findMiddleage(arr_users_age) {
-//   return (
-//     arr_users_age.reduce((sum, user) => sum + user.age, 0) /
-//     arr_users_age.length
-//   );
-// }
-// const users = [
-//   { name: "Alice", age: 25 },
-//   { name: "Bob", age: 30 },
-//   { name: "Charlie", age: 35 },
-//   { name: "Dave", age: 40 },
-// ];
-// console.log(findMiddleage(users));
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////|||||
-// 3. Завдання: Перетворіть масив об'єктів покупок у масив об'єктів, які містять тільки ім'я покупця і загальну суму їх покупок.
-//    - Вхідні дані:
-// function getTotalSum
-
-//      const purchases = [
-//        { buyer: "Alice", amount: 50 },
-//        { buyer: "Bob", amount: 70 },
-//        { buyer: "Alice", amount: 30 },
-//        { buyer: "Charlie", amount: 40 }
-//      ];
-/////////////////////////////////////Не вирішив/////////////////////////////////////////////////////////////////////////////|||||
-
-// 4. Завдання: Знайдіть найбільш дорогий продукт у масиві об'єктів продуктів.
-//    - Вхідні дані:
-function findMostExpensiveProduct(arr_products) {
-  return arr_products.reduce((mostExpensive, currentProduct) =>
-   );
+function getVipSubscriptionUsers(users_arr) {
+  return users_arr
+    .filter(
+      ({ subscriptionType }) =>
+        subscriptionType === "premium" || subscriptionType === "gold"
+    )
+    .map(({ name }) => name);
 }
-
-const products = [
-  { name: "Apple", price: 25 },
-  { name: "Banana", price: 15 },
-  { name: "Cherry", price: 10 },
-  { name: "Date", price: 30 },
+const users = [
+  { name: "Alice", subscriptionType: "basic" },
+  { name: "Bob", subscriptionType: "premium" },
+  { name: "Charlie", subscriptionType: "gold" },
+  { name: "Dave", subscriptionType: "basic" },
 ];
+console.log(getVipSubscriptionUsers(users));
