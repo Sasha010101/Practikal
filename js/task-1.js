@@ -1,5 +1,4 @@
-
-//(1) Напишіть функцію, яка приймає масив чисел і 
+//(1) Напишіть функцію, яка приймає масив чисел і
 // повертає суму всіх елементів у масиві.
 // const mainEl = document.querySelector("#main");
 // function calculateSumArr(numbers){
@@ -16,9 +15,7 @@
 //     console.log(calculateSumArr(arrNumbers));
 // });
 
-
-
-// (3.) Напишіть функцію, яка приймає масив чисел 
+// (3.) Напишіть функцію, яка приймає масив чисел
 // і повертає кількість додатних чисел у масиві.
 // const listEl = document.querySelector(".list");
 // function logPositiveNumbers(numbers){
@@ -37,9 +34,8 @@
 // console.log(logPositiveNumbers(arrNumbers));
 // })
 
-
-// 4. Напишіть функцію, яка приймає масив рядків 
-// і повертає новий масив, в якому всі рядки записані в 
+// 4. Напишіть функцію, яка приймає масив рядків
+// і повертає новий масив, в якому всі рядки записані в
 // обернутому вигляді.(при натісканні на лішки спрацьовує тільки 1 лішка)
 
 // const itemEl = document.querySelector(".item");
@@ -55,9 +51,8 @@
 // const textEl = document.querySelector(".text");
 // console.log(textEl);
 
-
-//(2) Напишіть функцію, яка приймає масив рядків 
-// і повертає новий масив, який містить тільки рядки, 
+//(2) Напишіть функцію, яка приймає масив рядків
+// і повертає новий масив, який містить тільки рядки,
 // які починаються з літери "A".
 
 // const miniButtonEl = document.querySelector(".mini-button");
@@ -75,13 +70,10 @@
 // console.log(logNewArray(arrStr));
 // });
 
-
-
-
 // const menuEl = document.querySelector(".menu");
 // console.log(menuEl);
 
-// 5. Напишіть функцію, яка приймає масив 
+// 5. Напишіть функцію, яка приймає масив
 // чисел і повертає найбільше число у масиві.
 
 // 7. Напишіть функцію, яка приймає масив рядків і повертає новий масив,
@@ -113,9 +105,8 @@
 //     console.log(getMostNumber(arrNumbers));
 // });
 
-
-// 6. Напишіть функцію, яка приймає масив 
-// чисел і повертає новий масив, в якому всі 
+// 6. Напишіть функцію, яка приймає масив
+// чисел і повертає новий масив, в якому всі
 // від'ємні числа замінені на 0.
 
 // const registerEl = document.querySelector(".register");
@@ -127,11 +118,11 @@
 //     return number;
 // }
 //     });
-    
+
 // }
 // const arrNumber = [-1, 2, -6, -12, -15, 10];
 
 // registerEl.addEventListener("click", event =>{
 //     console.log(giveNegativeNumberConvertedToZero(arrNumber));
-   
+
 // })

@@ -394,3 +394,35 @@
 //   { name: "Date", price: 30 },
 // ];
 // console.log(findMostExpensiveProduct(products));
+
+/////////////////////////////////////////////////////////////////////////////|||||/////////////////////////////////////////////////////////////////////////////|||||
+// 5. Завдання: Перетворіть масив об'єктів студентів у масив рядків, де кожен рядок містить ім'я студента та його оцінку.
+//    - Вхідні дані:
+// function getArrString(arr_str) {
+//   return arr_str.map((student) => `${student.name} - ${student.grade}`);
+// }
+// const students = [
+//   { name: "Alice", grade: "A" },
+//   { name: "Bob", grade: "B" },
+//   { name: "Charlie", grade: "C" },
+//   { name: "Dave", grade: "D" },
+// ];
+// console.log(getArrString(students));
+/////////////////////////////////////////////////////////////////////////////|||||/////////////////////////////////////////////////////////////////////////////|||||
+// 6. Завдання: Створіть кнопку, яка при кліку підраховує та виводить у консоль загальну суму цін продуктів у масиві об'єктів.
+//    - Вхідні дані:
+const buttonEl = document.querySelector(".button");
+function countTotalSum(arr_sum_price) {
+  return arr_sum_price.reduce((sum, totalSum) => (sum += totalSum.price), 0);
+}
+const products = [
+  { name: "Apple", price: 25 },
+  { name: "Banana", price: 15 },
+  { name: "Cherry", price: 10 },
+  { name: "Date", price: 30 },
+];
+
+buttonEl.addEventListener("click", (event) => {
+  console.log("Totalresult");
+  console.log(countTotalSum(products));
+});
