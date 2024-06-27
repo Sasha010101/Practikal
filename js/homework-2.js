@@ -246,7 +246,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////|||||
 // 2. Завдання: Знайдіть середній вік користувачів в масиві об'єктів користувачів.
 //    - Вхідні дані:
-// function findMiddleage(arr_users_age) {
+// function findMiddleAge(arr_users_age) {
 //   return (
 //     arr_users_age.reduce((sum, user) => sum + user.age, 0) /
 //     arr_users_age.length
@@ -258,30 +258,139 @@
 //   { name: "Charlie", age: 35 },
 //   { name: "Dave", age: 40 },
 // ];
-// console.log(findMiddleage(users));
+// console.log(findMiddleAge(users));
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////|||||
 // 3. Завдання: Перетворіть масив об'єктів покупок у масив об'єктів, які містять тільки ім'я покупця і загальну суму їх покупок.
 //    - Вхідні дані:
-// function getTotalSum
+// function getTotalSum(purchases_data) {
+//   const uniqNamesArr = []; //['Alice', 'Bob', 'Charlie']
+//   purchases_data.forEach(({ buyer }) => {
+//     // uniqNamesArr.includes(buyer) ? "" : uniqNamesArr.push(buyer);
+//     !uniqNamesArr.includes(buyer) && uniqNamesArr.push(buyer);
+//   });
 
-//      const purchases = [
-//        { buyer: "Alice", amount: 50 },
-//        { buyer: "Bob", amount: 70 },
-//        { buyer: "Alice", amount: 30 },
-//        { buyer: "Charlie", amount: 40 }
-//      ];
+//   const result = [];
+
+//   uniqNamesArr.forEach((name) => {
+//     let currentBuyer = {
+//       buyer: name,
+//       totalAmount: 0,
+//     };
+//     purchases_data.forEach(({ amount, buyer }) => {
+//       if (name === buyer) {
+//         currentBuyer.totalAmount += amount;
+//       }
+//     });
+//     result.push(currentBuyer);
+//   });
+//   console.log("result", result);
+// }
+
+// function getTotalSumSecond(purchases_data) {
+//   const result = [];
+
+//   purchases_data.forEach(({ buyer, amount }) => {
+//     let searchedBuyerObj = result.find(
+//       (curentBuyer) => curentBuyer.buyer === buyer
+//     );
+
+//     if (searchedBuyerObj) {
+//       searchedBuyerObj.amount += amount;
+//     } else {
+//       result.push({
+//         buyer: buyer,
+//         amount: amount,
+//       });
+//     }
+//   });
+//   console.log("second result", result);
+// }
+
+//['Alice', 'Bob', 'Alice', 'Charlie'..]
+
+// const purchases_data = [
+//   { buyer: "Alice", amount: 50, date: "01.06" },
+//   { buyer: "Bob", amount: 70, date: "01.06" },
+//   { buyer: "Alice", amount: 30, date: "01.06" },
+//   { buyer: "Charlie", amount: 40, date: "01.06" },
+//   { buyer: "Alice", amount: 41, date: "02.06" },
+//   { buyer: "Bob", amount: 12, date: "02.06" },
+//   { buyer: "Alice", amount: 89, date: "02.06" },
+//   { buyer: "Charlie", amount: 56, date: "02.06" },
+//   { buyer: "Alice", amount: 55, date: "03.06" },
+//   { buyer: "Bob", amount: 75, date: "03.06" },
+//   { buyer: "Alice", amount: 35, date: "03.06" },
+//   { buyer: "Charlie", amount: 45, date: "03.06" },
+//   { buyer: "Alice", amount: 46, date: "04.06" },
+//   { buyer: "Bob", amount: 36, date: "04.06" },
+//   { buyer: "Alice", amount: 16, date: "04.06" },
+//   { buyer: "Charlie", amount: 96, date: "04.06" },
+//   { buyer: "Alice", amount: 50, date: "01.06" },
+//   { buyer: "Bob", amount: 70, date: "01.06" },
+//   { buyer: "Alice", amount: 30, date: "01.06" },
+//   { buyer: "Charlie", amount: 40, date: "01.06" },
+//   { buyer: "Alice", amount: 41, date: "02.06" },
+//   { buyer: "Bob", amount: 12, date: "02.06" },
+//   { buyer: "Alice", amount: 89, date: "02.06" },
+//   { buyer: "Charlie", amount: 56, date: "02.06" },
+//   { buyer: "Alice", amount: 55, date: "03.06" },
+//   { buyer: "Bob", amount: 75, date: "03.06" },
+//   { buyer: "Alice", amount: 35, date: "03.06" },
+//   { buyer: "Charlie", amount: 45, date: "03.06" },
+//   { buyer: "Alice", amount: 46, date: "04.06" },
+//   { buyer: "Bob", amount: 36, date: "04.06" },
+//   { buyer: "Alice", amount: 16, date: "04.06" },
+//   { buyer: "Charlie", amount: 96, date: "04.06" },
+//   { buyer: "Alice", amount: 50, date: "01.06" },
+//   { buyer: "Bob", amount: 70, date: "01.06" },
+//   { buyer: "Alice", amount: 30, date: "01.06" },
+//   { buyer: "Charlie", amount: 40, date: "01.06" },
+//   { buyer: "Alice", amount: 41, date: "02.06" },
+//   { buyer: "Bob", amount: 12, date: "02.06" },
+//   { buyer: "Alice", amount: 89, date: "02.06" },
+//   { buyer: "Charlie", amount: 56, date: "02.06" },
+//   { buyer: "Alice", amount: 55, date: "03.06" },
+//   { buyer: "Bob", amount: 75, date: "03.06" },
+//   { buyer: "Alice", amount: 35, date: "03.06" },
+//   { buyer: "Charlie", amount: 45, date: "03.06" },
+//   { buyer: "Alice", amount: 46, date: "04.06" },
+//   { buyer: "Bob", amount: 36, date: "04.06" },
+//   { buyer: "Alice", amount: 16, date: "04.06" },
+//   { buyer: "Charlie", amount: 96, date: "04.06" },
+// ];
+
+// console.time("first");
+// getTotalSum(purchases_data);
+// console.timeEnd("first");
+
+// console.time("second");
+// getTotalSumSecond(purchases_data);
+// console.timeEnd("second");
+
+// const result = [
+//   { buyer: "Alice", amount: 200 },
+//   { buyer: "Bob", amount: 300 },
+//   { buyer: "Charlie", amount: 99 },
+// ];
 /////////////////////////////////////Не вирішив/////////////////////////////////////////////////////////////////////////////|||||
 
 // 4. Завдання: Знайдіть найбільш дорогий продукт у масиві об'єктів продуктів.
 //    - Вхідні дані:
-function findMostExpensiveProduct(arr_products) {
-  return arr_products.reduce((mostExpensive, currentProduct) =>
-   );
-}
+// function findMostExpensiveProduct(arr_products) {
+//   return arr_products.reduce(
+//     (mostExpensive, currentProduct) =>
+//       mostExpensive.price < currentProduct.price
+//         ? currentProduct
+//         : mostExpensive
+//     // ,
+//     // arr_products[0].price
+//   ).name;
+// }
 
-const products = [
-  { name: "Apple", price: 25 },
-  { name: "Banana", price: 15 },
-  { name: "Cherry", price: 10 },
-  { name: "Date", price: 30 },
-];
+// const products = [
+//   { name: "Apple", price: 25 }, //25<15
+//   { name: "Banana", price: 15 },
+//   { name: "Cherry", price: 10 },
+//   { name: "Date", price: 30 },
+// ];
+// console.log(findMostExpensiveProduct(products));
