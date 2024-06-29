@@ -411,18 +411,39 @@
 /////////////////////////////////////////////////////////////////////////////|||||/////////////////////////////////////////////////////////////////////////////|||||
 // 6. Завдання: Створіть кнопку, яка при кліку підраховує та виводить у консоль загальну суму цін продуктів у масиві об'єктів.
 //    - Вхідні дані:
-const buttonEl = document.querySelector(".button");
-function countTotalSum(arr_sum_price) {
-  return arr_sum_price.reduce((sum, totalSum) => (sum += totalSum.price), 0);
-}
-const products = [
-  { name: "Apple", price: 25 },
-  { name: "Banana", price: 15 },
-  { name: "Cherry", price: 10 },
-  { name: "Date", price: 30 },
-];
+// const buttonEl = document.querySelector(".button");
+// function countTotalSum(arr_sum_price) {
+//   return arr_sum_price.reduce((sum, totalSum) => (sum += totalSum.price), 0);
+// }
+// const products = [
+//   { name: "Apple", price: 25 },
+//   { name: "Banana", price: 15 },
+//   { name: "Cherry", price: 10 },
+//   { name: "Date", price: 30 },
+// ];
 
-buttonEl.addEventListener("click", (event) => {
-  console.log("Totalresult");
-  console.log(countTotalSum(products));
+// buttonEl.addEventListener("click", (_event) => {
+//   console.log("Totalresult");
+//   console.log(countTotalSum(products));
+// });
+/////////////////////////////////////////////////////////////////////////////|||||/////////////////////////////////////////////////////////////////////////////|||||
+
+// 7. Завдання: Створіть елемент, який при наведенні миші обчислює та виводить у консоль середній вік користувачів у масиві об'єктів.
+//    - Вхідні дані:
+const mouseEl = document.querySelector(".mouse");
+function getMiddleAgeUsers(arr_obj_users) {
+  return (
+    arr_obj_users.reduce((sum, user) => (sum += user.age), 0) /
+    arr_obj_users.length
+  );
+}
+const users = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 35 },
+  { name: "Dave", age: 40 },
+];
+mouseEl.addEventListener("mouseover", (event) => {
+  console.log("Середній вік:");
+  console.log(getMiddleAgeUsers(users));
 });
