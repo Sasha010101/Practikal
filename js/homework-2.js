@@ -430,20 +430,37 @@
 
 // 7. Завдання: Створіть елемент, який при наведенні миші обчислює та виводить у консоль середній вік користувачів у масиві об'єктів.
 //    - Вхідні дані:
-const mouseEl = document.querySelector(".mouse");
-function getMiddleAgeUsers(arr_obj_users) {
-  return (
-    arr_obj_users.reduce((sum, user) => (sum += user.age), 0) /
-    arr_obj_users.length
-  );
+// const mouseEl = document.querySelector(".mouse");
+// function getMiddleAgeUsers(arr_obj_users) {
+//   return (
+//     arr_obj_users.reduce((sum, user) => (sum += user.age), 0) /
+//     arr_obj_users.length
+//   );
+// }
+// const users = [
+//   { name: "Alice", age: 25 },
+//   { name: "Bob", age: 30 },
+//   { name: "Charlie", age: 35 },
+//   { name: "Dave", age: 40 },
+// ];
+// mouseEl.addEventListener("mouseover", (event) => {
+//   console.log("Середній вік:");
+//   console.log(getMiddleAgeUsers(users));
+// });
+/////////////////////////////////////////////////////////////////////////////|||||/////////////////////////////////////////////////////////////////////////////|||||
+// 8. Завдання: Створіть кнопку, яка при кліку підраховує та виводить у консоль загальну кількість покупок, зроблених кожним покупцем у масиві об'єктів покупок.
+//    - Вхідні дані:
+const buttonEl = document.querySelector("button");
+function getTotalSumPurchase(arr_obj_sum) {
+  return arr_obj_sum.reduce((sum, total) => (sum += total.amount), 0);
 }
-const users = [
-  { name: "Alice", age: 25 },
-  { name: "Bob", age: 30 },
-  { name: "Charlie", age: 35 },
-  { name: "Dave", age: 40 },
+const purchases = [
+  { buyer: "Alice", amount: 50 },
+  { buyer: "Bob", amount: 70 },
+  { buyer: "Alice", amount: 30 },
+  { buyer: "Charlie", amount: 40 },
 ];
-mouseEl.addEventListener("mouseover", (event) => {
-  console.log("Середній вік:");
-  console.log(getMiddleAgeUsers(users));
+buttonEl.addEventListener("click", (event) => {
+  console.log("Загальна сума всіх покупок");
+  console.log(getTotalSumPurchase(purchases));
 });
