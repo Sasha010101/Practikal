@@ -448,19 +448,50 @@
 //   console.log(getMiddleAgeUsers(users));
 // });
 /////////////////////////////////////////////////////////////////////////////|||||/////////////////////////////////////////////////////////////////////////////|||||
-// 8. Завдання: Створіть кнопку, яка при кліку підраховує та виводить у консоль загальну кількість покупок, зроблених кожним покупцем у масиві об'єктів покупок.
+// 8. Завдання: Створіть кнопку, яка при кліку підраховує та виводить у
+//  консоль загальну кількість покупок, зроблених кожним покупцем у масиві об'єктів покупок.
 //    - Вхідні дані:
 const buttonEl = document.querySelector("button");
-function getTotalSumPurchase(arr_obj_sum) {
-  return arr_obj_sum.reduce((sum, total) => (sum += total.amount), 0);
+function getTotalSumPurchase(purchaseUserList) {
+  const arr_uniq_names = [];
+  purchaseUserList.forEach(({ buyer, amount }) => {
+    let foundedBuyer = arr_uniq_names.find(
+      ({ uniqBayer }) => uniqBayer === buyer
+    );
+
+    if (!foundedBuyer) {
+      //якщо ми не знайшли об'єкт ( коли foundedBuyer дорівнює undefined )
+      // тоді ми створюємо об'єкт
+      arr_uniq_names.push({
+        uniqBayer: buyer,
+        purchaseCount: 1,
+        amount: amount,
+      });
+    } else {
+      // якщо ми знайшли об'єкт ( коли foundedBuyer дорівнює { не пустому } )
+      // тоді ми модифікуємо об'єкт foundedBuyer
+      foundedBuyer.purchaseCount++;
+      foundedBuyer.amount += amount;
+    }
+  });
+
+  return arr_uniq_names;
 }
+
 const purchases = [
   { buyer: "Alice", amount: 50 },
+  { buyer: "Charlie", amount: 55 },
   { buyer: "Bob", amount: 70 },
-  { buyer: "Alice", amount: 30 },
   { buyer: "Charlie", amount: 40 },
+  { buyer: "Alice", amount: 30 },
+  { buyer: "Charlie", amount: 12 },
+  { buyer: "Andrew", amount: 20 },
+  { buyer: "Jessika", amount: 30 },
+  { buyer: "Melisa", amount: 12 },
 ];
+
 buttonEl.addEventListener("click", (event) => {
-  console.log("Загальна сума всіх покупок");
   console.log(getTotalSumPurchase(purchases));
+  console.log("Загальна сума всіх покупок");
 });
+//[...new Set([1,2,3,4,5,5])]
