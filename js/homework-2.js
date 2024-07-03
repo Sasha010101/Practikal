@@ -451,47 +451,92 @@
 // 8. Завдання: Створіть кнопку, яка при кліку підраховує та виводить у
 //  консоль загальну кількість покупок, зроблених кожним покупцем у масиві об'єктів покупок.
 //    - Вхідні дані:
-const buttonEl = document.querySelector("button");
-function getTotalSumPurchase(purchaseUserList) {
-  const arr_uniq_names = [];
-  purchaseUserList.forEach(({ buyer, amount }) => {
-    let foundedBuyer = arr_uniq_names.find(
-      ({ uniqBayer }) => uniqBayer === buyer
-    );
+// const buttonEl = document.querySelector("button");
+// function getTotalSumPurchase(purchaseUserList) {
+//   const arr_uniq_names = [];
+//   purchaseUserList.forEach(({ buyer, amount }) => {
+//     let foundedBuyer = arr_uniq_names.find(
+//       ({ uniqBayer }) => uniqBayer === buyer
+//     );
 
-    if (!foundedBuyer) {
-      //якщо ми не знайшли об'єкт ( коли foundedBuyer дорівнює undefined )
-      // тоді ми створюємо об'єкт
-      arr_uniq_names.push({
-        uniqBayer: buyer,
-        purchaseCount: 1,
-        amount: amount,
-      });
-    } else {
-      // якщо ми знайшли об'єкт ( коли foundedBuyer дорівнює { не пустому } )
-      // тоді ми модифікуємо об'єкт foundedBuyer
-      foundedBuyer.purchaseCount++;
-      foundedBuyer.amount += amount;
-    }
-  });
+//     if (!foundedBuyer) {
+//       //якщо ми не знайшли об'єкт ( коли foundedBuyer дорівнює undefined )
+//       // тоді ми створюємо об'єкт
+//       arr_uniq_names.push({
+//         uniqBayer: buyer,
+//         purchaseCount: 1,
+//         amount: amount,
+//       });
+//     } else {
+// якщо ми знайшли об'єкт ( коли foundedBuyer дорівнює { не пустому } )
+// тоді ми модифікуємо об'єкт foundedBuyer
+//       foundedBuyer.purchaseCount++;
+//       foundedBuyer.amount += amount;
+//     }
+//   });
 
-  return arr_uniq_names;
-}
+//   return arr_uniq_names;
+// }
 
-const purchases = [
-  { buyer: "Alice", amount: 50 },
-  { buyer: "Charlie", amount: 55 },
-  { buyer: "Bob", amount: 70 },
-  { buyer: "Charlie", amount: 40 },
-  { buyer: "Alice", amount: 30 },
-  { buyer: "Charlie", amount: 12 },
-  { buyer: "Andrew", amount: 20 },
-  { buyer: "Jessika", amount: 30 },
-  { buyer: "Melisa", amount: 12 },
-];
+// const purchases = [
+//   { buyer: "Alice", amount: 50 },
+//   { buyer: "Charlie", amount: 55 },
+//   { buyer: "Bob", amount: 70 },
+//   { buyer: "Charlie", amount: 40 },
+//   { buyer: "Alice", amount: 30 },
+//   { buyer: "Charlie", amount: 12 },
+//   { buyer: "Andrew", amount: 20 },
+//   { buyer: "Jessika", amount: 30 },
+//   { buyer: "Melisa", amount: 12 },
+// ];
 
-buttonEl.addEventListener("click", (event) => {
-  console.log(getTotalSumPurchase(purchases));
-  console.log("Загальна сума всіх покупок");
-});
+// buttonEl.addEventListener("click", (event) => {
+//   console.log(getTotalSumPurchase(purchases));
+//   console.log("Загальна сума всіх покупок");
+// });
 //[...new Set([1,2,3,4,5,5])]
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 9. Завдання: Створіть елемент, який при наведенні миші
+//  визначає та виводить у консоль найдорожчий продукт у масиві об'єктів.
+//    - Вхідні дані:
+// const mouseEl = document.querySelector(".mouse");
+// function getMoreExpensiveProduct(arr_obj_product) {
+//   return arr_obj_product.reduce((initial, current) => {
+//     if (initial.price > current.price) {
+//       return initial;
+//     } else {
+//       return current;
+//     }
+//   });
+// }
+// const products = [
+//   { name: "Apple", price: 25 },
+//   { name: "Banana", price: 15 },
+//   { name: "Cherry", price: 35 },
+//   { name: "Date", price: 30 },
+// ];
+// mouseEl.addEventListener("mouseover", (event) => {
+//   const mostExpensiveProduct = getMoreExpensiveProduct(products);
+//   console.log(
+//     `Найдорожчий продукт: ${mostExpensiveProduct.name}, ${mostExpensiveProduct.price}`
+//   );
+// });
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 10. Завдання: Створіть кнопку, яка при кліку підраховує та виводить
+// у консоль кількість студентів, які отримали оцінку "A" у масиві об'єктів.
+//     - Вхідні дані:
+// const buttonEl = document.getElementById("button");
+// function getStudentsWithLatterA(arr_obj_uniq_student) {
+//   return arr_obj_uniq_student.filter(({ grade }) => grade === "A");
+// }
+// const students = [
+//   { name: "Alice", grade: "A" },
+//   { name: "Bob", grade: "B" },
+//   { name: "Charlie", grade: "C" },
+//   { name: "Dave", grade: "D" },
+// ];
+// buttonEl.addEventListener("click", (event) => {
+//   const totalStudents = getStudentsWithLatterA(students).length;
+//   console.log(`Кількість студентів з оцінкою А : ${totalStudents}`);
+// });
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
