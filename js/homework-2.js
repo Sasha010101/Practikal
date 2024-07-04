@@ -540,3 +540,18 @@
 //   console.log(`Кількість студентів з оцінкою А : ${totalStudents}`);
 // });
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const modalTitle = isActionCompletedSuccessfully
+  ? `You have
+${
+  selectedAction.endsWith("e")
+    ? selectedAction.slice(0, selectedAction.length - 1)
+    : selectedAction.endsWith("y")
+    ? selectedAction.slice(0, selectedAction.length - 1) + "i"
+    : selectedAction
+}ed
+the profile!`
+  : !selectedAction
+  ? "Profile Actions"
+  : selectedAction.slice(0, 1).toUpperCase() +
+    selectedAction.slice(1) +
+    " this profile";
