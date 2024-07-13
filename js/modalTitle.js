@@ -6,19 +6,16 @@
 //     ({ age, email }) => age > 18 && email.endsWith("@example.com")
 //   );
 // }
-
 // function getAdultUsersNames(arr_obj) {
 //   return arr_obj
 //     .filter(({ age, email }) => age > 18 && email.endsWith("@example.com"))
 //     .map(({ name }) => name);
 // }
-
 // const users = [
 //   { name: "Alice", age: 25, email: "alice@example.com" },
 //   { name: "Bob", age: 17, email: "bob@other.com" },
 //   { name: "Charlie", age: 22, email: "charlie@example.com" },
 // ];
-
 // console.log(getAdultUsersNames(users));
 // console.log(getAdultUsers(users));
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -49,9 +46,7 @@
 //     return domen.includes("mail");
 //   });
 // }
-
 // // return arr.filter((email) => email.split("@")[1].includes("mail"));
-
 // const emails = [
 //   "user1@mail.com",
 //   "user2@gmail.com",
@@ -69,14 +64,12 @@
 //     ({major, score}) => major === "computer science" && score > 85
 //   );
 // }
-
 // const students = [
 //   { name: "Dave", score: 90, major: "computer science" },
 //   { name: "Eve", score: 88, major: "mathematics" },
 //   { name: "Frank", score: 92, major: "computer science" },
 //   { name: "Grace", score: 75, major: "computer science" },
 // ];
-
 // console.log(geScoreStudentsAndUniqMajor(students));
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 5. Завдання:
@@ -126,13 +119,11 @@
 // 8. Завдання:
 //    - Дано масив об'єктів продуктів із властивостями productName, price та available.
 //    - Поверніть масив назв продуктів, які доступні (`available: true`) і ціна яких більша за 50.
-
 // function getFilteredproductNames(arr_obj) {
 //   return arr_obj
 //     .filter(({ available, price }) => available && price > 50)
 //     .map(({ productName }) => productName);
 // }
-
 // function maybeFaster(arr_obj) {
 //   let result = [];
 //   arr_obj.forEach(({ productName, price, available }) => {
@@ -140,7 +131,6 @@
 //   });
 //   return result;
 // }
-
 // const items = [
 //   { productName: "Phone", price: 600, available: true },
 //   { productName: "Tablet", price: 300, available: false },
@@ -174,11 +164,9 @@
 // console.time("first");
 // console.log(getFilteredproductNames(items));
 // console.timeEnd("first");
-
 // console.time("second");
 // console.log(maybeFaster(items));
 // console.timeEnd("second");
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 9. Завдання:
 //    - Дано масив об'єктів користувачів із властивостями name, subscriptionType (`basic`, premium, `gold`).
@@ -198,7 +186,6 @@
 //   { name: "Dave", subscriptionType: "basic" },
 // ];
 // console.log(getVipSubscriptionUsers(users));
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 12. Завдання:
 //     - Дано масив об'єктів employees із властивостями name, department, salary.
@@ -235,7 +222,6 @@
 //     .filter(({ price }) => price < 20)
 //     .map(({ name }) => name);
 // }
-
 // const products = [
 //   { name: "Apple", price: 25 },
 //   { name: "Banana", price: 15 },
@@ -268,9 +254,7 @@
 //     // uniqNamesArr.includes(buyer) ? "" : uniqNamesArr.push(buyer);
 //     !uniqNamesArr.includes(buyer) && uniqNamesArr.push(buyer);
 //   });
-
 //   const result = [];
-
 //   uniqNamesArr.forEach((name) => {
 //     let currentBuyer = {
 //       buyer: name,
@@ -285,15 +269,12 @@
 //   });
 //   console.log("result", result);
 // }
-
 // function getTotalSumSecond(purchases_data) {
 //   const result = [];
-
 //   purchases_data.forEach(({ buyer, amount }) => {
 //     let searchedBuyerObj = result.find(
 //       (curentBuyer) => curentBuyer.buyer === buyer
 //     );
-
 //     if (searchedBuyerObj) {
 //       searchedBuyerObj.amount += amount;
 //     } else {
@@ -305,9 +286,7 @@
 //   });
 //   console.log("second result", result);
 // }
-
 //['Alice', 'Bob', 'Alice', 'Charlie'..]
-
 // const purchases_data = [
 //   { buyer: "Alice", amount: 50, date: "01.06" },
 //   { buyer: "Bob", amount: 70, date: "01.06" },
@@ -358,22 +337,18 @@
 //   { buyer: "Alice", amount: 16, date: "04.06" },
 //   { buyer: "Charlie", amount: 96, date: "04.06" },
 // ];
-
 // console.time("first");
 // getTotalSum(purchases_data);
 // console.timeEnd("first");
-
 // console.time("second");
 // getTotalSumSecond(purchases_data);
 // console.timeEnd("second");
-
 // const result = [
 //   { buyer: "Alice", amount: 200 },
 //   { buyer: "Bob", amount: 300 },
 //   { buyer: "Charlie", amount: 99 },
 // ];
 /////////////////////////////////////Не вирішив/////////////////////////////////////////////////////////////////////////////|||||
-
 // 4. Завдання: Знайдіть найбільш дорогий продукт у масиві об'єктів продуктів.
 //    - Вхідні дані:
 // function findMostExpensiveProduct(arr_products) {
@@ -386,7 +361,6 @@
 //     // arr_products[0].price
 //   ).name;
 // }
-
 // const products = [
 //   { name: "Apple", price: 25 }, //25<15
 //   { name: "Banana", price: 15 },
@@ -394,7 +368,6 @@
 //   { name: "Date", price: 30 },
 // ];
 // console.log(findMostExpensiveProduct(products));
-
 /////////////////////////////////////////////////////////////////////////////|||||/////////////////////////////////////////////////////////////////////////////|||||
 // 5. Завдання: Перетворіть масив об'єктів студентів у масив рядків, де кожен рядок містить ім'я студента та його оцінку.
 //    - Вхідні дані:
@@ -421,13 +394,11 @@
 //   { name: "Cherry", price: 10 },
 //   { name: "Date", price: 30 },
 // ];
-
 // buttonEl.addEventListener("click", (_event) => {
 //   console.log("Totalresult");
 //   console.log(countTotalSum(products));
 // });
 /////////////////////////////////////////////////////////////////////////////|||||/////////////////////////////////////////////////////////////////////////////|||||
-
 // 7. Завдання: Створіть елемент, який при наведенні миші обчислює та виводить у консоль середній вік користувачів у масиві об'єктів.
 //    - Вхідні дані:
 // const mouseEl = document.querySelector(".mouse");
@@ -458,7 +429,6 @@
 //     let foundedBuyer = arr_uniq_names.find(
 //       ({ uniqBayer }) => uniqBayer === buyer
 //     );
-
 //     if (!foundedBuyer) {
 //       //якщо ми не знайшли об'єкт ( коли foundedBuyer дорівнює undefined )
 //       // тоді ми створюємо об'єкт
@@ -474,10 +444,8 @@
 //       foundedBuyer.amount += amount;
 //     }
 //   });
-
 //   return arr_uniq_names;
 // }
-
 // const purchases = [
 //   { buyer: "Alice", amount: 50 },
 //   { buyer: "Charlie", amount: 55 },
@@ -489,7 +457,6 @@
 //   { buyer: "Jessika", amount: 30 },
 //   { buyer: "Melisa", amount: 12 },
 // ];
-
 // buttonEl.addEventListener("click", (event) => {
 //   console.log(getTotalSumPurchase(purchases));
 //   console.log("Загальна сума всіх покупок");
@@ -540,63 +507,18 @@
 //   console.log(`Кількість студентів з оцінкою А : ${totalStudents}`);
 // });
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// const modalTitle = isActionCompletedSuccessfully
-//   ? `You have
-// ${
-//   selectedAction.endsWith("e")
-//     ? selectedAction.slice(0, selectedAction.length - 1)
-//     : selectedAction.endsWith("y")
-//     ? selectedAction.slice(0, selectedAction.length - 1) + "i"
-//     : selectedAction
-// }ed
-// the profile!`
-//   : !selectedAction
-//   ? "Profile Actions"
-//   : selectedAction.slice(0, 1).toUpperCase() +
-//     selectedAction.slice(1) +
-//     " this profile";
-// 1. Напишіть функцію, яка приймає масив чисел і
-// повертає новий масив, що містить лише унікальні значення з початкового масиву.
-// function getUniqNumbers(arr_numbers) {
-//   return [...new Set(arr_numbers)];
-// }
-
-// const numbers = [1, 2, 3, 4, 4, 5, 6, 6];
-// console.log(getUniqNumbers(numbers));
-
-// 2. Напишіть функцію, яка приймає масив об'єктів
-// та повертає новий масив, що містить лише значення
-// певного ключа з кожного об'єкта.
-// function getNewArrWithKeyName(arr_obj_names) {
-//   return arr_obj_names.map(({ name }) => name);
-// }
-// const arr_obj = [
-//   { name: "Alice", age: 25 },
-//   { name: "Bob", age: 30 },
-//   { name: "Charlie", age: 35 },
-// ];
-// console.log(getNewArrWithKeyName(arr_obj));
-// function getTheSameNumbers(arr1, arr2) {
-//   return arr1.filter((number) => arr2.includes(number));
-// }
-// const first_arr = [1, 2, 8, 3, 4];
-// const second_arr = [3, 8, 4, 5, 6];
-// const sameNumber = getTheSameNumbers(first_arr, second_arr);
-// console.log(sameNumber);
-// 4. Напишіть функцію,
-//  яка приймає масив чисел і повертає новий масив,
-//   де кожне число збільшене на 1.
-// function getNumbers(arr) {
-//   return arr.map((number) => number + 1);
-// }
-// const numbers = [10, 20, 30, 40];
-// console.log(getNumbers(numbers));
-// 5. Напишіть функцію, яка приймає масив рядків і
-// повертає масив, де кожен рядок перевернутий
-//  (наприклад, "hello" стає "olleh").
-// function getReversWords(arr_words) {
-//   return arr_words.map((word) => word.split("").reverse().join(""));
-// }
-
-// const arr_words = ["apple", "banana", "cherry", "JS", "React", "Angular"];
-// console.log(getReversWords(arr_words));
+const modalTitle = isActionCompletedSuccessfully
+  ? `You have
+${
+  selectedAction.endsWith("e")
+    ? selectedAction.slice(0, selectedAction.length - 1)
+    : selectedAction.endsWith("y")
+    ? selectedAction.slice(0, selectedAction.length - 1) + "i"
+    : selectedAction
+}ed
+the profile!`
+  : !selectedAction
+  ? "Profile Actions"
+  : selectedAction.slice(0, 1).toUpperCase() +
+    selectedAction.slice(1) +
+    " this profile";
