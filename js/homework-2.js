@@ -600,3 +600,46 @@
 
 // const arr_words = ["apple", "banana", "cherry", "JS", "React", "Angular"];
 // console.log(getReversWords(arr_words));
+
+// ### Завдання зі стилями:
+// 1. Зміна кольору фону при скролі:
+//    - Коли сторінка прокручується, змініть колір фону body.
+// const bodyEl = document.querySelector("body");
+// // function getRandonColor() {
+// //   return Math.floor(Math.random() * 256);
+// // }
+// let count = 0;
+// window.addEventListener("scroll", (event) => {
+//   count++;
+//   bodyEl.style.background = `rgb(255 99 ${count})`;
+// });
+// 2. Зміна кольору тексту при натисканні:
+//    - Додайте кнопку, яка при натисканні змінює колір тексту параграфа на червоний.
+// const buttonEl = document.getElementById("button");
+// const textEl = document.querySelector(".text");
+// buttonEl.addEventListener("click", (event) => {
+//   textEl.style.color = "blue";
+// });
+// 3. Зміна розміру шрифту при маусОвері:
+//    - Додайте елемент заголовка (`h1`). Змініть розмір шрифту заголовка при наведенні курсора миші.
+// const mouseEl = document.querySelector(".mouse");
+// mouseEl.addEventListener("mouseover", (event) => {
+//   mouseEl.style.fontSize = "30px";
+// });
+// mouseEl.addEventListener("mouseleave", (event) => {
+//   mouseEl.style.fontSize = "14px";
+// });
+// 4. Зміна видимості при подвійний клік:
+//    - Додайте елемент, який буде зникати (visibility: hidden) при подвійний клік на нього.
+// const buttonEl = document.getElementById("buttonC");
+// console.log(buttonEl);
+// buttonEl.addEventListener("dblclick", (event) => {
+//   console.log("click");
+//   buttonEl.style.visibility = "hidden";
+// });
+// 5. Зміна кольору межі при фокусі:
+//    - Додайте текстове поле (`input`). Змініть колір межі текстового поля при фокусі на нього.
+// const elementEl = document.querySelector(".element");
+// elementEl.addEventListener("focus", (event) => {
+//   elementEl.style.outline = "1px solid blue";
+// });
