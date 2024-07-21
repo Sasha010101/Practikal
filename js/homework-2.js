@@ -643,3 +643,114 @@
 // elementEl.addEventListener("focus", (event) => {
 //   elementEl.style.outline = "1px solid blue";
 // });
+// const buttonEl = document.getElementById("button");
+// const textEl = document.querySelector(".text");
+// function getRandomColor() {
+//   const r = Math.floor(Math.random() * 256);
+//   const g = Math.floor(Math.random() * 256);
+//   const b = Math.floor(Math.random() * 256);
+//   return `rgb(${r},${g},${b})`;
+// }
+// function startColorChange() {
+//   return setInterval(() => {
+//     textEl.style.color = getRandomColor();
+//   }, 1000); // Зміна кольору кожну секунду
+// }
+
+// // Запуск таймера для зміни кольору
+// const colorChangeInterval = startColorChange();
+
+// text.addEventListener("mouseover", (event) => {
+//   textEl.style.color = "teal";
+//   textEl.style.fontSize = "24px";
+//   textEl.style.backgroundColor = "";
+//   const a = 10;
+//   const b = 20;
+//   let c = a + b;
+//   console.log(c);
+// });
+// buttonEl.addEventListener("mouseleave", (event) => {
+//   textEl.style.color = "blue";
+//   textEl.style.fontSize = "14px";
+//   textEl.style.backgroundColor = "yellow";
+//   colorChangeInterval = startColorChange();
+// });
+// const buttonEl = document.getElementById("button");
+// const textEl = document.querySelector(".text");
+
+// // Початковий розмір тексту
+// let currentFontSize = 14;
+
+// // Функція для генерації випадкового кольору в форматі RGB
+// function getRandomColor() {
+//   const r = Math.floor(Math.random() * 256);
+//   const g = Math.floor(Math.random() * 256);
+//   const b = Math.floor(Math.random() * 256);
+//   return `rgb(${r},${g},${b})`;
+// }
+
+// // Функція для поступового збільшення розміру тексту
+// function increaseFontSize() {
+//   if (currentFontSize < 30) {
+//     currentFontSize += 1; // Збільшуємо розмір на 1px
+//     textEl.style.fontSize = `${currentFontSize}px`;
+//   }
+// }
+
+// Функція для оновлення кольору тексту кожну секунду
+// function startColorChange() {
+//   return setInterval(() => {
+//     textEl.style.color = getRandomColor();
+//     increaseFontSize(); // Збільшуємо розмір шрифту
+//   }, 300); // Зміна кольору та розміру кожну секунду
+// }
+
+// Запуск таймера для зміни кольору та розміру
+// let colorChangeInterval = startColorChange();
+
+// Додаємо слухачі подій для кнопки
+// buttonEl.addEventListener("mouseover", () => {
+//   clearInterval(colorChangeInterval); // Зупиняємо зміну кольору та розміру при наведенні
+//   textEl.style.color = "teal";
+//   textEl.style.fontSize = "24px";
+//   textEl.style.backgroundColor = ""; // Очищуємо фон
+//   currentFontSize = 24; // Встановлюємо поточний розмір шрифту
+// });
+
+// buttonEl.addEventListener("mouseleave", () => {
+//   textEl.style.color = "blue";
+//   textEl.style.fontSize = "14px";
+//   textEl.style.backgroundColor = "yellow"; // Встановлюємо жовтий фон
+//   currentFontSize = 14; // Встановлюємо початковий розмір шрифту
+//   // Перезапускаємо зміну кольору та розміру після відведення миші
+//   colorChangeInterval = startColorChange();
+// });
+
+// const mouseEl = document.querySelector(".mouse");
+// mouseEl.addEventListener("mouseover", (event) => {
+//   mouseEl.style.fontSize = "30px";
+// });
+// mouseEl.addEventListener("mouseleave", (event) => {
+//   mouseEl.style.fontSize = "14px";
+// });
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// const users = [
+//   { name: "Alice", subscriptionType: "basic" },
+//   { name: "Bob", subscriptionType: "premium" },
+//   { name: "Charlie", subscriptionType: "gold" },
+//   { name: "Dave", subscriptionType: "basic" },
+// ];
+// localStorage.setItem("users", JSON.stringify(users));
+// console.log(localStorage.setItem);
+// const saveUsers = localStorage.getItem("users");
+// console.log(saveUsers);
+// const parsedUsers = JSON.parse(saveUsers);
+// console.log(parsedUsers);
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const form = document.querySelector(".feedback-form");
+
+form.addEventListener("submit", (evt) => {
+  evt.preventDefault();
+  console.log(evt.target.elements.message.value);
+  form.reset();
+});
